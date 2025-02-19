@@ -1,11 +1,12 @@
-echo "Web Development Course
+# 🎓 Web Development Course  
 
-Roll Number: [WAQAS RAMZAN]
+**👤 Student:** WAQAS RAMZAN  
+**📌 Roll Number:** [Your Roll Number]  
+**👨‍🏫 Instructor:** USMAN AKRAM  
 
-Course Instructor: [USMAN AKRAM]
+---
 
-## Repository Structure
-
+## 📂 Repository Structure  
 - Assignments/
   - Assignment_1/
   - Assignment_2/
@@ -22,4 +23,3 @@ Course Instructor: [USMAN AKRAM]
   - Midterm/
   - Final/
 
-This repository contains assignments, lab tasks, and exam preparation materials for the Web Development Course." > README.md
