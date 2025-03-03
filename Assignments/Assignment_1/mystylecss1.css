@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --primary-color: #1c2833;
+    --secondary-color: #34495e;
+    --accent-color: #2980b9;
+    --muted-color: #6c757d;
+    --background-light: #f4f4f4;
+    --white: #ffffff;
+    --font-main: 'Poppins', Arial, sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: var(--primary-color);
+}
+
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    margin: 20px auto;
+    background: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+    background-color: #ffffff;
+    color: white;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+}
+
+aside img.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #34495e;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+aside h2 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.text-muted {
+    color: #bdc3c7;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-list li {
+    background: #34495e;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+    width: 70%;
+}
+
+/* Section Titles */
+.line-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 5px;
+}
+
+
+h3.line-title {
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.short {
+    width: 30%;
+    font-weight: bold;
+}
+
+.full {
+    width: 70%;
+}
+
+a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #1abc9c;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.phone-icon {
+    color: #25D366; /* WhatsApp Green */
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.email-icon {
+    color: #D44638; /* Gmail Red */
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.location-icon {
+    color: #FFD700; /* Orange Location Pin */
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.linkedin-icon {
+    color: #0077B5; /* LinkedIn Blue */
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.text-muted a {
+    color: #000000; /* LinkedIn link color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+.text-muted  {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.text-muted a:hover {
+    text-decoration: underline;
+}
+
+.line-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1E2A39;
+    text-align: left;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1E2A39;
+    padding-bottom: 2px;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: #6c757d !important; /* Greyish tone for proficiency text */
+    font-style: italic;
+    display: block; /* Ensures it appears below the language name */
+}
+p {
+    font-size: 16px; /* Adjust readability */
+    color: black; /* Ensures the language name is black */
+    text-align: left; /* Aligns Urdu, English, Arabic to the left */
+    margin-bottom: 5px; /* Adds spacing between paragraphs */
+}
+
+/* Interests Styling */
+.interest-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.interest {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    color: black !important; /* Makes the interest text black */
+}
+
+
+#Introduction {
+    background-color: #34495e; /* Blue background */
+    color: white; /* White text */
+    padding: 20px; /* Space inside the block */
+    border-radius: 1px; /* Rounded corners */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 95%; /* Adjust width */
+    margin: 20px auto; /* Centering */
+    text-align: left; /* Center text */
+}
+#Introduction h2 {
+    margin-top: 0;
+    font-size: 26px; /* Bigger font for name */
+}
+#Introduction p {
+    font-size: 16px;
+    line-height: 1.5; /* Better readability */
+    color: white;
+}
+
+.education-section {
+    padding-top: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.line-title1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1c2833;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #ffffff; /* Bottom border */
+    padding-bottom: 5px; /* Adds spacing below the text */
+    display: inline-block; /* Ensures border fits text width */
+}
+
+
+.line-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1c2833;
+    margin-bottom: 5px;
+}
+
+.degree {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1c2833;
+    margin-bottom: 0.5px;
+}
+
+.university {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 0.5px;
+    margin-top: 7px;
+}
+
+.text-muted {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.courses-title {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.courses {
+    display: flex;
+    justify-content: flex-start; /* Aligns lists to the left */
+    gap: 125px; /* Adjusts spacing between columns */
+    font-size: 14px;
+}
+
+.courses ul {
+    list-style: none; /* Remove default bullet */
+    padding-left: 0;
+    margin: 0; /* Remove extra spacing */
+}
+
+.courses ul li {
+    position: relative;
+    padding-left: 20px; /* Adjust space between bullet and text */
+    margin-bottom: 2px; /* Reduce space between items */
+}
+
+.courses ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 10px; /* Adjust size */
+    height: 10px;
+    border: 2px solid black; /* Creates the hollow effect */
+    background-color: transparent; /* Keep it hollow */
+    display: inline-block;
+}
+
+/* Title Styling */
+.line-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1c2833;
+    margin-bottom: 8px;
+    border-bottom: 2px solid #1c2833;
+    padding-bottom: 5px;
+}
+
+/* Certificates Section Layout */
+.certificates-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px; /* Adjusted spacing */
+}
+
+/* Certificate Styling */
+.certificates {
+    flex: 1; /* Takes up available space */
+}
+
+.certificate {
+    margin-bottom: 10px;
+}
+
+/* Smaller Heading for Certificates */
+.certificate h3 {
+    font-size: 16px; /* Reduced size */
+    font-weight: 600;
+    margin-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificate h3 a {
+    text-decoration: none;
+    color: #1c2833;
+    font-weight: 600;
+    font-size: 16px; /* Matches h3 size */
+    align-items: center;
+    white-space: nowrap;
+    margin-right: -5px;
+}
+
+.certificate h3 a:hover {
+    color: #0e76a8;
+}
+
+/* Institution/Platform Name */
+.certificate p {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+/* IBM Badge Styling */
+.ibm-badge {
+    flex-shrink: 0; /* Prevents shrinking */
+    margin-right: 30px; /* Moves the badge slightly to the left */
+    margin-top: 80px;
+}
+
+.ibm-badge img {
+    width: 140px;
+    height: auto;
+}
+
