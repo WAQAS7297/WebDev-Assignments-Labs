@@ -10,7 +10,7 @@
     <meta name="description" content="Tehzeeb is a culture, tradition, lifestyle and class of Pakistan, with a legacy of more than 114 years. Popular among Royalties and their families visiting Pakistan from all across the world.">
 </head>
 <body id = "html-body">
-    <div class = "page-wrapper home">
+    <div class = "page-wrapper home" style="position: relative;">
         <header id = "header" class = "page-header header">
             <div id = "header_top_row" class = "bg_header">
                 <div class = "delivery_txt">
@@ -19,13 +19,13 @@
                         <a href = "tel:051111112253">051-111-11-2253</a>
                     </p>
                 </div>
-                <div class = "header_container">
+                <div class = "header_container" >
                     <div class = "nav-section">
                         <div class = "nav-section-left">
                             <div class = "nav-section-filter">
                                 <div class = "nav-section-item">
                                     <a href = "#!" data-pushbar-target = "catgory_nav" class = "hum_menu">
-                                        <img src = "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/HamburgerMenu.webp" alt = "menu" width = "33" height = "21" style = "height: auto;">
+                                        <img id="cat500" src = "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/HamburgerMenu.webp" alt = "menu" width = "33" height = "21" style = "height: auto;">
                                     </a>
                                 </div>
                                 <div class = "nav-section-dropdown open_location">
@@ -94,7 +94,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="actions">
-                                                    <button type="submit" title="Search" class="action search" aria-label="Search" disabled="">
+                                                    <button type="submit" title="Search" class="action search" aria-label="Search" >
                                                         <span>Search</span>
                                                     </button>
                                                 </div>
@@ -110,58 +110,18 @@
                                     </a>
                                 </div>
                                 <div data-block = "minicart" class = "minicar-wrapper cart">
-                                    ::before
-                                    <div class = "action showcart" data-pushbar-target="minicart_sidebar" data-bind = "scope: 'minicart_content'">
-                                        <p class = "cart_text" title = "Cart">
-                                            <img src = "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt = "cart" width = "27" height = "27">
-                                        </p>
-                                        <span class = "counter qty empty" data-bind = "css: { empty: !!getCartParam('summary_count') == false && !isLoading() },blockLoader: isLoading">
-                                            <span class = "counter-number"></span>
-                                            <span class = "counter-label"></span>
-                                        </span>
+                                    <div class="cart-icon">
+                                        <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt="cart" width="27" height="27">
                                     </div>
-                                    <aside class = "right_dialog" data-pushbar-id="minicart_sidebar" data-pushbar-direction="right_dialog">
-                                        <div class = "dilog_product_blog_pr_size bg_white">
-                                            <div class = "close_dialog" data-pushbar-close>
-                                                <span class = "primary_text dialog_close">Close</span>
-                                            </div>
-                                            <div class = "dialog_inner">
-                                                <div class = "block block-minicart">
-                                                    ::before
-                                                    <div id = "minicart-content-wrapper" data-bind = "scope: 'minicart_content'">
-                                                        <div class = "dialog_top_cnt empty_cart">
-                                                            <h2 class = "primary_title">Shopping Cart</h2>
-                                                        </div>
-                                                        <div class = "block-title">
-                                                            <strong>
-                                                                <span class = "text" data-bind="i18n: 'My Cart'">My Cart</span>
-                                                                <span class = "qty empty" data-bind = "css: {empty: !!getCartParam('summary_count') == false},
-                                                                attr: { title: $t('Items in Cart') },text: getCartParam('summary_count')" title = "Items in Cart"></span>
-                                                            </strong>
-                                                        </div>
-                                                        <div class = "block-content">
-                                                            <button type = "button" id  = "btn-minicart-close" class = "action close" data-action = "close" data-bind = "attr: {title:$t('Close')},click:closeMinicart()" title = "Close">
-                                                                ::before
-                                                                <span data-bind = "i18n: 'Close">
-                                                                    Close
-                                                                </span>
-                                                            </button>
-                                                            <div class="minicart_empty">
-                                                                <div class="mincart_empty_icon"></div>
-                                                                <div class="subtitle empty minicart_text" data-bind="i18n: 'You have no items in your shopping cart.'">You have no items in your shopping cart.</div>
-                                                            </div>
-                                                            <div class="bottom_container">
-                                                                <div id="minicart-widgets" class="minicart-widgets">
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                    ::after
-                                                </div>
-                                            </div>
+                                    
+                                    <aside id="cart-side-menu" class="cart-side-menu">
+                                        <div class="cart-content">
+                                            <h2>Shopping Cart</h2>
+                                            <p>You have no items in your shopping cart.</p>
                                         </div>
+                                        <button id="close-cart-menu" class="close-cart-menu">Close</button>
                                     </aside>
-                                    ::after
+                                    
                                 </div>
                             </div>
                             <div class = "navigation">
@@ -193,7 +153,7 @@
                 </div>
             </div>
         </header>
-        <aside data-pusher-id = "category_nav" data-pusher-directions = "left" id = "menu" class = "open" style = "height: 914.667px;">
+        <aside data-pusher-id = "category_nav" data-pusher-directions = "left" id = "menu" class = "open" >
             <div class = "sidebar_category">
                 <nav class = "navigation category_item" data-action = "navigation">
                     <div class = "link">Categories1</div>
@@ -418,7 +378,7 @@
                         <div class = "homebanner_outer main_banner">
                             <div class = "banner_slider swiper home_banner swiper-initialized swiper-horizontal swiper-backface-hidden">
                                 <div class = "swiper-wrapper" id = "swiper-wrapper-3ed1b294cec787fa" aria-live = "polite">
-                                    <div class = "swiper slide swiper-slide-active swiper-slide-next" role = "group" aria-label ="1/1" data-swiper-slide-index = "0" style = "width: 133px;">
+                                    <div class = "swiper slide swiper-slide-active swiper-slide-next" role = "group" aria-label ="1/1" data-swiper-slide-index = "0" style = "width: 2120px;">
                                         <picture>
                                             <source media = "(max-width:600px)" srcset = "https://tehzeeb.com/media/banners/mobile/icon/9.jpeg">
                                             <source media = "(max-width:1024px)" srcset = "https://tehzeeb.com/media/banners/main/icon/5.jpeg">
@@ -576,7 +536,7 @@
                                 </div>
                                 <div class = "slider-wrapper main_container">
                                     <div class = "swiper-container swiper-slider-undefined swiper-initialized swiper-horizontal swiper-backface-hidden">
-                                        <div class = "swipper-wrapper" id = "swiper-wrapper-b0f246acc0c4054d" aria-live = "polite">
+                                        <div class = "swipper-wrapper" style="width: 100%;" id = "swiper-wrapper-b0f246acc0c4054d" aria-live = "polite">
                                             <div class = "product_item swiper-slide swiper-slide-next" role = "group" aria-label = "1/7" style = "width: 73px; margin-right:15px;">
                                                 <span class = "product-image-container product-image container-548" style = "width: 350px;">
                                                     <span class = "product-image-wrapper" style = "padding-bottom: 66.5714%">
@@ -591,6 +551,7 @@
                                                         padding-bottom: 66.571428571429%;
                                                     }
                                                 </style>
+                                                
                                                 <div class = "card">
                                                     <a href = "https://tehzeeb.com/lemon-puff-500g.html" class = "card_heading">Leading Puff</a>
                                                     <p class = "card_text">"Discovering the charm of French puff,layered with Tehzeeb lemon and sparking crystals.It is simple yet classy. Have it with tea or coffee and feel the difference it creates.</p>
@@ -932,41 +893,77 @@
                 </div>
             </div>
         </footer>
-        <div id = "customer-popup-login" class = "customer-popup-login login_wishlist _disable">
-            <div class = "block block-customer-login">
-                <div class = "block-content" aria-labelledby -=" "block-customer-login-heading>
-                    <from class = "form form-login" action = "https://tehzeeb.com/customer/ajax/login/" method = "post" id = "customer-popup-login-form" nonvalidate = "nonvalidate">
-                        <input name = "form_key" type = "hidden" value = "cEMruBsBeCufYbQL">
-                        <input type = "hidden" name = "redirect_url" value = "https://tehzeeb.com/">
-                        <fieldset class = "fieldset login" data-hasrequired="* Require Fields">
-                            <div class = "message"></div>
-                            <div class = "field email required">
-                                <div class = "control">
-                                    <input name = "username" value autocomplete = "off" id = "email-login" type = "email" class = "input-text" title="Email" data-validate = "{required:true ,'validate-email':true}" placeholder = "Enter your email address *" aria-required = "true">
+        <div id="customer-popup-login" class="customer-popup-login login_wishlist _disable">
+            <div class="block block-customer-login">
+                <div class="block-content" aria-labelledby="block-customer-login-heading">
+                    <form class="form form-login" action="#" method="post" id="customer-popup-login-form" novalidate>
+                        <input name="form_key" type="hidden" value="cEMruBsBeCufYbQL">
+                        <input type="hidden" name="redirect_url" value="http://127.0.0.1:5500/index.html">
+                        <fieldset class="fieldset login" data-hasrequired="* Required Fields">
+                            <div class="message"></div>
+                            <div class="field email required">
+                                <div class="control">
+                                    <input name="username" autocomplete="off" id="email-login" type="email" class="input-text" title="Email" data-validate="{required:true ,'validate-email':true}" placeholder="Enter your email address *" aria-required="true">
                                 </div>
                             </div>
-                            <div class = "field password required">
-                                <div class = "control">
-                                    <input name = "password" type = "password" value autocomplete = "off" class = "input-text" id = "pass-login" title="Password" data-validate = "{required:true}" placeholder = "Password *" aria-required = "true">
+                            <div class="field password required">
+                                <div class="control">
+                                    <input name="password" type="password" autocomplete="off" class="input-text" id="pass-login" title="Password" data-validate="{required:true}" placeholder="Password *" aria-required="true">
                                 </div>
-                                <div class = secondary>
-                                    <a href = "https://tehzeeb.com/customer/account/forgotpassword/">Forgot Your Password</a>
+                                <div class="secondary">
+                                    <a href="https://tehzeeb.com/customer/account/forgotpassword/">Forgot Your Password?</a>
                                 </div>
                             </div>
                         </fieldset>
-                        <div class= "modal-footer">
-                            <div class = "action-toolbar">
-                                <div class = "primary">
-                                    <button type="submit" class = "action-primary action login primary" name = "send" id = "send2-login">
+                        <div class="modal-footer">
+                            <div class="action-toolbar">
+                                <div class="primary">
+                                    <button type="submit" class="action-primary action login primary" name="send" id="send2-login">
                                         <span>Sign In</span>
                                     </button>
                                 </div>
                             </div>
                         </div>
-                    </from>
+                    </form>
                 </div>
             </div>
         </div>
+        
     </div>
+    <script>
+        document.querySelector('.hum_menu').addEventListener('click', function() {
+            document.getElementById('menu').classList.toggle('open');
+        });
+        
+        const cartIcon = document.querySelector('.cart-icon img');
+        const cartSideMenu = document.getElementById('cart-side-menu');
+        const closeCartMenu = document.getElementById('close-cart-menu');
+
+        cartIcon.addEventListener('click', function() {
+            cartSideMenu.classList.toggle('open');
+        });
+
+        closeCartMenu.addEventListener('click', function() {
+            cartSideMenu.classList.remove('open');
+        });
+    </script>
+
+
 </body>
+<script>
+
+    document.getElementById('cat500').addEventListener('click' , (e)=>{
+        document.querySelector('.sidebar_category').style.left = '0%';
+        e.stopPropagation();
+    });
+    document.addEventListener('click', (e) => {
+    const sidebar = document.querySelector('.sidebar_category');
+    if (!sidebar.contains(e.target)) { // Check if the click is outside the sidebar
+        sidebar.style.left = "-100%";
+    }
+    });
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector(".sidebar_category").style.left = "-100%";
+    });
+</script>
 </html>
