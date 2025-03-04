@@ -1196,7 +1196,7 @@ footer .footer_bottom_block .bottom_inner h2 {
 }
 
 .category_slider .slider-wrapper .swiper-container .swiper-wrapper .product_item .card {
-    /* display: none; */
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 7px;
