@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tehzeeb Bakers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image/png" href="https://tehzeeb.com/media/favicon/stores/1/resp_logo.png">
+    <link rel="shortcut icon" type="image/png" href="https://tehzeeb.com/media/favicon/stores/1/resp_logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Tehzeeb is a culture, tradition, lifestyle and class of Pakistan, with a legacy of more than 114 years. Popular among Royalties and their families visiting Pakistan from all across the world.">
+</head>
+<body>
+    <header class="fixed-top bg-transparent shadow-sm">
+        <div class="bg-danger text-white text-center py-2">
+            Delivering Nationwide. <a href="tel:051111112253" class="text-white fw-bold">051-111-11-2253</a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-white py-3">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="d-flex flex-column align-items-start">
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-secondary me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu">
+                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/HamburgerMenu.webp" alt="menu" width="30">
+                        </button>
+                        <div class="d-none d-md-block ">
+                            <span class="fw-bold">How do you want your products?</span>
+                        </div>
+                    </div>
+                    <ul class="nav justify-content-start border-top pt-2" style="color: white;">
+                        <style>
+                            .nav-link{
+                                color :white !important;
+                            }
+                        </style>
+
+                        <li class="nav-item"><a href="https://tehzeeb.com/pizza.html/" class="nav-link">Pizza</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/cake.html/" class="nav-link">Cakes</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/biscuits.html/" class="nav-link">Biscuits</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/pastry.html/" class="nav-link">Pastry</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/bread.html/" class="nav-link">Bread</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/puff.html/" class="nav-link">Puffs</a></li>
+                    </ul>
+                </div>
+                <a class="navbar-brand mx-auto" href="https://tehzeeb.com/">
+                    <img src="https://tehzeeb.com/media/logo/stores/1/Tehzeeb-Logo-PNG1.png" alt="Tehzeeb Bakers" width="150">
+                </a>
+                <div class="d-flex flex-column align-items-end">
+                    <div class="d-flex align-items-center">
+                        <a style="text-decoration: none;" href="tel:051111112253" class="text-light me-3 d-flex align-items-center">
+                            <!-- <img class="nav-link" src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/fluent_call-28-regular.webp" width="30" alt="call"> -->
+                            <i class="fa-solid fa-phone nav-link"></i>
+                            <span class="ms-2 d-none d-md-inline nav-link">Call Us</span>
+                        </a>
+                        <button class="btn btn-outline-secondary me-3" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/searchicon.webp" alt="search" width="25">
+                        </button>
+                        <a href="https://tehzeeb.com/customer/account/" class="text-light me-3">
+                            <i style="font-size: 24px; color: white;" class="fa-regular fa-user nav-link"></i>
+                            <!-- <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/Accont.webp" alt="account" width="25"> -->
+                        </a>
+                        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartMenu">
+                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt="cart" width="27">
+                        </button>
+                    </div>
+                    <ul class="nav justify-content-end border-top pt-2">
+                        <li class="nav-item"><a href="https://tehzeeb.com/ramadan-menu.html/" class="nav-link">
+                            <!-- <img src="https://tehzeeb.com/static/version1741244330/frontend/Magento/tehzeeb_new/en_US/images/ramadan.png" alt="Ramadan Icon" style="width: 20px; height: 20px; margin-right: 5px;"> -->
+                            <i class="fa-solid fa-mosque nav-link"></i>
+                            Ramdan</a></li>
+                        <li class="nav-item"><DELIVER href="https://tehzeeb.com/snacks.html/" class="nav-link">DELIVER NATIONWIDE</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/snacks.html/" class="nav-link">Snacks</a></li>
+                        <li class="nav-item"><a href="https://tehzeeb.com/salad.html/" class="nav-link">Salad</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="offcanvas offcanvas-start d-flex flex-column" id="categoryMenu" tabindex="-1" style="color: black; background-color: #fdf9f3; height: 100vh;">
+    <div class="offcanvas-header border-bottom">
+        <h5 class="offcanvas-title fw-bold text-uppercase">Categories</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body flex-grow-1">
+        <nav class="nav flex-column">
+            <div class="nav-item dropdown">
+                <a class="nav-link1 dropdown-toggle fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#breadMenu" aria-expanded="false">Bread</a>
+                <div class="collapse" id="breadMenu">
+                    <ul class="list-unstyled ps-3">
+                        <li><a href="https://tehzeeb.com/bread.html" class="nav-link1">All Bread</a></li>
+                        <li><a href="https://tehzeeb.com/bread/buns.html" class="nav-link1">Bun</a></li>
+                        <li><a href="https://tehzeeb.com/bread/crossiant.html" class="nav-link1">Croissant</a></li>
+                        <li><a href="https://tehzeeb.com/bread/rusk.html" class="nav-link1">Rusk</a></li>
+                        <li><a href="https://tehzeeb.com/bread/breakfast-bread.html" class="nav-link1">Breakfast Bread</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link1 dropdown-toggle fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#cakeMenu" aria-expanded="false">Cakes</a>
+                <div class="collapse" id="cakeMenu">
+                    <ul class="list-unstyled ps-3">
+                        <li><a href="https://tehzeeb.com/cake.html" class="nav-link1">All Cakes</a></li>
+                        <li><a href="https://tehzeeb.com/cake/dry-cake.html" class="nav-link1">Dry Cakes</a></li>
+                        <li><a href="https://tehzeeb.com/cake/the-teacake-family.html" class="nav-link1">Teacake</a></li>
+                        <li><a href="https://tehzeeb.com/cake/fresh-cream-cake.html" class="nav-link1">Fresh Cream Cake</a></li>
+                        <li><a href="https://tehzeeb.com/cake/mousse-cake.html" class="nav-link1">Mousse Cake</a></li>
+                        <li><a href="https://tehzeeb.com/cake/butter-cream-cake.html" class="nav-link1">Buttercream Cake</a></li>
+                        <li><a href="https://tehzeeb.com/cake/cheesecakes.html" class="nav-link1">Cheesecakes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://tehzeeb.com/snacks.html" class="nav-link1">Snack</a>
+            <a href="https://tehzeeb.com/pizza.html" class="nav-link1">Pizza</a>
+            <a href="https://tehzeeb.com/biscuits.html" class="nav-link1">Biscuit</a>
+            <div class="nav-item dropdown">
+                <a class="nav-link1 dropdown-toggle fw-bold" href="#" data-bs-toggle="collapse" data-bs-target="#pasteryMenu" aria-expanded="false">Pastry</a>
+                <div class="collapse" id="pasteryMenu">
+                    <ul class="list-unstyled ps-3">
+                        <li><a href="https://tehzeeb.com/pastry.html" class="nav-link1">All Pastry</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/fresh-cream-pastry.html" class="nav-link1">Fresh Cream Pastery</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/mousse-pastry.html" class="nav-link1">Mousse Pastery</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/butter-cream-pastry.html" class="nav-link1">Butter Cream Pastery</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/brownies.html" class="nav-link1">Brownies</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/cheesecake-pastry.html" class="nav-link1">Cheesecake</a></li>
+                        <li><a href="https://tehzeeb.com/pastry/sundae-cups.html" class="nav-link1">Sundae Cups</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="https://tehzeeb.com/donut.html" class="nav-link1">Donut</a>
+            <a href="https://tehzeeb.com/salad.html" class="nav-link1">Salad</a>
+            <a href="https://tehzeeb.com/burger-amp-sandwich.html" class="nav-link1">Sandwich</a>
+            <a href="https://tehzeeb.com/burger.html" class="nav-link1">Burger</a>
+            <a href="https://tehzeeb.com/nimko.html" class="nav-link1">Nimko</a>
+            <a href="https://tehzeeb.com/puff.html" class="nav-link1">Puff</a>
+            <a href="https://tehzeeb.com/gifting.html" class="nav-link1">Gifting</a>
+            <a href="https://tehzeeb.com/kanas-ketchup.html" class="nav-link1">Kanas Ketchup</a>
+            <a href="https://tehzeeb.com/packed-items.html" class="nav-link1">Packed Items</a>
+            <a href="https://tehzeeb.com/royal-biscuits.html" class="nav-link1">Royal Biscuits</a>
+            <a href="https://tehzeeb.com/ramadan-menu.html" class="nav-link1">Ramadan Menu</a>
+        </nav>
+    </div>
+    <div class="offcanvas-footer border-top p-3">
+        <p class="fw-bold text-uppercase mb-1">Accounts</p>
+        <p class="fw-bold text-uppercase">Contact Us</p>
+    </div>
+</div>
+<div class="modal fade" id="searchModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Search Tehzeeb</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form action="https://tehzeeb.com/catalogsearch/result/" method="get">
+                    <input type="text" name="q" class="form-control" placeholder="Search Tehzeeb" required>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="offcanvas offcanvas-end" id="cartMenu">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Shopping Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+        <p>You have no items in your shopping cart.</p>
+    </div>
+</div>
+<main id="main-content" class="container-fluid p-0">
+<div id="bannerCarousel" class="carousel slide mt-2" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <picture>
+                <source media="(max-width:600px)" srcset="https://tehzeeb.com/media/banners/mobile/icon/9.jpeg">
+                <source media="(max-width:1024px)" srcset="https://tehzeeb.com/media/banners/main/icon/5.jpeg">
+                <source media="(min-width:1024px)" srcset="https://tehzeeb.com/media/banners/main/icon/5.jpeg">
+                <img class="d-block w-100 banner-image" src="https://tehzeeb.com/media/banners/main/icon/5.jpeg" alt="banner">
+            </picture>
+        </div>
+    </div>
+</div>
+<div class="container py-5 " style="background-color: #fdf9f3; color: black;">
+    <div class="text-center mb-4">
+        <h2 class="text-dark">CATEGORIES</h2>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-1 g-4">
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/bread.html" title="Bread">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Bun-grey-512z512.png" class="card-img-top" alt="Bread">
+                </a>
+                <a href="https://tehzeeb.com/bread.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Bread</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/cakes.html" title="Cakes">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Cake-grey-512x512.png" class="card-img-top" alt="Cakes">
+                </a>
+                <a href="https://tehzeeb.com/cakes.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Cakes</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/snacks.html" title="Snack">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Roll-2-grey-512x512.png" class="card-img-top" alt="Snack">
+                </a>
+                <a href="https://tehzeeb.com/snacks.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Snack</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/pizza.html" title="Pizza">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/pizzaa-grey-512x512_1_.png" class="card-img-top" alt="Pizza">
+                </a>
+                <a href="https://tehzeeb.com/pizza.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Pizza</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/biscuits.html" title="Biscuit">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Royal-biscuit-grey-512x512.png" class="card-img-top" alt="Biscuit">
+                </a>
+                <a href="https://tehzeeb.com/biscuits.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Biscuit</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/pastry.html" title="Pastry">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Pastry-grey-512x512.png" class="card-img-top" alt="Pastry">
+                </a>
+                <a href="https://tehzeeb.com/pastry.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Pastry</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/donut.html" title="Donut">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Donut.png" class="card-img-top" alt="Donut">
+                </a>
+                <a href="https://tehzeeb.com/donut.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Donut</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/salad.html" title="Salad">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/salad-grey-512x512.png" class="card-img-top" alt="Salad">
+                </a>
+                <a href="https://tehzeeb.com/salad.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Salad</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/burger-amp-sandwich.html" title="Sandwich">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Sandwich-grey-512x512.png" class="card-img-top" alt="Sandwich">
+                </a>
+                <a href="https://tehzeeb.com/burger-amp-sandwich.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Sandwich</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/burger.html" title="Burger">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Jalapeno-Burger-grey-512x512.png" class="card-img-top" alt="Burger">
+                </a>
+                <a href="https://tehzeeb.com/burger.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Burger</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/nimko.html" title="Nimko">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Nimko.png" class="card-img-top" alt="Nimko">
+                </a>
+                <a href="https://tehzeeb.com/nimko.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Nimko</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/puff.html" title="Puff">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Puff.png" class="card-img-top" alt="Puff">
+                </a>
+                <a href="https://tehzeeb.com/puff.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Puff</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/gifting.html" title="Gifting">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Gifrbasket-grey-512x512_1_.png" class="card-img-top" alt="Gifting">
+                </a>
+                <a href="https://tehzeeb.com/gifting.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Gifting</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/royal-biscuits.html" title="Kanas Ketchup">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Tomat-ketchup-gray-512x512.png" class="card-img-top" alt="Kanas Ketchup">
+                </a>
+                <a href="https://tehzeeb.com/royal-biscuits.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Kanas Ketchup</h5>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card text-center border-0">
+                <a href="https://tehzeeb.com/packed-items.html" title="Packed Items">
+                    <img src="https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/countryside-grey-512x512.png" class="card-img-top" alt="Packed Items">
+                </a>
+                <a href="https://tehzeeb.com/packed-items.html" class="text-decoration-none text-dark">
+                    <h5 class="mt-2">Packed Items</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section_padding top_zero primarybg container-fluid">
+    <div class="row justify-content-center">
+    <div class="col-12">
+        <div class="category_slider text-center">
+        <div class="category_banner">
+            <a href="https://tehzeeb.com/puff.html">
+            <img src="https://tehzeeb.com/media/catalog/category/1800x549_px_Banner_2.png" alt="Category Banner" class="img-fluid">
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+    <style>
+        .container1 {
+            max-width: 1900px;
+            margin: auto;
+        }
+
+        .swiper-slide {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .swiper-slide:hover {
+            transform: scale(1.05);
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            display: block;
+            border-radius: 10px;
+        }
+
+        .cardofslider {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            padding: 20px;
+        }
+
+        .swiper-slide:hover .cardofslider {
+            opacity: 1;
+        }
+
+        .card_heading {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .card_text {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .card_btns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card_btn {
+            background: #ffcc00;
+            color: black;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .card_btn:hover {
+            background: #e6b800;
+        }
+        </style>
+<div class="container mt-5">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/i/m/img_7647.jpg" alt="Lemon Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_heading">Leading Puff</a>
+                    <p class="card_text">Discovering the charm of French puff, layered with Tehzeeb lemon and sparking crystals. It is simple yet classy. Have it with tea or coffee and feel the difference.</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/1/_/1_69.jpg" alt="French Heart Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/french-heart-500g.html" class="card_heading">French Heart Puff</a>
+                    <p class="card_text">Crispy and sweet, experience a delightful French Heart puff that is perfect for enjoying with your cup of tea.</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/french-heart-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/french-heart-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/2/_/2_80_3.jpg" alt="Parsley Sticks Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/catalog/product/view/id/552/s/parsley-stick-500g/" class="card_heading">Parsley Sticks Puff</a>
+                    <p class="card_text">Discover crispy, golden pastry sticks infused with the fresh and herbaceous flavor of parsley, perfect for snacking or  pairing with your favorite dips and spreads.</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/catalog/product/view/id/552/s/parsley-stick-500g/" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/catalog/product/view/id/552/s/parsley-stick-500g/" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/3/_/3_65.jpg" alt="Cheese Tie Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_heading">Cheese Tie Puff</a>
+                    <p class="card_text">Discovering the charm of French puff, layered with Tehzeeb lemon and sparking crystals. It is simple yet classy. Have it with tea or coffee and feel the difference.</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/lemon-puff-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/i/m/img_6658.jpg" alt="Butter Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/cheese-tie-500g.html" class="card_heading">Cheese Tie Puff</a>
+                    <p class="card_text">A delightful snack,our Cheese Tie puff combines the rich</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/cheese-tie-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/cheese-tie-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/i/m/img_6658.jpg" alt="Butter Puff" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/butter-puff-500g.html" class="card_heading">Butter Puff</a>
+                    <p class="card_text">Butter Puffs are delicate,flaky pasteries made with rich and creamy butter</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/butter-puff-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/butter-puff-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/i/m/img_5993_1.jpg" alt="Vegetable Cheese Pastry" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/vegetables-cheese-pasty-each.html" class="card_heading">Vegetable Cheese Pastry</a>
+                    <p class="card_text">A delightful pastry filled with a blend of fresh vegetables and creamy cheese, wrapped in a golden , flaky pastry</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/vegetables-cheese-pasty-each.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/vegetables-cheese-pasty-each.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/2/_/2_72.jpg" alt="Bakarkhani Puf" class="img-fluid">
+                <div class="cardofslider">
+                    <a href="https://tehzeeb.com/bakarkhani-500g.html" class="card_heading">Bakarkhani Puff</a>
+                    <p class="card_text">Bakarkhani is a tradition treat that pairs perfectly with tea or coffee for a delightful snack</p>
+                    <div class="card_btns">
+                        <a href="https://tehzeeb.com/bakarkhani-500g.html" class="card_btn">See More</a>
+                        <a href="https://tehzeeb.com/bakarkhani-500g.html" class="card_btn">Buy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-scrollbar mt-2"></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    </div>
+</div>
+<div class="iconic-cake-block position-relative">
+    <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/bg_home2.png"
+        alt="Coffee Fudge Cake Background" class="img-fluid w-100">
+
+    <div class="overlay position-absolute top-50 start-0 translate-middle-y text-white p-4 text-start w-50">
+        <h2 style="text-align: center;" class="display-4 fw-bold text-uppercase" style="letter-spacing: 2px">Coffee Fudge Cake</h2>
+        <p style="text-align: center; class="lead">
+            Our iconic cake, loved throughout generations. Perfectly moist sponge, rich and creamy.
+            Have it with tea or coffee for a perfect afternoon.
+        </p>
+        <div class="text-center mt-3">
+            <a href="https://tehzeeb.com/coffee-fudge-cake.html/" class="btn btn-outline-light rounded-pill px-4 py-2">Order Now</a>
+        </div>
+    </div>
+</div>
+
+<section class="gifting py-5">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="display-5 fw-bold">GIFTING</h2>
+            <p class="lead">
+                Our gifting collection is thoughtfully crafted to bring joy and a smile to your face. Whether it's a birthday, anniversary, or your special day, a gift from Tehzeeb Bakers is a wonderful way to express your care for your loved one.
+            </p>
+        </div>
+        <div class="row row-cols-lg-4 row-cols-md-2 ">
+            <div class="mb-4">
+                <div class="card border-0 text-center gifting-card">
+                    <a href="https://tehzeeb.com/gifting.html">
+                        <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting1.webp" alt="BASKET" class="card-img-top img-fluid">
+                    </a>
+                    <div class="card-body p-0 mt-2">
+                        <a href="https://tehzeeb.com/gifting.html" class="stretched-link text-decoration-none">
+                            <span class="fw-bold text-transition">BASKET</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" mb-4">
+                <div class="card border-0 text-center gifting-card">
+                    <a href="https://tehzeeb.com/biscuits.html">
+                        <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting2.webp" alt="BISCUITS" class="card-img-top img-fluid">
+                    </a>
+                    <div class="card-body p-0 mt-2">
+                        <a href="https://tehzeeb.com/biscuits.html" class="stretched-link text-decoration-none">
+                            <span class="fw-bold text-transition">BISCUITS</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0 text-center gifting-card">
+                    <a href="https://tehzeeb.com/cake.html">
+                        <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting3.webp" alt="CAKES" class="card-img-top img-fluid">
+                    </a>
+                    <div class="card-body p-0 mt-2">
+                        <a href="https://tehzeeb.com/cake.html" class="stretched-link text-decoration-none">
+                            <span class="fw-bold text-transition">CAKES</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="card border-0 text-center gifting-card">
+                    <a href="https://tehzeeb.com/cake.html">
+                        <img src="https://img.drz.lazcdn.com/g/kf/S418e1d61126f4fb2ab0ef14cd2ba37ccb.jpg_720x720q80.jpg_.webp" alt="chocolate" class="card-img-top img-fluid">
+                    </a>
+                    <div class="card-body p-0 mt-2">
+                        <a href="https://tehzeeb.com/cake.html" class="stretched-link text-decoration-none">
+                            <span class="fw-bold text-transition">Chocolate</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="classic-tradition position-relative">
+    <div class="container-fluid py-5"style = "background-color: #fdf9f3;">
+        <div class="row " >
+        <div class="col-12 text-center">
+            <h2 class="display-4 fw-bold">The Classic Baking Tradition</h2>
+            <span class="text-muted d-block mb-3">114 Years of Legacy</span>
+            <p>
+            "Tehzeeb is a culture, tradition, lifestyle and class of Pakistan, with a legacy of more than 114 years. The bakery is exceedingly popular among the society including Presidents, Prime Minister, Diplomats, Royalties and their families visiting Pakistan from all across the world."
+            </p>
+            <p>
+            "We believe in making this world a better place by sharing love, empathy and happiness"
+            </p>
+            <a href="https://tehzeeb.com/about-us/" style="color: red; text-decoration: none;">Read more</a>
+            <span class="d-block mt-2">Islamabad | Rawalpindi | Lahore | Wah</span>
+        </div>
+    </div>
+    </div>
+    <div class="tradition-img">
+        <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/scatch.webp" alt="tehzeeb" class="img-fluid w-100">
+    </div>
+</section>
+
+</main>
+<footer class="page-footer footer  pt-5"style="background-color: #fdf9f3;">
+    <div class="container"  style="background-color: #fdf9f3;">
+        <!-- Email Subscription Row -->
+        <div class="row mb-4 align-items-center">
+            <!-- Left Side: Header & Paragraph -->
+            <div class="col-md-6">
+                <h2 class="h4">Enter the world of Tehzeeb</h2>
+                <p class="mb-3">News, Bakery Creation & Latest events in stores.</p>
+            </div>
+
+            <!-- Right Side: Email Subscription Box -->
+            <div class="col-md-6 text-md-end">
+                <form class="subscribe" novalidate action="https://tehzeeb.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+                    <div class="input-group">
+                        <input type="email" name="email" id="newsletter" class="form-control" placeholder="Enter your email address *" required>
+                        <button class="btn custom-brown-btn" type="submit" title="Subscribe" aria-label="Subscribe">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Links Row -->
+        <div class="row">
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Categories</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled footer_list">
+                            <li><a href="https://tehzeeb.com/cake.html/" class="footer_link">Cakes</a></li>
+                            <li><a href="https://tehzeeb.com/biscuits.html/" class="footer_link">Biscuits</a></li>
+                            <li><a href="https://tehzeeb.com/pastry.html/" class="footer_link">Pastries</a></li>
+                            <li><a href="https://tehzeeb.com/salad.html/" class="footer_link">Salads</a></li>
+                            <li><a href="https://tehzeeb.com/bread.html/" class="footer_link">Bread</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled footer_list">
+                            <li><a href="https://tehzeeb.com/pizza.html/" class="footer_link">Pizzas</a></li>
+                            <li><a href="https://tehzeeb.com/donut.html/" class="footer_link">Donuts</a></li>
+                            <li><a href="https://tehzeeb.com/snacks.html/" class="footer_link">Snacks</a></li>
+                            <li><a href="https://tehzeeb.com/puff.html/" class="footer_link">Puff</a></li>
+                            <li><a href="https://tehzeeb.com/bread/buns.html/" class="footer_link">Buns</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Company -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Company</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="https://tehzeeb.com/contactus.html/" class="footer_link">Contact us</a></li>
+                    <li><a href="https://tehzeeb.com/about-us/" class="footer_link">About us</a></li>
+                    <li><a href="https://tehzeeb.com/terms-and-conditions-1/" class="footer_link">Terms & Conditions</a></li>
+                    <li><a href="https://tehzeeb.com/privacy-policy/" class="footer_link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Services</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="javascript:void(0)" class="footer_link">B2B</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Art of Gifting</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Built My Cake</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Pick up</a></li>
+                </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Quick Links</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="https://tehzeeb.com/faqs.html/" class="footer_link">FAQ's</a></li>
+                    <li><a href="https://tehzeeb.com/customer/account/index/" class="footer_link">My Account</a></li>
+                    <li><a href="https://tehzeeb.com/storepickup/" class="footer_link">Our Stores</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Social Media & Copyright -->
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <ul class="list-inline d-flex flex-row justify-content-center align-items-center mb-0">
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.facebook.com/Tehzeeb.pk/" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" fill="none" viewBox="0 0 13 24">
+                                <path d="M8.08008 23.5679V13.0302H11.6351L12.1635 8.90436H8.08008V6.27636C8.08008 5.08579 8.4118 4.27064 10.1205 4.27064H12.2857V0.592214C11.2322 0.479317 10.1733 0.424805 9.1138 0.428928C5.97151 0.428928 3.81408 2.34721 3.81408 5.86879V8.89664H0.282227V13.0225H3.8218V23.5679H8.08008Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.instagram.com/tehzeeb.pk/?hl=en" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 6.40372 13.0003C6.40372 11.2509 7.09869 9.57305 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.pinterest.com/tehzeebbakers/" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 4.87 2.92 9.06 7.12 11 0-.83 0-1.82.22-2.72.22-.91 1.5-6.38 1.5-6.38s-.39-.78-.39-1.93c0-1.8 1.04-3.15 2.35-3.15 1.1 0 1.63.83 1.63 1.83 0 1.1-.7 2.75-1.06 4.27-.31 1.34.66 2.44 2 2.44 2.41 0 4.27-2.56 4.27-6.24 0-3.27-2.35-5.58-5.71-5.58-3.9 0-6.21 2.92-6.21 5.94 0 1.1.39 2.27.96 2.91.13.17.13.26.09.48-.09.22-.26.83-.31.96-.09.22-.26.31-.48.17-1.35-.65-2.2-2.73-2.2-4.41 0-3.56 2.74-6.84 7.86-6.84 4.13 0 7.33 2.96 7.33 6.89 0 4.1-2.44 7.36-5.91 7.36-1.14 0-2.26-.61-2.63-1.31l-.72 2.74c-.22.87-.83 1.96-1.24 2.63 1.13.35 2.33.52 3.59.52 6.63 0 12-5.37 12-12S18.63 0 12 0z" fill="#A4854F"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12 text-center mt-3">
+                <p class="mb-0">&copy; 2025 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        window.addEventListener("scroll", function () {
+            let header = document.querySelector("header");
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+        var swiper1 = new Swiper('.mySwiper', {
+            loop: true,
+            slidesPerView: 4, 
+            spaceBetween: 20, 
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                1200: { slidesPerView: 4 }, 
+                992: { slidesPerView: 3 }, 
+                768: { slidesPerView: 2 }, 
+                480: { slidesPerView: 1 }  
+            }
+        });
+        document.querySelectorAll(".swiper-slide").forEach(slide => {
+            let card = slide.querySelector(".card");
+
+            slide.addEventListener("mouseenter", () => {
+                card.style.opacity = "1";
+            });
+
+            slide.addEventListener("mouseleave", () => {
+                card.style.opacity = "0";
+            });
+            slide.addEventListener("touchstart", () => {
+                card.style.opacity = "1";
+            });
+
+            slide.addEventListener("touchend", () => {
+                setTimeout(() => {
+                    card.style.opacity = "0";
+                }, 3000); 
+            });
+        });
+    });
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
