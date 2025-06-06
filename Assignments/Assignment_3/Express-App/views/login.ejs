@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="title" content="Customer Login">
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="viewport" content="user-scalable=yes, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Customer Login</title>
+    <link rel="icon" type="image/x-icon" href="https://tehzeeb.com/media/favicon/stores/1/resp_logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://tehzeeb.com/media/favicon/stores/1/resp_logo.png">
+    <link rel="stylesheet" href="/stylesheets/login.css">
+</head>
+<body class="customer-account-login">
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong>
+                    <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+
+    <div class="page-wrapper form_bg">
+        <header id="header_login_top_row" class="reg_header">
+            <a class="logo" href="/" title="Tehzeeb" aria-label="store logo">
+                <img src="https://tehzeeb.com/static/version1748357445/frontend/Magento/tehzeeb_new/en_US/images/form_logo.png" alt="Tehzeeb Logo">
+            </a>
+            <div class="block block-new-customer">
+                <div class="block-content">
+                    <div class="actions-toolbar">
+                        <div class="primary">
+                            <a href="/register" class="action create primary primary_link create-account-link">
+                                <span>Create an Account</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none"><path d="M1 11.4883L11 1.48828M11 1.48828V11.0883M11 1.48828H1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main id="maincontent" class="page-main ctg_bd">
+            <a id="contentarea" tabindex="-1"></a>
+            <div class="page messages">
+                <div data-placeholder="messages">
+                    <% if (typeof error !== 'undefined' && error) { %>
+                        <div class="message-error error"><div><%= error %></div></div>
+                    <% } %>
+                    <% if (typeof success !== 'undefined' && success) { %>
+                        <div class="message-success success"><div><%= success %></div></div>
+                    <% } %>
+                </div>
+            </div>
+            <div class="columns noflex">
+                <div id="innercontainer" class="inner">
+                    <div class="column main">
+                        <div class="login-container section_padding">
+                            <div class="acc_form_blocks">
+                                <div class="acc_form_inner small_width">
+                                    <div class="block block-customer-login form_container">
+                                        <div class="block-title form_title">
+                                            <h2 id="block-customer-login-heading" role="heading" aria-level="2">Login</h2>
+                                        </div>
+                                        <div class="block-content" aria-labelledby="block-customer-login-heading">
+                                            <form class="form form-login" action="/login" method="post" id="login-form">
+                                                <fieldset class="fieldset login">
+                                                    <div class="field email required form_field custom_class">
+                                                        <div class="control">
+                                                            <input name="email" value="" autocomplete="email" id="email" type="email" class="input-text field_item field" title="Email" placeholder="Enter your email address *" required aria-required="true">
+                                                        </div>
+                                                    </div>
+                                                    <div class="field password required form_field custom_class">
+                                                        <div class="control">
+                                                            <input name="password" type="password" autocomplete="current-password" class="input-text field_item field" id="pass" title="Password" placeholder="Password *" required aria-required="true">
+                                                            <span class="pass-eye">
+                                                                <img src="https://tehzeeb.com/static/version1748357445/frontend/Magento/tehzeeb_new/en_US/images/pass-eye.png" alt="Toggle password visibility">
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="actions-toolbar">
+                                                        <div class="fieldset full m-20">
+                                                            <div class="secondary form_check_label">
+                                                                <a class="action remind reset_password" href="/forgot-password">
+                                                                    <span class="passwordlabel">Forgot Password?</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="primary fieldset full">
+                                                            <button type="submit" class="action login primary form_cta primary_cta" name="send" id="send2">
+                                                                <span>Login</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/javascripts/login.js"></script>
+</body>
+</html> 

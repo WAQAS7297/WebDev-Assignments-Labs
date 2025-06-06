@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= typeof pageTitle !== 'undefined' ? pageTitle : 'Admin Panel' %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/stylesheets/admin-styles.css">
+    <!-- <link rel="stylesheet" href="/stylesheets/style.css"> -->
+    <style>
+        /* === START: CSS for New Admin Header === */
+        /* RECOMMENDATION: Move these styles to /css/admin-styles.css */
+        body {
+            /* Adjust this value based on the actual height of your fixed header */
+            padding-top: 85px; /* Matches py-3 on navbar and typical content height */
+        }
+
+        .admin-themed-header .nav-link {
+            color: black !important;
+            font-weight: 500;
+        }
+
+        .admin-themed-header .nav-link:hover,
+        .admin-themed-header .nav-link.active {
+            color: #fff !important;
+        }
+        
+        .admin-themed-header .dropdown-menu .dropdown-item {
+             color: #212529 !important;
+        }
+        .admin-themed-header .dropdown-menu {
+            background-color: #fff !important;
+            border: 1px solid rgba(0, 0, 0, 0.15); /* Optional: keeps Bootstrap default border */
+        }
+
+
+        .admin-themed-header .dropdown-menu .dropdown-item:hover,
+        .admin-themed-header .dropdown-menu .dropdown-item:focus {
+            background-color:black;
+        }
+
+        .admin-themed-header .navbar-toggler {
+            border-color: black;
+        }
+        .admin-themed-header .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.85)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        /* === END: CSS for New Admin Header === */
+
+        /* Minimal styles from your admin-styles.css for context (affects content in admin.ejs) */
+        .form-card, .card { margin-bottom: 20px; }
+        .action-buttons .btn { margin-right: 5px; }
+        .current-image img { border: 1px solid #ddd; padding: 3px; max-width: 100px; height: auto; }
+        .delete-form { display: inline-block; }
+        .table img { width: 50px; height: auto; border-radius: 4px; }
+        
+        /* Styles for the elaborate footer (page-footer in admin.ejs) */
+        footer { /* This is a general selector, will affect both if not overridden by more specific class styles */
+            /* background-color: #f8f9fa; /* Base for admin-footer, page-footer has its own inline */
+            /* padding: 3rem 1rem; /* Base for admin-footer, page-footer has its own */
+            text-align: center;
+        }
+
+        .footer_title {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .footer_list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 1.5rem;
+        }
+
+        .footer_list li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer_link {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer_link:hover {
+            color: #000;
+        }
+
+        .social_block {
+            margin-bottom: 1.5rem;
+        }
+
+        .social_list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social_item {
+            color: #666;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .social_item:hover {
+            color: #000;
+        }
+
+        .copyright {
+            color: #666;
+            font-size: 0.875rem;
+            margin-top: 1rem;
+        }
+
+        .copyright a {
+            color: #666;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .copyright a:hover {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header class="admin-themed-header fixed-top shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="/admin/dashboard">
+                    <img src="https://tehzeeb.com/media/logo/stores/1/Tehzeeb-Logo-PNG1.png" alt="Tehzeeb Admin Logo" width="100" class="me-2">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbarContent" aria-controls="adminNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="adminNavbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-white ms-5">
+                        <li class="nav-item">
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'dashboard') ? 'active' : '' %>" href="/admin/dashboard"><i class="fas fa-tachometer-alt me-1"></i> Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'products') ? 'active' : '' %>" href="/admin/products"><i class="fas fa-box-open me-1"></i> Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'orders') ? 'active' : '' %>" href="/admin/orders"><i class="fas fa-shopping-cart me-1"></i> Orders</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'users') ? 'active' : '' %>" href="/admin/users"><i class="fas fa-users me-1"></i> Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'reports') ? 'active' : '' %>" href="/admin/reports"><i class="fas fa-chart-line me-1"></i> Reports</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link" href="/" target="_blank" title="View Frontend Site"><i class="fas fa-eye me-1"></i> View Site</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                        <li class="nav-item d-none d-lg-block">
+                            <span class="navbar-text text-black me-3">
+                                Welcome, Admin!
+                            </span>
+                        </li>
+                        <li class="nav-item dropdown bg-white">
+                            <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="adminUserDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-lg me-1"></i>
+                                <span class="d-none d-lg-inline">My Account</span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end bg-white" aria-labelledby="adminUserDropdown">
+                                <li><a class="dropdown-item" href="/admin/profile"><i class="fas fa-user-edit me-2"></i> Profile</a></li>
+                                <li><a class="dropdown-item" href="/admin/settings"><i class="fas fa-cog me-2"></i> Settings</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/admin/logout"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <%- body %>
+
+    <footer class="page-footer footer  pt-5"style="background-color: #fdf9f3;">
+    <div class="container"  style="background-color: #fdf9f3;">
+        <!-- Email Subscription Row -->
+        <div class="row mb-4 align-items-center">
+            <!-- Left Side: Header & Paragraph -->
+            <div class="col-md-6">
+                <h2 class="h4">Enter the world of Tehzeeb</h2>
+                <p class="mb-3">News, Bakery Creation & Latest events in stores.</p>
+            </div>
+
+            <!-- Right Side: Email Subscription Box -->
+            <div class="col-md-6 text-md-end">
+                <form class="subscribe" novalidate action="https://tehzeeb.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+                    <div class="input-group">
+                        <input type="email" name="email" id="newsletter" class="form-control" placeholder="Enter your email address *" required>
+                        <button class="btn custom-brown-btn" type="submit" title="Subscribe" aria-label="Subscribe">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Links Row -->
+        <div class="row">
+            <!-- Categories -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Categories</h5>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled footer_list">
+                            <li><a href="https://tehzeeb.com/cake.html/" class="footer_link">Cakes</a></li>
+                            <li><a href="https://tehzeeb.com/biscuits.html/" class="footer_link">Biscuits</a></li>
+                            <li><a href="https://tehzeeb.com/pastry.html/" class="footer_link">Pastries</a></li>
+                            <li><a href="https://tehzeeb.com/salad.html/" class="footer_link">Salads</a></li>
+                            <li><a href="https://tehzeeb.com/bread.html/" class="footer_link">Bread</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="list-unstyled footer_list">
+                            <li><a href="https://tehzeeb.com/pizza.html/" class="footer_link">Pizzas</a></li>
+                            <li><a href="https://tehzeeb.com/donut.html/" class="footer_link">Donuts</a></li>
+                            <li><a href="https://tehzeeb.com/snacks.html/" class="footer_link">Snacks</a></li>
+                            <li><a href="https://tehzeeb.com/puff.html/" class="footer_link">Puff</a></li>
+                            <li><a href="https://tehzeeb.com/bread/buns.html/" class="footer_link">Buns</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Company -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Company</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="https://tehzeeb.com/contactus.html/" class="footer_link">Contact us</a></li>
+                    <li><a href="https://tehzeeb.com/about-us/" class="footer_link">About us</a></li>
+                    <li><a href="https://tehzeeb.com/terms-and-conditions-1/" class="footer_link">Terms & Conditions</a></li>
+                    <li><a href="https://tehzeeb.com/privacy-policy/" class="footer_link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Services -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Services</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="javascript:void(0)" class="footer_link">B2B</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Art of Gifting</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Built My Cake</a></li>
+                    <li><a href="javascript:void(0)" class="footer_link">Pick up</a></li>
+                </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-3 mb-4">
+                <h5 class="footer_title">Quick Links</h5>
+                <ul class="list-unstyled footer_list">
+                    <li><a href="https://tehzeeb.com/faqs.html/" class="footer_link">FAQ's</a></li>
+                    <li><a href="https://tehzeeb.com/customer/account/index/" class="footer_link">My Account</a></li>
+                    <li><a href="https://tehzeeb.com/storepickup/" class="footer_link">Our Stores</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Social Media & Copyright -->
+        <div class="row align-items-center">
+            <div class="col-md-12">
+                <ul class="list-inline d-flex flex-row justify-content-center align-items-center mb-0">
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.facebook.com/Tehzeeb.pk/" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" fill="none" viewBox="0 0 13 24">
+                                <path d="M8.08008 23.5679V13.0302H11.6351L12.1635 8.90436H8.08008V6.27636C8.08008 5.08579 8.4118 4.27064 10.1205 4.27064H12.2857V0.592214C11.2322 0.479317 10.1733 0.424805 9.1138 0.428928C5.97151 0.428928 3.81408 2.34721 3.81408 5.86879V8.89664H0.282227V13.0225H3.8218V23.5679H8.08008Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.instagram.com/tehzeeb.pk/?hl=en" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 6.40372 13.0003C6.40372 11.2509 7.09869 9.57305 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="list-inline-item social_list">
+                        <a href="https://www.pinterest.com/tehzeebbakers/" target="_blank" class="social_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 4.87 2.92 9.06 7.12 11 0-.83 0-1.82.22-2.72.22-.91 1.5-6.38 1.5-6.38s-.39-.78-.39-1.93c0-1.8 1.04-3.15 2.35-3.15 1.1 0 1.63.83 1.63 1.83 0 1.1-.7 2.75-1.06 4.27-.31 1.34.66 2.44 2 2.44 2.41 0 4.27-2.56 4.27-6.24 0-3.27-2.35-5.58-5.71-5.58-3.9 0-6.21 2.92-6.21 5.94 0 1.1.39 2.27.96 2.91.13.17.13.26.09.48-.09.22-.26.83-.31.96-.09.22-.26.31-.48.17-1.35-.65-2.2-2.73-2.2-4.41 0-3.56 2.74-6.84 7.86-6.84 4.13 0 7.33 2.96 7.33 6.89 0 4.1-2.44 7.36-5.91 7.36-1.14 0-2.26-.61-2.63-1.31l-.72 2.74c-.22.87-.83 1.96-1.24 2.63 1.13.35 2.33.52 3.59.52 6.63 0 12-5.37 12-12S18.63 0 12 0z" fill="#A4854F"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-12 text-center mt-3">
+                <p class="mb-0">&copy; 2025 Your Company Name. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/javascripts/admin-scripts.js" defer></script>
+</body>
+</html>

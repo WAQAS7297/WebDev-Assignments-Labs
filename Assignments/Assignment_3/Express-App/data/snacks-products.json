@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Bun Shami Kebab",
+    "description": "A savory shami kebab patty made from minced meat and lentils, seasoned with aromatic spices, tucked inside a soft bun. A perfect quick bite.",
+    "price": 150,
+    "category": "Snack",
+    "image": "/images/products/Snack/Bun Shami Kebab.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Bread",
+    "description": "Soft, savory bread generously filled with seasoned, tender chicken pieces. A satisfying snack or light meal on the go.",
+    "price": 180,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Bread.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Cheese and Onion Roll",
+    "description": "A delectable roll packed with flavorful chicken, melted cheese, and savory onions, all wrapped in a soft, golden pastry. Warm and satisfying.",
+    "price": 160,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Cheese and Onion Roll.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Cheese Burger",
+    "description": "A classic chicken cheese burger featuring a juicy chicken patty, melted cheese, fresh lettuce, and creamy sauce in a soft bun.",
+    "price": 280,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Cheese Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Cheese Samosa",
+    "description": "Crispy golden pastry filled with a mouth-watering mixture of seasoned chicken and gooey melted cheese. An irresistible savory snack.",
+    "price": 70,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Cheese Samosa.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Chinese Pastry",
+    "description": "A savory pastry with an Asian-inspired twist, filled with tender chicken and vegetables in a flavorful Chinese-style sauce, encased in flaky pastry.",
+    "price": 150,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Chinese Pastry.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Crust Roll",
+    "description": "Tender, seasoned chicken encased in a uniquely crispy and flaky crust. A delightful texture and taste experience.",
+    "price": 140,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Crust Roll.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Drumstick",
+    "description": "A succulent and flavorful fried or baked chicken drumstick, seasoned to perfection. A classic savory treat.",
+    "price": 130,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Drumstick.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Grill Burger",
+    "description": "A healthy and delicious grilled chicken burger featuring a perfectly grilled chicken breast, fresh veggies, and a light sauce in a toasted bun.",
+    "price": 300,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Grill Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Kebab Stick",
+    "description": "Tender, marinated pieces of chicken grilled on a skewer, bursting with aromatic spices. Perfect as an appetizer or a light snack.",
+    "price": 100,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Kebab Stick.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Mushroom Roll",
+    "description": "A savory roll filled with a creamy mixture of diced chicken and sautéed mushrooms, wrapped in a soft, golden pastry.",
+    "price": 160,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Mushroom Roll.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Pie",
+    "description": "A comforting individual chicken pie with a flaky pastry crust and a rich, creamy filling of tender chicken and vegetables.",
+    "price": 180,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Pie.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Pizza Garlic",
+    "description": "A personal-sized snack pizza topped with succulent chicken pieces, a generous spread of aromatic garlic sauce, and melted cheese.",
+    "price": 190,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Pizza Garlic.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Pizza Snack",
+    "description": "A bite-sized, delicious chicken pizza, perfect for a quick savory snack. Topped with chicken, tomato sauce, and cheese.",
+    "price": 170,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Pizza Snack.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Quiche Pie",
+    "description": "A savory individual quiche featuring a creamy egg custard base, tender chicken pieces, and cheese baked in a buttery pastry crust.",
+    "price": 170,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Quiche Pie.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Roll",
+    "description": "A classic chicken roll with a flavorful seasoned chicken filling wrapped in a soft bread or pastry. Simple, yet satisfying.",
+    "price": 130,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Roll.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Samosa",
+    "description": "Crispy, golden-fried pastry filled with a savory and spiced minced chicken mixture. A popular and flavorful snack.",
+    "price": 60,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Samosa.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Sandwich 6 pieces",
+    "description": "A delightful platter of six mini chicken sandwich triangles, filled with creamy chicken salad or sliced chicken. Perfect for sharing or a light meal.",
+    "price": 300,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Sandwich 6 pieces.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Shami Kebab",
+    "description": "Soft, flavorful chicken shami kebabs made from minced chicken and lentils, infused with aromatic spices. Served per piece.",
+    "price": 80,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Shami Kebab.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Spicy Burger",
+    "description": "Turn up the heat with our spicy chicken burger! A crispy, spicy chicken fillet, fresh lettuce, and tangy sauce in a soft bun.",
+    "price": 290,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Spicy Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Spicy Pizza",
+    "description": "A fiery snack pizza for spice lovers, topped with spicy chicken, jalapeños, chili flakes, and melted cheese on a crispy base.",
+    "price": 190,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Spicy Pizza.png",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Thai Stick",
+    "description": "Skewered chicken pieces marinated in authentic Thai spices (lemongrass, chili, coconut milk) and grilled to perfection. Sweet, savory, and slightly spicy.",
+    "price": 110,
+    "category": "Snack",
+    "image": "/images/products/Snack/Chicken Thai Stick.webp",
+    "inStock": true
+  },
+  {
+    "name": "Club Sandwich 2 pieces",
+    "description": "A classic triple-decker club sandwich with layers of chicken, bacon (or alternative), lettuce, tomato, and mayonnaise. Served as two hearty pieces.",
+    "price": 350,
+    "category": "Snack",
+    "image": "/images/products/Snack/Club Sandwich 2 pieces.webp",
+    "inStock": true
+  },
+  {
+    "name": "Egg and Cheese Sandwich",
+    "description": "A simple yet satisfying sandwich with fluffy scrambled or fried egg and melted cheese, nestled between slices of soft bread.",
+    "price": 220,
+    "category": "Snack",
+    "image": "/images/products/Snack/Egg and Cheese Sandwich.webp",
+    "inStock": true
+  },
+  {
+    "name": "Grill Chicken Roast",
+    "description": "A whole or half tender and juicy grilled roast chicken, marinated in herbs and spices for a rich, savory flavor. Perfect for a meal.",
+    "price": 450,
+    "category": "Snack",
+    "image": "/images/products/Snack/Grill Chicken Roast.webp",
+    "inStock": true
+  },
+  {
+    "name": "Grilled Panini Sandwich 2 pieces",
+    "description": "Warm, pressed panini sandwich filled with delicious ingredients like grilled chicken, cheese, and vegetables. Served as two grilled halves.",
+    "price": 320,
+    "category": "Snack",
+    "image": "/images/products/Snack/Grilled Panini Sandwich 2pieces.webp",
+    "inStock": true
+  },
+  {
+    "name": "Jalapeno Burger",
+    "description": "A fiery burger for those who love a kick! Juicy patty topped with spicy jalapeños, melted cheese, and zesty sauce.",
+    "price": 320,
+    "category": "Snack",
+    "image": "/images/products/Snack/Jalapeno Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Mix Vegetable Roll",
+    "description": "A healthy and flavorful roll packed with a medley of fresh, seasoned mixed vegetables, wrapped in a soft pastry or flatbread.",
+    "price": 120,
+    "category": "Snack",
+    "image": "/images/products/Snack/Mix Vegetable Roll.webp",
+    "inStock": true
+  },
+  {
+    "name": "Mix Vegetable Samosa",
+    "description": "Crispy pastry filled with a delicious and lightly spiced mixture of assorted vegetables like peas, carrots, and potatoes.",
+    "price": 50,
+    "category": "Snack",
+    "image": "/images/products/Snack/Mix Vegetable Samosa.webp",
+    "inStock": true
+  },
+  {
+    "name": "Plain Chicken Burger",
+    "description": "A simple and satisfying chicken burger with a seasoned chicken patty in a soft bun. Perfect for customizing with your favorite toppings.",
+    "price": 250,
+    "category": "Snack",
+    "image": "/images/products/Snack/Plain Chicken Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Sausage Burger",
+    "description": "A unique twist on a burger, featuring a savory sausage patty, often with cheese and sauce, in a soft burger bun.",
+    "price": 270,
+    "category": "Snack",
+    "image": "/images/products/Snack/Sausage Burger.webp",
+    "inStock": true
+  },
+  {
+    "name": "Shashlik Stick",
+    "description": "Skewers of marinated meat (often chicken or beef) and colorful vegetables like bell peppers, onions, and tomatoes, grilled to perfection.",
+    "price": 120,
+    "category": "Snack",
+    "image": "/images/products/Snack/Shashlik Stick.webp",
+    "inStock": true
+  },
+  {
+    "name": "Stream Chicken Roast Piece",
+    "description": "A single, tender piece of steam-roasted chicken, lightly seasoned and incredibly juicy. A healthy and flavorful snack or meal component.",
+    "price": 230,
+    "category": "Snack",
+    "image": "/images/products/Snack/Stream Chicken Roast Piece.webp",
+    "inStock": true
+  },
+  {
+    "name": "Stream Chicken Roast",
+    "description": "Healthy and tender steam-roasted chicken (whole or half), seasoned with herbs and spices for a delicate and juicy flavor. Ideal for a satisfying meal.",
+    "price": 480,
+    "category": "Snack",
+    "image": "/images/products/Snack/Stream Chicken Roast.webp",
+    "inStock": true
+  },
+  {
+    "name": "Vegetable Cream Cheese Sandwich",
+    "description": "A refreshing sandwich filled with creamy cream cheese and a mix of crisp, fresh vegetables like cucumber, carrots, and bell peppers.",
+    "price": 250,
+    "category": "Snack",
+    "image": "/images/products/Snack/Vegetable Cream Cheese Sandwich.webp",
+    "inStock": true
+  }
+]

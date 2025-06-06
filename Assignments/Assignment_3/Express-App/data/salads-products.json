@@ -1,0 +1,178 @@
+[
+  {
+    "name": "Almond Mix Fruit Salad",
+    "description": "A refreshing medley of seasonal fresh fruits, enhanced with the delightful crunch of toasted almonds and a light, sweet dressing.",
+    "price": 280,
+    "category": "Salad",
+    "image": "/images/products/Salad/Almond MIx Fruit Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Apple Chicken Italian Salad",
+    "description": "A vibrant Italian-inspired salad featuring crisp apples, tender grilled chicken, mixed greens, and a zesty Italian vinaigrette.",
+    "price": 320,
+    "category": "Salad",
+    "image": "/images/products/Salad/Apple Chicken Italian Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Banana Chicken Salad",
+    "description": "An unconventional yet delicious salad combining tender chicken pieces with sweet banana slices, crisp lettuce, and a creamy, slightly tangy dressing.",
+    "price": 300,
+    "category": "Salad",
+    "image": "/images/products/Salad/Banana Chicken Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Beans Salad",
+    "description": "A hearty and nutritious salad made with a mix of beans (such as kidney, chickpeas, and black beans), fresh vegetables, and a light vinaigrette.",
+    "price": 250,
+    "category": "Salad",
+    "image": "/images/products/Salad/Beans Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cheese and Cucumber Salad",
+    "description": "A simple yet refreshing salad with crisp cucumber slices and cubes of mild cheese, tossed in a light, creamy dressing.",
+    "price": 220,
+    "category": "Salad",
+    "image": "/images/products/Salad/Cheese and Cucumber Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 1",
+    "description": "Our Chef's Special Combination Salad 1, featuring a curated mix of fresh greens, seasonal vegetables, and a unique dressing. Ask for today's selection!",
+    "price": 350,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 1.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 2",
+    "description": "Explore new flavors with Combination Salad 2! A delightful blend of textures and tastes, expertly combined by our chefs.",
+    "price": 360,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 2.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 3",
+    "description": "Combination Salad 3 offers a unique and satisfying mix of fresh ingredients, perfect for a healthy and flavorful meal.",
+    "price": 370,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 3.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 4",
+    "description": "Discover our exciting Combination Salad 4, a thoughtfully crafted salad designed to tantalize your taste buds with a medley of fresh components.",
+    "price": 380,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 4.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 5",
+    "description": "Indulge in Combination Salad 5, a premium selection of fresh ingredients, proteins, and a signature dressing for a fulfilling experience.",
+    "price": 390,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 5.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 6",
+    "description": "Our popular Combination Salad 6 brings together a harmonious blend of fresh vegetables, grains, and a flavorful dressing.",
+    "price": 360,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 7",
+    "description": "Experience the delightful mix of Combination Salad 7, featuring a special selection of ingredients for a nutritious and tasty meal.",
+    "price": 375,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 7.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Combination 8",
+    "description": "Combination Salad 8 is a chef-inspired creation with a unique blend of fresh produce and a perfectly paired dressing. A delightful choice!",
+    "price": 385,
+    "category": "Salad",
+    "image": "/images/products/Salad/Combination 8.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Egg and Cucumber Salad",
+    "description": "A classic and refreshing salad with chopped hard-boiled eggs, crisp cucumber, and a light mayonnaise-based dressing.",
+    "price": 260,
+    "category": "Salad",
+    "image": "/images/products/Salad/Egg and Cucumber Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fresh Fruit Salad",
+    "description": "A vibrant and healthy bowl of assorted seasonal fresh fruits, cut into bite-sized pieces. Naturally sweet and refreshing.",
+    "price": 240,
+    "category": "Salad",
+    "image": "/images/products/Salad/Fresh Fruit Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Macaroni Salad",
+    "description": "A creamy and comforting salad made with cooked macaroni pasta, mixed vegetables like carrots and peas, and a rich mayonnaise dressing.",
+    "price": 270,
+    "category": "Salad",
+    "image": "/images/products/Salad/Macaroni Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Noodle Salad",
+    "description": "A flavorful Asian-inspired salad featuring chilled noodles, crisp vegetables, and a savory, tangy dressing. Often with sesame and soy notes.",
+    "price": 290,
+    "category": "Salad",
+    "image": "/images/products/Salad/Noodie Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pasta Salad",
+    "description": "A versatile and satisfying salad with cooked pasta, fresh vegetables, cheese, and a zesty Italian or creamy dressing.",
+    "price": 280,
+    "category": "Salad",
+    "image": "/images/products/Salad/Pasta Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Russian Salad",
+    "description": "A classic creamy salad made with diced boiled potatoes, carrots, peas, and sometimes chicken or eggs, all mixed in a rich mayonnaise dressing.",
+    "price": 300,
+    "category": "Salad",
+    "image": "/images/products/Salad/Russian Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Smoked Chicken Pasta Salad",
+    "description": "A delicious and hearty salad combining tender smoked chicken pieces, cooked pasta, fresh vegetables, and a creamy or vinaigrette dressing.",
+    "price": 340,
+    "category": "Salad",
+    "image": "/images/products/Salad/Smoked Chicken Pasta Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sweet Corn Salad",
+    "description": "A bright and flavorful salad featuring sweet corn kernels, bell peppers, onions, and a light, zesty lime dressing.",
+    "price": 230,
+    "category": "Salad",
+    "image": "/images/products/Salad/Sweet Corn Salad.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Mix Fruit Salad",
+    "description": "A delightful combination of fresh seasonal fruits, enhanced with the rich, earthy crunch of walnuts and a light, complementary dressing.",
+    "price": 290,
+    "category": "Salad",
+    "image": "/images/products/Salad/Walnut Mix Fruit Salad.jpg",
+    "inStock": true
+  }
+]

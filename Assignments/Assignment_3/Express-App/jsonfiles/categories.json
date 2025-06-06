@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Bread",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Bun-grey-512z512.png",
+    "pagelink": "/categories/bread"
+  },
+  {
+    "name": "Cakes",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Cake-grey-512x512.png",
+    "pagelink": "/categories/cakes"
+  },
+  {
+    "name": "Snack",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Roll-2-grey-512x512.png",
+    "pagelink": "/categories/snacks"
+  },
+  {
+    "name": "Pizza",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/pizzaa-grey-512x512_1_.png",
+    "pagelink": "/categories/pizza"
+  },
+  {
+    "name": "Biscuit",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Royal-biscuit-grey-512x512.png",
+    "pagelink": "/categories/biscuits"
+  },
+  {
+    "name": "Pastry",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Pastry-grey-512x512.png",
+    "pagelink": "/categories/pastry"
+  },
+  {
+    "name": "Donut",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Donut.png",
+    "pagelink": "/categories/donut"
+  },
+  {
+    "name": "Salad",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/salad-grey-512x512.png",
+    "pagelink": "/categories/salad"
+  },
+  {
+    "name": "Sandwich",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Sandwich-grey-512x512.png",
+    "pagelink": "/categories/sandwich"
+  },
+  {
+    "name": "Burger",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Jalapeno-Burger-grey-512x512.png",
+    "pagelink": "/categories/burger"
+  },
+  {
+    "name": "Nimko",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Nimko.png",
+    "pagelink": "/categories/nimko"
+  },
+  {
+    "name": "Puff",
+    "image": "https://tehzeeb.com/media/resize/cat/resizedImage/512x512/catalog/category/Puff.png",
+    "pagelink": "/categories/puff"
+  }
+]

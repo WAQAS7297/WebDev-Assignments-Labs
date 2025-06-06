@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Chocolate Coconut Donut",
+    "description": "A delightful donut dipped in rich chocolate glaze and generously sprinkled with sweet, shredded coconut.",
+    "price": 120,
+    "category": "Donut",
+    "image": "/images/products/Donut/Chocolate Coconut Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Fudge Donut",
+    "description": "An intensely rich donut topped with a decadent chocolate fudge icing, perfect for serious chocolate lovers.",
+    "price": 130,
+    "category": "Donut",
+    "image": "/images/products/Donut/Chocolate Fudge Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Marble Donut",
+    "description": "A visually appealing donut with a beautiful swirl of chocolate and vanilla icing, offering a classic flavor combination.",
+    "price": 110,
+    "category": "Donut",
+    "image": "/images/products/Donut/Chocolate Marble Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Sprinkle Donut",
+    "description": "A classic favorite! Soft donut glazed with rich chocolate and covered in colorful, fun sprinkles.",
+    "price": 100,
+    "category": "Donut",
+    "image": "/images/products/Donut/Chocolate Sprinkle Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Jam Donut",
+    "description": "A fluffy donut filled with sweet fruit jam and generously coated in shredded coconut for a tropical twist.",
+    "price": 120,
+    "category": "Donut",
+    "image": "/images/products/Donut/Coconut Jam Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coffee Fudge Donut",
+    "description": "A sophisticated donut featuring a rich coffee-infused fudge icing, perfect for a morning or afternoon pick-me-up.",
+    "price": 130,
+    "category": "Donut",
+    "image": "/images/products/Donut/Coffee Fudge Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Double Chocolate Donut",
+    "description": "Indulge in ultimate chocolate bliss with this donut, featuring a chocolate dough and a rich chocolate glaze.",
+    "price": 140,
+    "category": "Donut",
+    "image": "/images/products/Donut/Double Chocolate Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Donut",
+    "description": "A zesty and refreshing donut with a tangy lemon glaze or filling, offering a bright burst of citrus flavor.",
+    "price": 110,
+    "category": "Donut",
+    "image": "/images/products/Donut/Lemon Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lotus Donut",
+    "description": "An irresistible donut topped with creamy Lotus Biscoff spread and crunchy Biscoff cookie crumbles.",
+    "price": 150,
+    "category": "Donut",
+    "image": "/images/products/Donut/Lotus Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Nutella Hazelnut Donut",
+    "description": "A dream come true! Fluffy donut generously filled or topped with creamy Nutella and sprinkled with toasted hazelnuts.",
+    "price": 150,
+    "category": "Donut",
+    "image": "/images/products/Donut/Nutella Hazelnut Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Oreo Donut",
+    "description": "A crowd-pleasing donut featuring a creamy glaze and topped with crushed Oreo cookie pieces for a delightful crunch.",
+    "price": 140,
+    "category": "Donut",
+    "image": "/images/products/Donut/Oreo Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Original Glazed Donut",
+    "description": "The timeless classic! A light and airy donut covered in a perfectly sweet, signature glaze.",
+    "price": 90,
+    "category": "Donut",
+    "image": "/images/products/Donut/Original Glazed Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Donut",
+    "description": "A simple, soft, and slightly sweet plain donut, perfect on its own or for dipping in your favorite beverage.",
+    "price": 80,
+    "category": "Donut",
+    "image": "/images/products/Donut/Plain Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Strawbery Icing Donut",
+    "description": "A sweet and fruity donut topped with a vibrant pink strawberry-flavored icing, often with sprinkles.",
+    "price": 100,
+    "category": "Donut",
+    "image": "/images/products/Donut/Strawbery Icing Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Coconut Donut",
+    "description": "A delightful donut with a sweet vanilla glaze, generously coated with shredded coconut for a tropical touch.",
+    "price": 120,
+    "category": "Donut",
+    "image": "/images/products/Donut/Vanilla Coconut Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Icing Donut",
+    "description": "A classic donut topped with a smooth and sweet vanilla icing, a simple and satisfying treat.",
+    "price": 100,
+    "category": "Donut",
+    "image": "/images/products/Donut/Vanilla Icing Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Marbel Donut",
+    "description": "An elegant donut featuring a beautiful swirl of vanilla and another complementary icing, offering a classic sweet flavor.",
+    "price": 110,
+    "category": "Donut",
+    "image": "/images/products/Donut/Vanilla Marbel Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Fudge Donut",
+    "description": "A rich donut topped with decadent chocolate fudge icing and generously sprinkled with crunchy walnuts.",
+    "price": 130,
+    "category": "Donut",
+    "image": "/images/products/Donut/Walnut Fudge Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "White Smiley Donut",
+    "description": "Bring a smile to your face with this fun donut, featuring a white icing base and a cheerful smiley face design.",
+    "price": 110,
+    "category": "Donut",
+    "image": "/images/products/Donut/White Smiley Donut.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Yellow Smiley Donut",
+    "description": "A bright and cheerful donut with a sunny yellow icing base and an adorable smiley face design. Perfect for kids and kids at heart!",
+    "price": 110,
+    "category": "Donut",
+    "image": "/images/products/Donut/Yellow Smiley Donut.jpg",
+    "inStock": true
+  }
+]

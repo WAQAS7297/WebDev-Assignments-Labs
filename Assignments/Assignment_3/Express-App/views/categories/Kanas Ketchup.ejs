@@ -1,0 +1,115 @@
+<!-- Kanas Category Page -->
+<div class="container mt-5 pt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Kanas</li>
+        </ol>
+    </nav>
+
+    <h1 class="mb-4">Our Kanas Collection</h1>
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Category Filter Sidebar -->
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Categories</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="/categories/Kanas Ketchup/all" class="list-group-item list-group-item-action<%= currentCategory === 'all' ? 'active' : '' %>">All Kanas</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <!-- Error Alert -->
+            <% if (locals.error) { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <!-- Products Grid -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <% if (locals.products && products.length > 0) { %>
+                    <% products.forEach(product => { %>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="<%= product.image %>" 
+                                     class="card-img-top" 
+                                     alt="<%= product.name %>"
+                                     onerror="this.src='/images/placeholder.jpg'; this.onerror=null;"
+                                     style="height: 200px; object-fit: cover;">
+                                <div class="card-body">
+                                    <h5 class="card-title"><%= product.name %></h5>
+                                    <p class="card-text"><%= product.description %></p>
+                                    <p class="card-text"><strong>Rs. <%= product.price %></strong></p>
+                                    <% if (product.inStock) { %>
+                                        <button class="btn btn-primary add-to-cart" data-product-id="<%= product._id %>">
+                                            Add to Cart
+                                        </button>
+                                    <% } else { %>
+                                        <button class="btn btn-secondary" disabled>
+                                            Out of Stock
+                                        </button>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            No products available in this category.
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add to Cart Success Modal -->
+<div class="modal fade" id="addToCartModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Success!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Item has been added to your cart.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                <a href="/cart" class="btn btn-primary">View Cart</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', async (e) => {
+        const productId = e.target.dataset.productId;
+        try {
+            const response = await fetch('/cart/add', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ productId })
+            });
+            if (response.ok) {
+                const modal = new bootstrap.Modal(document.getElementById('addToCartModal'));
+                modal.show();
+            } else {
+                throw new Error('Failed to add to cart');
+            }
+        } catch (error) {
+            console.error('Error adding to cart:', error);
+            alert('Failed to add item to cart. Please try again.');
+        }
+    });
+});
+</script> 

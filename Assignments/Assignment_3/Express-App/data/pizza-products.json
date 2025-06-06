@@ -1,0 +1,82 @@
+[
+  {
+    "name": "Cheese and Tomato Pizza",
+    "description": "A timeless classic featuring a rich tomato sauce base, generously topped with melted mozzarella cheese. Simple, yet utterly delicious.",
+    "price": 280,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Cheese and Tomato Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Four Square Pizza",
+    "description": "Enjoy variety with our Four Square Pizza! Each quadrant offers a different delicious topping combination, perfect for sharing or sampling multiple flavors.",
+    "price": 380,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Four Square Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Grilled Chicken Pizza",
+    "description": "Savory grilled chicken pieces, perfectly seasoned and layered over a tangy tomato sauce with melted mozzarella and often bell peppers or onions.",
+    "price": 350,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Grilled Chicken Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Hawaiian Pizza",
+    "description": "A delightful blend of sweet and savory, this pizza features juicy pineapple chunks and savory ham (or turkey ham) on a cheesy tomato base.",
+    "price": 320,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Hawaiian Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mortadella Pizza",
+    "description": "An authentic Italian taste experience with thinly sliced, delicate Mortadella, often complemented by pistachios or creamy ricotta over a light tomato sauce.",
+    "price": 370,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Mortadella Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sausage Pizza",
+    "description": "A hearty and flavorful pizza topped with crumbled or sliced savory sausage, rich tomato sauce, and a generous layer of melted mozzarella cheese.",
+    "price": 340,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Sausage Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Smoked Chicken Pizza",
+    "description": "Tender, flavorful smoked chicken pieces combined with a smoky BBQ or tomato sauce, melted cheese, and often red onions for a truly satisfying pizza.",
+    "price": 360,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Smoked Chicken Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sriracha Pizza",
+    "description": "For those who like it hot! This pizza features a spicy Sriracha-infused sauce or drizzle, often with toppings like chicken, jalapeños, and onions for an extra kick.",
+    "price": 330,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Sriracha Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vegetarian Pizza",
+    "description": "A wholesome and delicious pizza loaded with a colorful medley of fresh garden vegetables such as bell peppers, mushrooms, olives, onions, and tomatoes.",
+    "price": 300,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Vegetarian Pizza.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Veggie Pizza",
+    "description": "A delightful pizza packed with a vibrant assortment of fresh vegetables, melted cheese, and our classic tomato sauce. A healthy and tasty option.",
+    "price": 300,
+    "category": "Pizza",
+    "image": "/images/products/Pizza/Veggie Pizza.jpg",
+    "inStock": true
+  }
+]
