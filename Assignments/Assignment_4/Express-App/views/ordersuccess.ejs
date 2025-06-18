@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* --- CSS for Full Page Centering --- */
+        html, body {
+            height: 100%; /* Make html and body take full viewport height */
+            margin: 0;     /* Remove default browser margins */
+            padding: 0;    /* Remove default browser padding */
+        }
+
+        body {
+            display: flex;           /* Use flexbox to center content */
+            align-items: center;     /* Vertically center the direct child (.container) */
+            justify-content: center; /* Horizontally center the direct child (.container) */
+            background-color: #f8f9fa; /* Optional: A light background for the whole page */
+        }
+
+        /* --- Your Custom Styles --- */
+        .dashboard-title {
+            color: #C8102E;
+            font-weight: bold;
+        }
+
+        .order-card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Slightly enhanced shadow for better visibility */
+            border-radius: 0.5rem; /* Optional: rounded corners for the card */
+        }
+
+        .continue-shopping-btn {
+            background-color: #C8102E;
+            border-color: #C8102E;
+            color: white; /* Ensure text is white */
+        }
+
+        .continue-shopping-btn:hover {
+            background-color: #a30d1d;
+            border-color: #a30d1d;
+            color: white; /* Ensure text remains white on hover */
+        }
+
+        .btn-outline-primary { /* Bootstrap's .btn-outline-primary is usually blue, so we're overriding it significantly */
+            color: #C8102E;
+            border-color: #C8102E;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #C8102E;
+            color: white;
+        }
+
+        .icon-success {
+            margin-bottom: 1.5rem; /* Adjusted margin */
+        }
+
+        .icon-success .fa-check-circle { /* Targeting the icon specifically for color */
+            color: #C8102E; /* Ensured the icon color is applied */
+        }
+
+        /* Adjustments for the main container if needed, though Bootstrap's .container usually handles this well */
+        .container.py-5 {
+            max-width: 960px; /* Example: Limit max width if you don't want it to be too wide on large screens */
+            /* The py-5 class already adds top and bottom padding. */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="icon-success">
+                    <i class="fas fa-check-circle fa-5x" style="color: #C8102E;"></i>
+                </div>
+                <h2 class="dashboard-title mt-4">Thank You!</h2>
+                <p class="lead mb-4">Your order has been placed successfully!</p>
+                
+                <div class="order-details mt-5">
+                    <div class="card order-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Order Details</h5>
+                            <p class="card-text">
+                                <strong>Order ID:</strong> <%= orderId %><br>
+                                <strong>Payment Method:</strong> <%= paymentMethod %><br>
+                                <strong>Status:</strong> Processing
+                            </p>
+                            <a href="/" class="btn btn-primary continue-shopping-btn mb-3">Continue Shopping</a>
+                            <a href="/myorders" class="btn btn-outline-primary ms-2 mb-3">View My Orders</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .dashboard-title {
+            color: #C8102E;
+            font-weight: bold;
+        }
+
+        .order-card {
+            border: none;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .continue-shopping-btn {
+            background-color: #C8102E;
+            border-color: #C8102E;
+        }
+
+        .continue-shopping-btn:hover {
+            background-color: #a30d1d;
+            border-color: #a30d1d;
+        }
+
+        .btn-outline-primary {
+            color: #C8102E;
+            border-color: #C8102E;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #C8102E;
+            color: white;
+        }
+
+        .icon-success {
+            margin-bottom: 2rem;
+        }
+    </style>
+
+</body>
+</html>

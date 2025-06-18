@@ -1,0 +1,306 @@
+[
+  {
+    "name": "Almond Khatan Tin",
+    "description": "A beautifully presented tin filled with delicious, crumbly almond shortbread cookies (Khatai). Perfect for gifting on any occasion.",
+    "price": 550,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almod Khatan Tin.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Biscotti",
+    "description": "Crisp and crunchy almond biscotti, elegantly packaged for gifting. Ideal for enjoying with coffee or tea.",
+    "price": 450,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almond Biscotti.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Khatai Box 7 pieces",
+    "description": "A delightful gift box containing 7 pieces of traditional, melt-in-your-mouth almond shortbread cookies (Khatai).",
+    "price": 280,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almond Khatai Box 7 pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Khatai Box 12 pieces",
+    "description": "A generous gift box featuring 12 pieces of our signature almond shortbread cookies (Khatai), perfect for sharing.",
+    "price": 420,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almond Khatai Box 12 pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Khatai Fancy Box",
+    "description": "Exquisite almond shortbread cookies (Khatai) presented in a luxurious fancy box, making it an impressive gift.",
+    "price": 650,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almond Khatai Fancy Box.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Macaroon",
+    "description": "Delicate and chewy almond macaroons, beautifully packaged for a sweet and thoughtful gift.",
+    "price": 480,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Almond Macraoon.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Arabian Sweet",
+    "description": "An opulent assortment of traditional Arabian sweets, exquisitely packaged to make a luxurious gift for connoisseurs.",
+    "price": 900,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Arabian Sweet.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Besan Khatai",
+    "description": "Traditional gram flour (besan) shortbread cookies, known for their unique flavor and crumbly texture, in a gift-ready pack.",
+    "price": 300,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Besan Khatai.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cake Gift Bag",
+    "description": "A delicious cake of your choice, beautifully presented in an elegant gift bag. A perfect celebratory gift.",
+    "price": 1200,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Cake Gift Bag.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cane Gift Basket (Empty)",
+    "description": "A charming empty cane gift basket, perfect for creating your own personalized gift hamper with our finest treats.",
+    "price": 400,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Cane Gift Basket (Empty).jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cane Gift Basket",
+    "description": "A beautifully arranged cane gift basket filled with a curated selection of our most popular gourmet treats and snacks.",
+    "price": 1800,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Cane Gift Basket.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Box 16 pieces",
+    "description": "A delightful gift box containing 16 classic, soft and chewy chocolate chip cookies. A universally loved treat.",
+    "price": 400,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Chocolate Chip Box 16 pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Crisp",
+    "description": "Thin, delicate, and intensely chocolatey crisp biscuits, elegantly packaged for a sophisticated gift.",
+    "price": 350,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Chocolate Crisp.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Walnut Biscotti",
+    "description": "Crunchy biscotti generously studded with rich chocolate chunks and walnuts, presented in a gift-worthy pack.",
+    "price": 500,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Chocolate Walnut Biscotti.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Cookies",
+    "description": "Buttery cookies with a delightful tropical coconut flavor, attractively packaged for gifting.",
+    "price": 320,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Coconut Cookies.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Countryside Biscuit",
+    "description": "A charming assortment of rustic and wholesome countryside-style biscuits, perfect for a heartwarming gift.",
+    "price": 480,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Countyside Biscuit.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cranberry Cookies",
+    "description": "Soft and chewy cookies packed with tart cranberries and often white chocolate chips, in a beautiful gift box.",
+    "price": 380,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Cranberry Cookies.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Flax Snap",
+    "description": "Healthy and crispy flaxseed snaps, a nutritious and thoughtful gift for the health-conscious.",
+    "price": 280,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Flax Snap.jpg",
+    "inStock": true
+  },
+  {
+    "name": "French Heart Box",
+    "description": "An elegant gift box filled with sweet, crispy, heart-shaped puff pastries (palmiers). A delightful French classic.",
+    "price": 350,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/French Heart Box.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Cake Rusk",
+    "description": "Deliciously crispy rusk made from rich fruit cake, packed with mixed dried fruits. A wonderful gift for tea lovers.",
+    "price": 250,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Fruit Cake Rusk.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Ginger Cake Rusk",
+    "description": "Crispy and aromatic rusk made from spiced ginger cake, offering a warm flavor. A unique and comforting gift.",
+    "price": 250,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Ginger Cake Rusk.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Hard Nougat",
+    "description": "Classic hard nougat packed with crunchy nuts and sweetened with honey, presented as an elegant gift.",
+    "price": 450,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Hard Naugat.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Nougat",
+    "description": "Soft and chewy honey nougat, generously filled with almonds or other nuts. A sweet and luxurious gift.",
+    "price": 480,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Honey Nouget.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Crisp",
+    "description": "Thin, zesty, and refreshing lemon-flavored crisp biscuits, beautifully packaged for a light and delightful gift.",
+    "price": 330,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Lemon Crisp.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Marzipan",
+    "description": "Exquisite almond marzipan confections, often artfully shaped and colored. A traditional and sophisticated gift.",
+    "price": 600,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Mazipan.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Multiseed Biscotti",
+    "description": "Wholesome and crunchy biscotti packed with a variety of nutritious seeds, making a healthy and thoughtful gift.",
+    "price": 480,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Multiseed Biscotti.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Oatlay",
+    "description": "Delicious and wholesome oatmeal cookies, possibly with raisins or nuts, presented in a gift-ready pack.",
+    "price": 300,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Oatlay.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pistachio Biscotti",
+    "description": "Premium crunchy biscotti featuring the rich flavor and vibrant color of pistachios. An elegant gift choice.",
+    "price": 550,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Pistachio Biscotti.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Royal Biscuit Collection 250 g",
+    "description": "A delightful 250g gift pack from our Royal Biscuit Collection, offering an assortment of fine, buttery biscuits.",
+    "price": 250,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Royal Biscuit Collection 250 g.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Royal Biscuit Collection 500 g",
+    "description": "A generous 500g gift pack of our Royal Biscuit Collection, featuring a wider variety of exquisite biscuits.",
+    "price": 450,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Royal Biscuit Collection 500 g.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Royal Biscuit Collection",
+    "description": "Our premium Royal Biscuit Collection presented in an elegant, reusable tin. A luxurious selection perfect for gifting.",
+    "price": 700,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Royal Biscuit Collection.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Season Snap",
+    "description": "Crisp and savory snaps or crackers featuring seasonal flavors and ingredients. A unique and timely gift.",
+    "price": 280,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Season Sanp.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Shopping bag (Synthetic)",
+    "description": "A stylish and durable synthetic shopping bag, perfect for presenting your gifts or as a practical gift itself.",
+    "price": 150,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Shopping bag (Synthetic).jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Crisp",
+    "description": "Thin, delicate, and fragrant vanilla-flavored crisp biscuits, elegantly packaged for a classic gift.",
+    "price": 330,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Vanilla Crisp.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Wooden Gift Basket",
+    "description": "A beautifully crafted wooden gift basket, pre-filled with an assortment of our finest gourmet products. An impressive gift for any occasion.",
+    "price": 2200,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Wooden Gift Basket.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Wooden Hexagonal Gift Basket",
+    "description": "A unique and stylish hexagonal wooden gift basket, filled with a premium selection of treats. Perfect for making a statement.",
+    "price": 2500,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Wooden Hexagonal Gift Basket.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Wooden Hexagonal Gifting Basket",
+    "description": "An empty, elegant hexagonal wooden basket, ideal for creating a bespoke, high-end gift hamper.",
+    "price": 700,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Wooden Hexagonal Gifting Basket.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Wooden Rope Gift Basket (Empty)",
+    "description": "A rustic yet elegant empty wooden gift basket with rope handles, providing a charming base for your custom gift selection.",
+    "price": 500,
+    "category": "Gifting",
+    "image": "/images/products/Gifting/Wooden Rope Gift Basket (Empty).jpg",
+    "inStock": true
+  }
+]
