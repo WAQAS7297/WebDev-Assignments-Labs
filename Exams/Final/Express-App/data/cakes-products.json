@@ -1,0 +1,482 @@
+[
+  {
+    "name": "Brownie Chocolate Cake",
+    "description": "A delightful fusion of rich brownie chunks and moist chocolate cake, all enveloped in smooth buttercream frosting.",
+    "price": 1650,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Brownie Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Caramel Fudge Cake",
+    "description": "Indulgent layers of moist cake with luscious caramel fudge and a smooth buttercream finish, perfect for caramel lovers.",
+    "price": 1750,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Caramel Fudge Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Fudge Cake",
+    "description": "A classic rich chocolate fudge cake with decadent layers and a creamy buttercream frosting, a true chocolate delight.",
+    "price": 1600,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Chocolate Fudge Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Hard Icing Cake",
+    "description": "Moist chocolate cake coated with a firm, sweet chocolate icing, offering a delightful textural contrast and rich flavor.",
+    "price": 1450,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Chocolate Hard Icing Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coffee Fudge Cake",
+    "description": "Aromatic coffee-infused cake layers with rich coffee fudge and smooth buttercream, a perfect treat for coffee enthusiasts.",
+    "price": 1700,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Coffee Fudge Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dark Chocolate Cake",
+    "description": "Intensely flavored dark chocolate cake with layers of rich dark chocolate buttercream, designed for the ultimate chocoholic.",
+    "price": 1850,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Dark Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Tart Cake",
+    "description": "A unique cake inspired by the zesty flavors of a lemon tart, featuring tangy lemon layers and a creamy, sweet buttercream.",
+    "price": 1550,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Lemon Tart Cake.jpg",
+    "inStock": false
+  },
+  {
+    "name": "Special Chocolate Cake",
+    "description": "Our bakery's signature special chocolate cake, a secret recipe with layers of moist chocolate cake and exquisite buttercream.",
+    "price": 1950,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Special Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Strawberry Hard Icing Cake",
+    "description": "Sweet strawberry flavored cake covered in a delightful firm strawberry icing, a fruity and fun choice for celebrations.",
+    "price": 1500,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Strawberry Hard Icing Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Chocolate Fudge Cake",
+    "description": "The best of both worlds: moist vanilla cake layers paired with rich chocolate fudge and smooth buttercream frosting.",
+    "price": 1650,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Vanilla Chocolate Fudge Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Hard Icing Cake",
+    "description": "Classic vanilla cake with a sweet and firm vanilla icing, offering a simple yet timelessly delicious experience.",
+    "price": 1350,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Vanilla Hard Icing Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Brownie Cake",
+    "description": "A decadent combination of rich brownie, crunchy walnuts, and moist cake layers, generously finished with buttercream.",
+    "price": 1800,
+    "category": "butter cream cake",
+    "image": "/images/products/CAKE/BUTTER CREAM CAKE/Walnut Brownie Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate New York Cheesecake",
+    "description": "Classic creamy New York cheesecake infused with rich chocolate, set on a chocolate cookie crust for an extra decadent treat.",
+    "price": 2300,
+    "category": "cheese cake",
+    "image": "/images/products/CAKE/CHEESE CAKE/Chocolate New York Cheesecake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lotus New York Cheesecake",
+    "description": "Irresistible New York cheesecake with a Lotus Biscoff cookie crust and a creamy Lotus Biscoff spread topping, a caramel-spiced delight.",
+    "price": 2500,
+    "category": "cheese cake",
+    "image": "/images/products/CAKE/CHEESE CAKE/Lotus New York Cheesecake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "New York Cheesecake",
+    "description": "The quintessential dense, creamy, and rich New York style cheesecake with a classic graham cracker crust, often served plain or with a fruit coulis.",
+    "price": 2100,
+    "category": "cheese cake",
+    "image": "/images/products/CAKE/CHEESE CAKE/New York Cheesecake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Dry Cake",
+    "description": "A subtly sweet and wonderfully moist dry cake infused with a delicate almond flavor, perfect for tea time or a light dessert.",
+    "price": 750,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Almond Dry Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Almond Macaroon Cake",
+    "description": "A delightful cake featuring the distinct chewy texture and nutty flavor of almond macaroons, a unique treat.",
+    "price": 900,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Almond Macaroon Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Apple Dry Cake",
+    "description": "A comforting and moist dry cake with tender chunks of sweet apple and a hint of warming cinnamon.",
+    "price": 800,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Apple Dry Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Cheesecake (Dry Style)",
+    "description": "A unique dry cake offering the rich flavor profile of chocolate cheesecake in a denser, loaf-style cake. Not a traditional creamy cheesecake.",
+    "price": 950,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Chocolate Cheesecake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Macaroon Cake",
+    "description": "A delicious cake that captures the sweet, tropical essence and chewy texture of coconut macaroons.",
+    "price": 850,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Coconut Macaroon Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dry Cheese Cake",
+    "description": "A savory-sweet dry cake with a subtle baked cheese flavor, offering a distinct and enjoyable taste experience. Not a creamy cheesecake.",
+    "price": 900,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Dry Cheese Cake.jpg",
+    "inStock": false
+  },
+  {
+    "name": "Honey Almond Cake",
+    "description": "A delightful dry cake sweetened naturally with honey and packed with the nutty goodness of toasted almonds.",
+    "price": 1000,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Honey Almond Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Baig Cake",
+    "description": "A zesty and refreshing lemon-flavored dry cake, with a wonderfully moist crumb, perfect for a light treat.",
+    "price": 700,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Lemon Baig Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pecan Caramel Cake",
+    "description": "A rich and buttery dry cake featuring crunchy toasted pecans and swirls of luscious caramel flavor.",
+    "price": 1100,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Pecan Caramel Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Walnut Cake",
+    "description": "A simple yet satisfying dry cake generously studded with crunchy walnuts, offering a classic nutty flavor.",
+    "price": 800,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Plain Walnut Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Roasted Almond Cake",
+    "description": "A flavorful dry cake with the deep, nutty taste of roasted almonds, providing a rich and aromatic experience.",
+    "price": 950,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Roasted Almond Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Fudge Cake",
+    "description": "A rich, fudgy dry cake packed with walnuts for a delightful crunch and intense chocolate-walnut flavor.",
+    "price": 1150,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Walnut Fudge Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Honey Cake",
+    "description": "A wholesome and moist dry cake combining the natural sweetness of honey with the earthy taste of crunchy walnuts.",
+    "price": 1050,
+    "category": "dry cake",
+    "image": "/images/products/CAKE/DRY CAKE/Walnut Honey Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bakers Street Cake",
+    "description": "Our signature Bakers Street special, a delightful fresh cream cake with unique layers of flavor and artistic decoration.",
+    "price": 1900,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Bakers Street Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Belgium Chocolate Cake",
+    "description": "Luxurious fresh cream cake made with fine Belgian chocolate for an intensely rich, smooth, and unforgettable chocolate experience.",
+    "price": 2300,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Belgium Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Black Forest Cake",
+    "description": "The classic German dessert featuring layers of chocolate sponge, whipped fresh cream, tart cherries, and delicate chocolate shavings.",
+    "price": 1700,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Black Forest Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cadbury Chocolate Cake",
+    "description": "A delightful fresh cream cake infused with the iconic, creamy taste of Cadbury chocolate, perfect for all ages and occasions.",
+    "price": 1800,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Cadbury Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Cake",
+    "description": "Moist fresh cream cake generously studded with delicious chocolate chips throughout its layers for a delightful texture and taste.",
+    "price": 1600,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Chocolate Chip Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Fudge Cake Fresh Cream",
+    "description": "Rich chocolate fudge cake layers beautifully balanced with light and airy fresh cream frosting for a decadent yet smooth treat.",
+    "price": 2000,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Chocolate Fudge Cake Fresh Cream.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coffee Chocolate Cake",
+    "description": "A perfect pairing of aromatic coffee-infused sponge and rich chocolate, all enveloped in a light fresh cream frosting.",
+    "price": 1850,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Coffee Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dubai Style Kunafa Chocolate Cake",
+    "description": "An exotic and luxurious fusion of traditional Middle Eastern Kunafa (crispy shredded pastry) and rich chocolate cake, with a fresh cream finish.",
+    "price": 2700,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Dubai Style Kunafa Chocolate Cake.jpg",
+    "inStock": false
+  },
+  {
+    "name": "Hazelnut Brownie Cake",
+    "description": "Indulgent fresh cream cake featuring layers of rich, chewy brownie, crunchy toasted hazelnuts, and smooth, light cream.",
+    "price": 2200,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Hazelnut Brownie Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Heaven Chocolate Cake",
+    "description": "A truly heavenly experience with layers of ultra-moist chocolate cake and ethereal fresh cream, delivering pure chocolate bliss.",
+    "price": 2400,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Heaven Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kitkat Chocolate Cake",
+    "description": "A fun and delightful fresh cream cake adorned with crunchy KitKat chocolate bars and rich chocolate ganache or shavings.",
+    "price": 2050,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Kitkat Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Milk Chocolate Cake",
+    "description": "Smooth and creamy milk chocolate fresh cream cake, offering a gentle, sweet, and satisfying chocolate experience for all.",
+    "price": 1750,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Milk Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Oreo Fresh Cream Cake",
+    "description": "A crowd-pleasing favorite featuring crushed Oreo cookies folded into luscious fresh cream and layered with moist chocolate or vanilla cake.",
+    "price": 1950,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Oreo Fresh Cream Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pineapple Cake",
+    "description": "A light and refreshing fresh cream cake with layers of soft vanilla sponge, whipped cream, and juicy pineapple chunks or filling.",
+    "price": 1500,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Pineapple Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Seasonal Fresh Cake",
+    "description": "A delightful fresh cream cake celebrating nature's bounty, featuring the best and freshest fruits of the current season.",
+    "price": 2100,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Seasonal Fresh Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Three Milk Chocolate Cake",
+    "description": "An ultra-moist chocolate sponge cake soaked in a decadent blend of three types of milk, topped with light fresh cream and a hint of chocolate.",
+    "price": 2300,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Three Milk Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Tiramisu Cake",
+    "description": "Classic Italian dessert reimagined as a cake, with coffee-soaked sponge layers, rich mascarpone cream, and a dusting of cocoa powder.",
+    "price": 2500,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Tiramisu Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Tiramisu Mocha Cake",
+    "description": "A delightful twist on the classic Tiramisu, with an enhanced mocha flavor infused into its creamy mascarpone layers and coffee-soaked sponge.",
+    "price": 2550,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Tiramisu Mocha Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Brownie Syrup Cake",
+    "description": "Layers of moist vanilla cake and rich, chewy brownie pieces, drizzled with a sweet syrup and finished with light fresh cream.",
+    "price": 2000,
+    "category": "fresh cream cake",
+    "image": "/images/products/CAKE/FRESH CREAM CAKE/Vanilla Brownie Syrup Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Caramel Crunch Mousse Cake",
+    "description": "Smooth, velvety caramel mousse with delightful crunchy elements like praline or nuts, offering a perfect balance of textures and sweetness.",
+    "price": 2700,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Caramel Crunch Mousse Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Mocha Mousse Cake",
+    "description": "An airy and rich mousse cake perfectly combining the deep flavors of decadent chocolate and aromatic mocha coffee.",
+    "price": 2600,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Chocolate Mocca Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Mousse Cake",
+    "description": "Classic decadent chocolate mousse cake, light and airy in texture but intensely rich in pure chocolate flavor.",
+    "price": 2400,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Chocolate Mousse Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Death by Chocolate Mousse Cake",
+    "description": "An ultimate indulgence for chocolate lovers, featuring multiple layers of intense chocolate mousse, ganache, and moist chocolate cake.",
+    "price": 2900,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Death by Chocolate Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dream Chocolate Mousse Cake",
+    "description": "A dreamy, light, and ethereal chocolate mousse cake that melts in your mouth, offering a cloud-like chocolate experience.",
+    "price": 2500,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Dream Chocolate Cake.jpg",
+    "inStock": false
+  },
+  {
+    "name": "Java Mousse Cake",
+    "description": "A sophisticated mousse cake with rich, bold coffee (Java) notes, perfectly balanced with creamy mousse for coffee aficionados.",
+    "price": 2650,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Java Mousse Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Wafer Mousse Cake",
+    "description": "Light and airy mousse cake with layers or inclusions of crispy wafer for a delightful textural contrast and subtle sweetness.",
+    "price": 2550,
+    "category": "mousse cake",
+    "image": "/images/products/CAKE/MOUSSE CAKE/Wafer Mousse Cake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Banana Teacake",
+    "description": "Moist and flavorful teacake made with ripe bananas and often a hint of spice, a comforting classic perfect with a cup of tea or coffee.",
+    "price": 550,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Banana Teacake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Carrot Teacake",
+    "description": "A wholesome and delicious teacake packed with finely grated carrots, warm spices like cinnamon, and often nuts or raisins.",
+    "price": 600,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Carrot Teacake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Teacake",
+    "description": "A classic teacake generously studded with a variety of mixed dried fruits, offering a sweet, slightly chewy texture and rich flavor.",
+    "price": 650,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Fruit Teacake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Ginger Teacake",
+    "description": "A warming and aromatic teacake infused with the spicy zest of ginger, often with a moist crumb, perfect for a comforting treat.",
+    "price": 580,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Ginger Teacake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Teacake",
+    "description": "A simple, subtly sweet, and buttery teacake with a tender crumb, the perfect unadorned accompaniment to your favorite hot beverage.",
+    "price": 500,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Plain Teacake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Rich Plum Teacake",
+    "description": "A dense and flavorful teacake enriched with juicy plums, often with a hint of spice, ideal for a special tea time or dessert.",
+    "price": 750,
+    "category": "tea cake",
+    "image": "/images/products/CAKE/TEA CAKE/Rich Plum Teacake.jpg",
+    "inStock": false
+  }
+]

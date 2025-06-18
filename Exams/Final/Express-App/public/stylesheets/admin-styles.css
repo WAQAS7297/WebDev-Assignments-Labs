@@ -1,0 +1,128 @@
+body {
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex-grow: 1; /* Ensures container pushes footer down */
+}
+
+.admin-header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.admin-header h1 {
+    margin-bottom: 0;
+}
+
+.card-header {
+    background-color: #e9ecef;
+}
+
+.table img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #dee2e6; /* Added a light border for better visibility */
+}
+
+.action-buttons form {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.action-buttons .btn { /* Ensure buttons are vertically aligned if needed */
+    vertical-align: middle;
+}
+
+.form-card {
+    margin-bottom: 2rem;
+}
+
+.current-image img.img-thumbnail {
+    padding: 3px; /* Replicates previous inline style */
+    border: 1px solid #ddd; /* Replicates previous inline style */
+}
+
+.admin-footer {
+    background-color: #e9ecef; /* Consistent with card headers */
+    border-top: 1px solid #dee2e6;
+    /* margin-top: auto; Ensured by flexbox on body */
+}
+
+footer {
+background-color: #f8f9fa;
+padding: 3rem 1rem;
+text-align: center;
+}
+
+.footer_title {
+font-size: 1.25rem;
+margin-bottom: 1rem;
+color: #333;
+font-weight: bold;
+}
+
+.footer_list {
+list-style: none;
+padding: 0;
+margin: 0 0 1.5rem;
+}
+
+.footer_list li {
+margin-bottom: 0.5rem;
+}
+
+.footer_link {
+color: #666;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer_link:hover {
+color: #000;
+}
+
+.social_block {
+margin-bottom: 1.5rem;
+}
+
+.social_list {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+padding: 0;
+margin: 0;
+}
+
+.social_item {
+color: #666;
+font-size: 1.5rem;
+transition: color 0.3s ease;
+}
+
+.social_item:hover {
+color: #000;
+}
+
+.copyright {
+color: #666;
+font-size: 0.875rem;
+margin-top: 1rem;
+}
+
+.copyright a {
+color: #666;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+color: #000;
+}

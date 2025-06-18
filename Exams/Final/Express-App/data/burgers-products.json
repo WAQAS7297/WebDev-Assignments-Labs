@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Bun Shami Kebab",
+    "description": "A flavorful and traditional shami kebab patty, made with minced meat and lentils, seasoned with aromatic spices, tucked inside a soft bun. A perfect savory snack.",
+    "price": 150,
+    "category": "Burger",
+    "image": "/images/products/Burger/Bun Shami Kebab.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Cheese Burger",
+    "description": "A classic favorite! A juicy grilled or fried chicken patty topped with a slice of melted cheese, crisp lettuce, fresh tomato, and creamy sauce, all nestled in a soft burger bun.",
+    "price": 280,
+    "category": "Burger",
+    "image": "/images/products/Burger/Chicken Cheese Burger.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Grill Burger",
+    "description": "A healthier yet delicious option featuring a perfectly grilled, tender chicken breast, fresh lettuce, ripe tomato, and a light tangy sauce, served in a toasted burger bun.",
+    "price": 300,
+    "category": "Burger",
+    "image": "/images/products/Burger/Chicken Grill Burger.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Spicy Burger",
+    "description": "For those who crave a kick! A crispy, spicy chicken fillet, zesty sauce, fresh lettuce, and perhaps a slice of pepper jack cheese, all packed into a soft burger bun.",
+    "price": 290,
+    "category": "Burger",
+    "image": "/images/products/Burger/Chicken Spicy Burger.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Jalapeno Burger",
+    "description": "Turn up the heat with this fiery delight! A juicy beef or chicken patty topped with spicy jalapeño slices, melted cheese (often pepper jack), and a zesty chipotle mayo in a fresh bun.",
+    "price": 320,
+    "category": "Burger",
+    "image": "/images/products/Burger/Jalapeno Burger.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Chicken Burger",
+    "description": "A simple and satisfying burger featuring a seasoned chicken patty served in a soft bun. Perfect for customizing with your favorite toppings and sauces, or enjoying as is.",
+    "price": 250,
+    "category": "Burger",
+    "image": "/images/products/Burger/Plain Chicken Burger.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sausage Burger",
+    "description": "A unique and flavorful burger experience! A savory sausage patty, often complemented with cheese, grilled onions, and a tangy mustard or BBQ sauce, served in a fresh burger bun.",
+    "price": 270,
+    "category": "Burger",
+    "image": "/images/products/Burger/Sasage Burger.jpg",
+    "inStock": true
+  }
+]

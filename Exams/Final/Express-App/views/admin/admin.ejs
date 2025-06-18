@@ -1,0 +1,65 @@
+<div class="container mt-5">
+    <div id="successAlert" class="alert alert-success alert-dismissible fade hide" role="alert">
+        <span id="successMessage"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div id="errorAlert" class="alert alert-danger alert-dismissible fade hide" role="alert">
+        <span id="errorMessage"></span>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-danger">Admin Dashboard</h2>
+    </div>
+
+    <div class="row g-4">
+        <!-- Carousel Management Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa-solid fa-images fa-3x mb-3" style="color: #A4854F;"></i>
+                    <h5 class="card-title">Carousel Management</h5>
+                    <p class="card-text">Create and manage carousel slides for the homepage.</p>
+                    <a href="/admin/create_carosel" class="btn btn-outline-danger">Manage Carousel</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Category Management Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa-solid fa-list fa-3x mb-3" style="color: #A4854F;"></i>
+                    <h5 class="card-title">Category Management</h5>
+                    <p class="card-text">Create and manage product categories.</p>
+                    <a href="/admin/create_category" class="btn btn-outline-danger">Manage Categories</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gifting Management Card -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fa-solid fa-gift fa-3x mb-3" style="color: #A4854F;"></i>
+                    <h5 class="card-title">Gifting Management</h5>
+                    <p class="card-text">Manage gifting options and special offers.</p>
+                    <a href="/admin/create_gifting" class="btn btn-outline-danger">Manage Gifting</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Basic script for delete confirmation (optional, but good practice)
+document.querySelectorAll('.btn-delete-product').forEach(button => {
+    button.addEventListener('click', function(event) {
+        const productName = this.getAttribute('data-product-name');
+        if (!confirm(`Are you sure you want to delete "${productName}"?`)) {
+            event.preventDefault();
+        }
+    });
+});
+</script>

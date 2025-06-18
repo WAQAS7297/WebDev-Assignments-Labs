@@ -1,0 +1,34 @@
+[
+  {
+    "title": "GIFTING",
+    "description": "Our gifting collection is thoughtfully crafted to bring joy and a smile to your face. Whether it's a birthday, anniversary, or your special day, a gift from Tehzeeb Bakers is a wonderful way to express your care for your loved one.",
+    "name": "BASKET",
+    "imageUrl": "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting1.webp",
+    "altText": "BASKET",
+    "linkUrl": "https://tehzeeb.com/gifting.html"
+  },
+  {
+    "title": "GIFTING",
+    "description": "Our gifting collection is thoughtfully crafted to bring joy and a smile to your face. Whether it's a birthday, anniversary, or your special day, a gift from Tehzeeb Bakers is a wonderful way to express your care for your loved one.",
+    "name": "BISCUITS",
+    "imageUrl": "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting2.webp",
+    "altText": "BISCUITS",
+    "linkUrl": "https://tehzeeb.com/biscuits.html"
+  },
+  {
+    "title": "GIFTING",
+    "description": "Our gifting collection is thoughtfully crafted to bring joy and a smile to your face. Whether it's a birthday, anniversary, or your special day, a gift from Tehzeeb Bakers is a wonderful way to express your care for your loved one.",
+    "name": "CAKES",
+    "imageUrl": "https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/gifting3.webp",
+    "altText": "CAKES",
+    "linkUrl": "https://tehzeeb.com/cake.html"
+  },
+  {
+    "title": "GIFTING",
+    "description": "Our gifting collection is thoughtfully crafted to bring joy and a smile to your face. Whether it's a birthday, anniversary, or your special day, a gift from Tehzeeb Bakers is a wonderful way to express your care for your loved one.",
+    "name": "Chocolate",
+    "imageUrl": "https://img.drz.lazcdn.com/g/kf/S418e1d61126f4fb2ab0ef14cd2ba37ccb.jpg_720x720q80.jpg_.webp",
+    "altText": "chocolate",
+    "linkUrl": "https://tehzeeb.com/cake.html"
+  }
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Customer Account</title>
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a class="logo" href="/">
+                <img src="https://tehzeeb.com/static/version1748357445/frontend/Magento/tehzeeb_new/en_US/images/form_logo.png" alt="Tehzeeb Logo">
+            </a>
+            <div class="login-link">
+                <a href="/login">Login<svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none"><path d="M1 11.4883L11 1.48828M11 1.48828V11.0883M11 1.48828H1.4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form-container-wrapper">
+            <h2>CREATE AN ACCOUNT</h2>
+            <div class="page messages">
+                <div data-placeholder="messages">
+                    <% if (typeof error !== 'undefined' && error) { %>
+                        <div class="message-error error"><div><%= error %></div></div>
+                    <% } %>
+                    <% if (typeof success !== 'undefined' && success) { %>
+                        <div class="message-success success"><div><%= success %></div></div>
+                    <% } %>
+                </div>
+            </div>
+            <form class="form-create-account" id="form-validate" method="post" action="/register" autocomplete="off">
+                <div class="field half">
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter First Name *" required>
+                </div>
+                <div class="field half">
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter Last Name *" required>
+                </div>
+                <div class="field full">
+                    <input type="email" name="email" id="email_address" placeholder="Enter Your Email *" required>
+                </div>
+                <div class="field half">
+                    <div class="control-password">
+                        <input type="password" name="password" id="password" placeholder="Password *" required>
+                        <span class="password-toggle" data-target="password">
+                            <img src="https://tehzeeb.com/static/version1748357445/frontend/Magento/tehzeeb_new/en_US/images/pass-eye.png" alt="Toggle Password">
+                        </span>
+                    </div>
+                </div>
+                <div class="field half">
+                    <div class="control-password">
+                        <input type="password" name="password_confirmation" id="password-confirmation" placeholder="Confirm Password *" required>
+                        <span class="password-toggle" data-target="password-confirmation">
+                            <img src="https://tehzeeb.com/static/version1748357445/frontend/Magento/tehzeeb_new/en_US/images/pass-eye.png" alt="Toggle Password">
+                        </span>
+                    </div>
+                </div>
+                <div class="field checkbox-field">
+                    <input type="checkbox" id="show-password-checkbox">
+                    <label for="show-password-checkbox">Show Password</label>
+                </div>
+                <div class="field checkbox-field">
+                    <input type="checkbox" name="terms_conditions" id="terms_conditions" required>
+                    <label for="terms_conditions">I have read and accepted the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <div class="field checkbox-field">
+                    <input type="checkbox" name="marketing_consent" id="marketing_consent">
+                    <label for="marketing_consent">I hereby give my consent with <a href="#">Processing of my personal data</a> for marketing purposes</label>
+                </div>
+                <div class="field-recaptcha">
+                    <div class="g-recaptcha" data-sitekey="6Lc60jAdAAAAANlq5hBUm6By4EtksTk91hKLDlqx"></div>
+                </div>
+                <div class="actions-toolbar">
+                    <button type="submit" class="action-submit">SUBMIT</button>
+                </div>
+            </form>
+            <p class="form-note">Once you make an account on Tehzeeb your checkout process will be much faster. It will also enable you to create wish lists while keeping track of all your orders through your account.</p>
+        </div>
+    </main>
+
+    <script src="/javascripts/register.js"></script>
+</body>
+</html> 

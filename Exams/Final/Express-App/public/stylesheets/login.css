@@ -1,0 +1,196 @@
+/* Tehzeeb Login Form Styles */
+:root {
+    --primary-color: #C8102E;  /* Tehzeeb red color */
+    --text-gray: #666666;
+    --border-color: #E5E5E5;
+    --background-color: #fefbf8;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.reg_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;  /* Added horizontal padding */
+    width: 100%;
+    background-color: var(--background-color);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.logo {
+    display: block;
+    margin-left: 20px;  /* Added left margin */
+}
+
+.logo img {
+    max-height: 100px;
+    width: auto;
+}
+
+.block-new-customer {
+    margin-right: 40px;  /* Added right margin */
+}
+
+.create-account-link {
+    display: flex;
+    align-items: center;
+    color: #1A1A1A;
+    text-decoration: none;
+    font-size: 24px;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.create-account-link svg {
+    transition: transform 0.3s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.create-account-link:hover {
+    color: var(--primary-color);
+}
+
+.create-account-link:hover svg {
+    transform: translate(4px, -4px);
+}
+
+.form_title h2 {
+    color: #1A1A1A;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.form_field {
+    margin-bottom: 24px;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+}
+
+.field_item {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #E5E5E5;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #1A1A1A;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+.field_item::placeholder {
+    color: #999;
+    font-size: 16px;
+}
+
+.field_item:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.pass-eye {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-gray);
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+}
+
+.pass-eye:hover {
+    opacity: 1;
+}
+
+.control {
+    position: relative;
+}
+
+.reset_password {
+    display: block;
+    text-align: left;
+    color: var(--text-gray);
+    text-decoration: none;
+    margin: 16px 0 24px;
+    font-size: 14px;
+}
+
+.form_cta {
+    width: 100%;
+    padding: 16px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: none;
+    outline: none;
+}
+
+.form_cta:hover {
+    background-color: #a00d25;
+}
+
+.message-error {
+    background: #fae5e5;
+    padding: 12px 20px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    color: #C8102E;
+    font-size: 14px;
+}
+
+/* Remove extra containers and boxes */
+.columns, .column.main, .login-container, .acc_form_blocks, .acc_form_inner {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    background: none;
+    border: none;
+}
+
+.block-content {
+    padding: 0;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Add Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Main content adjustments */
+.login-container {
+    max-width: 460px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Add these styles for validation and error messages */
+.validation-failed {
+    border-color: #C8102E !important;
+}
