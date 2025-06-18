@@ -48,8 +48,3 @@ logs/
 dist/
 build/
 *.egg-info/
-
-
-/node_modules
-*.lock
-package-lock.json
