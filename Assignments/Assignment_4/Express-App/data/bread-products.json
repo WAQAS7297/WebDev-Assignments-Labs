@@ -1,0 +1,338 @@
+[
+  {
+    "name": "Bran Bread",
+    "description": "A hearty and wholesome bran bread, rich in fiber and perfect for a healthy start to your day or for nutritious sandwiches.",
+    "price": 130,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Bran Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Brioche Bread",
+    "description": "A light, fluffy, and slightly sweet brioche bread, known for its rich buttery flavor. Excellent for French toast or indulgent sandwiches.",
+    "price": 160,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Brioche Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Butter Bread",
+    "description": "A soft and delicious bread with a hint of buttery goodness, versatile for toasting or making your favorite sandwiches.",
+    "price": 110,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Butter Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Bread",
+    "description": "A savory delight! Soft bread filled with seasoned, tender chicken pieces, perfect for a satisfying snack or light meal.",
+    "price": 180,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Chicken Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Countryside Bread",
+    "description": "A rustic and hearty countryside loaf, with a perfectly baked crust and soft interior. Ideal for any meal.",
+    "price": 140,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Countryside Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Focaccia Bread",
+    "description": "Authentic Italian flatbread, dimpled and often flavored with olive oil, herbs like rosemary, and sea salt. Perfect for dipping or as a sandwich base.",
+    "price": 170,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Focaccia Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "French Bread",
+    "description": "Classic French baguette with a crisp crust and soft, airy interior. Perfect for sandwiches, crostini, or enjoying with cheese and wine.",
+    "price": 120,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/French Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Bread",
+    "description": "A sweet and delightful bread loaf, generously studded with mixed dried fruits and often a hint of spice. Perfect toasted with butter.",
+    "price": 150,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Fruit Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Garlic Bread",
+    "description": "Crusty bread infused with aromatic garlic and butter, often with herbs. A perfect accompaniment to pasta dishes or enjoyed on its own.",
+    "price": 160,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Garlic Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "House Bread",
+    "description": "Our signature loaf, a versatile and delicious bread perfect for everyday enjoyment. Baked fresh with quality ingredients.",
+    "price": 130,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/House Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Marshall Bread",
+    "description": "A special Marshall Bakery creation, this bread offers a unique taste and texture. Perfect for toasting or sandwiches.",
+    "price": 150,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Marshall Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Milky Bread",
+    "description": "A soft, tender, and slightly sweet bread enriched with milk, making it exceptionally smooth. Great for children and adults alike.",
+    "price": 130,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Milky Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Multi Seed Bread",
+    "description": "A wholesome and nutritious bread packed with a variety of seeds like flax, sesame, sunflower, and pumpkin seeds, offering a delightful crunch and flavor.",
+    "price": 170,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Multi Seed Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Whole Wheat Bread",
+    "description": "Healthy and delicious whole wheat bread, rich in fiber and nutrients. A perfect choice for a balanced diet.",
+    "price": 140,
+    "category": "breakfast",
+    "image": "/images/products/Bread/BREAKFAST BREAD/Whole Wheat Bread.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Butter Croissant",
+    "description": "A classic French delight, this croissant is exceptionally flaky, buttery, and light. Perfect with coffee or on its own.",
+    "price": 120,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Butter Croissant.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Croissant",
+    "description": "Indulge in our buttery, flaky croissant filled with rich, decadent chocolate. A perfect treat for any time of day.",
+    "price": 140,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Chocolate Croissant.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Crispy Croissant",
+    "description": "Experience the ultimate crunch with our extra crispy croissant, boasting layers of flaky pastry baked to golden perfection.",
+    "price": 130,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Crispy Croissant.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Croissant Mini Pack of 6",
+    "description": "Enjoy a delightful selection of six mini butter croissants, perfect for sharing or a multi-day treat. Flaky, buttery, and bite-sized.",
+    "price": 250,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Croissant Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Multiseed Croissant",
+    "description": "A wholesome twist on a classic! Our flaky butter croissant generously topped with a blend of nutritious seeds for added texture and flavor.",
+    "price": 150,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Multiseed Croissant.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Zaatar Croissant",
+    "description": "A savory delight, this flaky croissant is infused with the aromatic and tangy flavor of Zaatar spice blend. A unique and delicious choice.",
+    "price": 150,
+    "category": "croissant",
+    "image": "/images/products/Bread/CROISSANT/Zaatar Croissant.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Black Cumin Bun Mini Pack of 6",
+    "description": "A pack of six delightful mini buns flavored with aromatic black cumin seeds, offering a unique and savory taste. Perfect for sliders or small snacks.",
+    "price": 90,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Black Cumin Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bran Bun Mini Pack of 6",
+    "description": "A healthy choice! Six mini bran buns, rich in fiber and perfect for creating wholesome mini sandwiches or enjoying as a light snack.",
+    "price": 90,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Bran Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bran Bun",
+    "description": "A soft and wholesome bran bun, rich in fiber. Ideal for healthy burgers or as a side with your meal.",
+    "price": 35,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Bran Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Brioche Bun",
+    "description": "Light, fluffy, and slightly sweet brioche bun with a rich buttery flavor. Perfect for gourmet burgers or elevated sandwiches.",
+    "price": 45,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Brioche Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Burger Bun",
+    "description": "Classic soft and fluffy burger bun, perfectly sized and textured to hold your favorite patties and toppings. Often topped with sesame seeds.",
+    "price": 30,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Burger Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Bun Mini Pack of 6",
+    "description": "A sweet treat! Pack of six mini buns generously studded with delicious chocolate chips. Perfect for kids or a delightful snack.",
+    "price": 100,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Chocolate Chip Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Bun",
+    "description": "A soft and sweet bun filled with delightful chocolate chips. A perfect treat for any time of the day.",
+    "price": 40,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Chocolate Chip Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dinner Roll Bun",
+    "description": "Soft, light, and slightly sweet dinner roll, perfect as an accompaniment to any meal or for small sandwiches.",
+    "price": 25,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Dinner Roll Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dinner Roll Bun Mini Pack of 6",
+    "description": "Pack of six soft and light mini dinner rolls. Ideal for serving with meals, for parties, or for creating bite-sized appetizers.",
+    "price": 80,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Dinner Roll Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Bun Mini Pack of 6",
+    "description": "A delightful pack of six mini sweet buns, dotted with mixed dried fruits. A tasty snack, especially when lightly toasted.",
+    "price": 100,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Fruit Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Bun",
+    "description": "A soft, sweet bun speckled with mixed dried fruits and often a hint of spice. Perfect for a tea-time treat.",
+    "price": 40,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Fruit Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Sheermal",
+    "description": "Traditional saffron-flavored sweet flatbread, often enriched with milk and studded with dried fruits. A festive and delicious treat.",
+    "price": 70,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Fruit Sheermal.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Hotdog Bun",
+    "description": "Classic elongated soft bun, perfectly shaped to cradle your favorite hot dog and toppings. A must-have for BBQs and quick meals.",
+    "price": 30,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Hotdog Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Bun Mini Pack of 6",
+    "description": "A versatile pack of six plain mini buns. Soft, fluffy, and perfect for sliders, small sandwiches, or as a side.",
+    "price": 80,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Plain Bun Mini Pack of 6.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Bun",
+    "description": "A simple, soft, and fluffy plain bun. Versatile for any use, from small burgers to a side with soup.",
+    "price": 25,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Plain Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Plain Sheermal",
+    "description": "Traditional saffron-flavored sweet flatbread, enriched with milk, with a soft and slightly dense texture. A delightful treat on its own or with tea.",
+    "price": 60,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Plain Sheermal.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Spicy Bun",
+    "description": "A soft bun with a kick! Infused with a blend of spices for a warm and savory flavor. Great for adding excitement to your meal.",
+    "price": 45,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Spicy Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Whole Wheat Bun",
+    "description": "A healthy and soft whole wheat bun, offering a good source of fiber. Perfect for nutritious burgers or sandwiches.",
+    "price": 35,
+    "category": "buns",
+    "image": "/images/products/Bread/BUN/Whole Wheat Bun.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bran Rusk Flat",
+    "description": "Crispy and wholesome flat bran rusks, rich in fiber. Perfect for a healthy tea-time snack or a light breakfast.",
+    "price": 110,
+    "category": "rusk",
+    "image": "/images/products/Bread/RUSK/Bran Rusk Flat.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Fruit Cake Rusk",
+    "description": "Deliciously crispy rusk made from fruit cake, packed with mixed dried fruits and a hint of spice. A delightful treat to dunk in tea or coffee.",
+    "price": 130,
+    "category": "rusk",
+    "image": "/images/products/Bread/RUSK/Fruit Cake Rusk.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Ginger Cake Rusk",
+    "description": "Crispy and aromatic rusk made from ginger cake, offering a warm, spicy flavor. Perfect with a hot beverage on a chilly day.",
+    "price": 130,
+    "category": "rusk",
+    "image": "/images/products/Bread/RUSK/Ginger Cake Rusk.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sweet Rusk",
+    "description": "Classic sweet and crispy rusk, twice-baked for that perfect crunch. Ideal for dipping in tea or coffee, a timeless favorite.",
+    "price": 100,
+    "category": "rusk",
+    "image": "/images/products/Bread/RUSK/Sweet Rusk.jpg",
+    "inStock": true
+  }
+]

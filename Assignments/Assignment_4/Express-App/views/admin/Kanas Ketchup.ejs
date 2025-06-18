@@ -1,0 +1,155 @@
+<style>
+    .category-navigation {
+        color: #000000 !important;
+    }
+
+    .category-navigation .form-label {
+        color: #000000 !important;
+        font-weight: 500;
+    }
+
+    .category-navigation .form-select {
+        color: #000000 !important;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+    }
+
+    .category-navigation .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .category-navigation .btn-outline-secondary {
+        color: #000000 !important;
+        border-color: #6c757d;
+    }
+
+    .category-navigation .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white !important;
+    }
+
+    .category-navigation .fas {
+        color: #000000 !important;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+
+            <div class="card form-card mb-4">
+                <div class="card-header">
+                    <h3><%= pageTitle %></h3>
+                </div>
+                <div class="card-body">
+                    <% if (typeof error !== 'undefined' && error) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } %>
+
+                    <form action="/admin/Kanas" method="POST">
+                        <div class="mb-3">
+                            <label for="kanaName" class="form-label">Kanas Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="kanaName" name="name"
+                                value="<%= typeof formData !== 'undefined' && formData.name ? formData.name : '' %>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="kanaImageUrl" class="form-label">Image URL <span class="text-danger">*</span></label>
+                            <input type="url" class="form-control" id="kanaImageUrl" name="image"
+                                value="<%= typeof formData !== 'undefined' && formData.image ? formData.image : '' %>" required
+                                placeholder="e.g., /images/kanas/regular.jpg or https://example.com/kanas.jpg">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="kanaPrice" class="form-label">Price <span class="text-danger">*</span></label>
+                            <input type="number" step="0.01" min="0" class="form-control" id="kanaPrice" name="price"
+                                value="<%= typeof formData !== 'undefined' && formData.price ? formData.price : '' %>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="kanaDescription" class="form-label">Description <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="kanaDescription" name="description" rows="3" required><%= typeof formData !== 'undefined' && formData.description ? formData.description : '' %></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="kanaCategory" class="form-label">Category <span class="text-danger">*</span></label>
+                            <select class="form-select" id="kanaCategory" name="category" required>
+                                <option value="">Select Category...</option>
+                                <% const kanaCategories = ['regular', 'hot', 'spicy', 'mild', 'all']; %>
+                                <% kanaCategories.forEach(cat => { %>
+                                    <option value="<%= cat %>" <%= (typeof formData !== 'undefined' && formData.category === cat) ? 'selected' : '' %>>
+                                        <%= cat.charAt(0).toUpperCase() + cat.slice(1) %>
+                                    </option>
+                                <% }); %>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus-circle"></i> Add Kanas Product
+                        </button>
+                        <a href="/admin" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to Admin
+                        </a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Table of Existing Kanas Products -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Existing Kanas Products</h3>
+                </div>
+                <div class="card-body">
+                    <% if (typeof kanas !== 'undefined' && kanas.length > 0) { %>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Category</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% kanas.forEach(kana => { %>
+                                        <tr>
+                                            <td>
+                                                <img src="<%= kana.image && (kana.image.startsWith('http') || kana.image.startsWith('/')) ? kana.image : '/' + kana.image %>" 
+                                                     alt="<%= kana.name %>" 
+                                                     style="width: 60px; height: auto; border-radius: 4px;"
+                                                     onerror="this.style.display='none'; this.nextSibling.style.display='block';" >
+                                                <span style="display:none;">No Image</span>
+                                            </td>
+                                            <td><%= kana.name %></td>
+                                            <td>$<%= Number(kana.price).toFixed(2) %></td>
+                                            <td><%= kana.category.charAt(0).toUpperCase() + kana.category.slice(1) %></td>
+                                            <td><%= kana.description.length > 50 ? kana.description.substring(0, 50) + '...' : kana.description %></td>
+                                            <td class="action-buttons">
+                                                <a href="/admin/Kanas/edit/<%= kana._id %>" class="btn btn-sm btn-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                                                <form action="/admin/Kanas/delete/<%= kana._id %>" method="POST" style="display: inline;">
+                                                    <button type="submit" class="btn btn-sm btn-danger btn-delete-product" title="Delete" data-product-name="<%= kana.name %>">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    <% } else { %>
+                        <p class="text-center">No kanas products found. Add one using the form above.</p>
+                    <% } %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

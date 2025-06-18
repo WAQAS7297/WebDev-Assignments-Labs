@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Bakarkhani Puff",
+    "description": "A traditional layered, crispy, and slightly sweet or savory puff pastry, often circular, enjoyed with tea. Known for its flaky texture.",
+    "price": 60,
+    "category": "Puff",
+    "image": "/images/products/Puff/Bakarkhani Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Butter Puff",
+    "description": "A classic, light, and exceptionally flaky puff pastry with a rich buttery flavor. Perfect on its own or as an accompaniment.",
+    "price": 50,
+    "category": "Puff",
+    "image": "/images/products/Puff/Butter Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cheese Tie Puff",
+    "description": "A savory puff pastry elegantly shaped like a tie, generously filled or topped with delicious melted cheese and herbs.",
+    "price": 70,
+    "category": "Puff",
+    "image": "/images/products/Puff/Cheese Tie Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Cheese Patties",
+    "description": "Golden, flaky puff pastry patties with a delectable filling of seasoned minced chicken and gooey melted cheese. A savory delight.",
+    "price": 90,
+    "category": "Puff",
+    "image": "/images/products/Puff/Chicken Cheese Patties.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chicken Patties",
+    "description": "Crispy and golden puff pastry patties generously filled with a flavorful, well-seasoned minced chicken mixture. A classic savory snack.",
+    "price": 80,
+    "category": "Puff",
+    "image": "/images/products/Puff/Chicken Patties.jpg",
+    "inStock": true
+  },
+  {
+    "name": "French Heart Puff",
+    "description": "Delicate, heart-shaped puff pastry (palmiers), caramelized with sugar for a sweet, crispy, and buttery treat. Also known as elephant ears.",
+    "price": 65,
+    "category": "Puff",
+    "image": "/images/products/Puff/French Hear Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "French Heart Box",
+    "description": "A delightful box filled with crispy, sweet, heart-shaped French puff pastries (palmiers). Perfect for sharing, gifting, or enjoying with coffee.",
+    "price": 250,
+    "category": "Puff",
+    "image": "/images/products/Puff/French Heart Box.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Puff",
+    "description": "A light and zesty puff pastry, often filled with a tangy lemon curd or glazed with a sweet lemon icing for a refreshing bite.",
+    "price": 70,
+    "category": "Puff",
+    "image": "/images/products/Puff/Lemon Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Parsley Sticks Puff",
+    "description": "Savory and crisp puff pastry sticks infused with fresh parsley and herbs, making for an elegant appetizer or a flavorful snack.",
+    "price": 75,
+    "category": "Puff",
+    "image": "/images/products/Puff/Parsley Sticks Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Spicy Puff",
+    "description": "A flaky puff pastry with a zesty and spicy filling, often containing seasoned vegetables or meat, offering a flavorful kick.",
+    "price": 80,
+    "category": "Puff",
+    "image": "/images/products/Puff/Spicy Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "U Puff",
+    "description": "A uniquely U-shaped, flaky puff pastry, perfect for a light snack. Can be plain, sweet, or savory depending on the preparation.",
+    "price": 55,
+    "category": "Puff",
+    "image": "/images/products/Puff/U Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vegetable Cheese Pastry",
+    "description": "A savory puff pastry delight, filled with a delicious mixture of seasoned mixed vegetables and melted cheese, baked to golden perfection.",
+    "price": 85,
+    "category": "Puff",
+    "image": "/images/products/Puff/Vegetable Cheese Pastry.jpg",
+    "inStock": true
+  }
+]

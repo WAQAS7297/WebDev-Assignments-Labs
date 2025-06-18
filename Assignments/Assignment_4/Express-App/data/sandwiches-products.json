@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Chicken Sandwich 6 pieces",
+    "description": "A delightful platter of six mini chicken sandwich triangles, filled with creamy chicken salad or sliced chicken and crisp lettuce. Perfect for sharing or a light meal.",
+    "price": 300,
+    "category": "Sandwich",
+    "image": "/images/products/Sandwich/Chicken Sandwich 6 pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Club Sandwich 2 Pieces",
+    "description": "A classic triple-decker club sandwich with layers of tender chicken or turkey, crispy bacon (or alternative), fresh lettuce, ripe tomato, and mayonnaise. Served as two hearty pieces.",
+    "price": 350,
+    "category": "Sandwich",
+    "image": "/images/products/Sandwich/Club Sandwich 2 Pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Egg & Cheese Sandwich",
+    "description": "A simple yet satisfying sandwich featuring fluffy scrambled or fried egg and melted cheese, nestled between slices of soft bread. A great choice for breakfast or a light lunch.",
+    "price": 220,
+    "category": "Sandwich",
+    "image": "/images/products/Sandwich/Egg & Cheese Sandwich.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Grilled Panini Sandwich 2 Pieces",
+    "description": "Warm, pressed panini sandwich with a crispy golden exterior, filled with delicious ingredients like grilled chicken, melted mozzarella, and flavorful pesto or other spreads. Served as two perfectly grilled halves.",
+    "price": 320,
+    "category": "Sandwich",
+    "image": "/images/products/Sandwich/Grilled Panini Sandwich 2 Pieces.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vegetable Cream Cheese Sandwich",
+    "description": "A refreshing and light sandwich filled with smooth, tangy cream cheese and a medley of crisp, fresh vegetables like cucumber, carrots, bell peppers, and lettuce. A healthy and tasty option.",
+    "price": 250,
+    "category": "Sandwich",
+    "image": "/images/products/Sandwich/Vegetable Cream Cheese Sandwich.jpg",
+    "inStock": true
+  }
+]

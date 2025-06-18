@@ -1,0 +1,155 @@
+<style>
+    .category-navigation {
+        color: #000000 !important;
+    }
+
+    .category-navigation .form-label {
+        color: #000000 !important;
+        font-weight: 500;
+    }
+
+    .category-navigation .form-select {
+        color: #000000 !important;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+    }
+
+    .category-navigation .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+
+    .category-navigation .btn-outline-secondary {
+        color: #000000 !important;
+        border-color: #6c757d;
+    }
+
+    .category-navigation .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white !important;
+    }
+
+    .category-navigation .fas {
+        color: #000000 !important;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+
+            <div class="card form-card mb-4">
+                <div class="card-header">
+                    <h3><%= pageTitle %></h3>
+                </div>
+                <div class="card-body">
+                    <% if (typeof error !== 'undefined' && error) { %>
+                        <div class="alert alert-danger" role="alert">
+                            <%= error %>
+                        </div>
+                    <% } %>
+
+                    <form action="/admin/Sandwich" method="POST">
+                        <div class="mb-3">
+                            <label for="sandwichName" class="form-label">Sandwich Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="sandwichName" name="name"
+                                value="<%= typeof formData !== 'undefined' && formData.name ? formData.name : '' %>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sandwichImageUrl" class="form-label">Image URL <span class="text-danger">*</span></label>
+                            <input type="url" class="form-control" id="sandwichImageUrl" name="image"
+                                value="<%= typeof formData !== 'undefined' && formData.image ? formData.image : '' %>" required
+                                placeholder="e.g., /images/sandwich/club.jpg or https://example.com/sandwich.jpg">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sandwichPrice" class="form-label">Price <span class="text-danger">*</span></label>
+                            <input type="number" step="0.01" min="0" class="form-control" id="sandwichPrice" name="price"
+                                value="<%= typeof formData !== 'undefined' && formData.price ? formData.price : '' %>" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sandwichDescription" class="form-label">Description <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="sandwichDescription" name="description" rows="3" required><%= typeof formData !== 'undefined' && formData.description ? formData.description : '' %></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sandwichCategory" class="form-label">Category <span class="text-danger">*</span></label>
+                            <select class="form-select" id="sandwichCategory" name="category" required>
+                                <option value="">Select Category...</option>
+                                <% const sandwichCategories = ['club', 'grilled', 'sub', 'wrap', 'all']; %>
+                                <% sandwichCategories.forEach(cat => { %>
+                                    <option value="<%= cat %>" <%= (typeof formData !== 'undefined' && formData.category === cat) ? 'selected' : '' %>>
+                                        <%= cat.charAt(0).toUpperCase() + cat.slice(1) %>
+                                    </option>
+                                <% }); %>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-plus-circle"></i> Add Sandwich Product
+                        </button>
+                        <a href="/admin" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left"></i> Back to Admin
+                        </a>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Table of Existing Sandwich Products -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    <h3>Existing Sandwich Products</h3>
+                </div>
+                <div class="card-body">
+                    <% if (typeof sandwiches !== 'undefined' && sandwiches.length > 0) { %>
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th>Category</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% sandwiches.forEach(sandwich => { %>
+                                        <tr>
+                                            <td>
+                                                <img src="<%= sandwich.image && (sandwich.image.startsWith('http') || sandwich.image.startsWith('/')) ? sandwich.image : '/' + sandwich.image %>" 
+                                                     alt="<%= sandwich.name %>" 
+                                                     style="width: 60px; height: auto; border-radius: 4px;"
+                                                     onerror="this.style.display='none'; this.nextSibling.style.display='block';" >
+                                                <span style="display:none;">No Image</span>
+                                            </td>
+                                            <td><%= sandwich.name %></td>
+                                            <td>$<%= Number(sandwich.price).toFixed(2) %></td>
+                                            <td><%= sandwich.category.charAt(0).toUpperCase() + sandwich.category.slice(1) %></td>
+                                            <td><%= sandwich.description.length > 50 ? sandwich.description.substring(0, 50) + '...' : sandwich.description %></td>
+                                            <td class="action-buttons">
+                                                <a href="/admin/Sandwich/edit/<%= sandwich._id %>" class="btn btn-sm btn-warning" title="Edit"><i class="fas fa-edit"></i></a>
+                                                <form action="/admin/Sandwich/delete/<%= sandwich._id %>" method="POST" style="display: inline;">
+                                                    <button type="submit" class="btn btn-sm btn-danger btn-delete-product" title="Delete" data-product-name="<%= sandwich.name %>">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </button>
+                                                </form>
+                                            </td>
+                                        </tr>
+                                    <% }) %>
+                                </tbody>
+                            </table>
+                        </div>
+                    <% } else { %>
+                        <p class="text-center">No sandwich products found. Add one using the form above.</p>
+                    <% } %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">

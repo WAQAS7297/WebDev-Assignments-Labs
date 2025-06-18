@@ -1,0 +1,458 @@
+[
+  {
+    "name": "Almond Brownie",
+    "description": "A rich, fudgy brownie generously studded with crunchy almonds, offering a delightful texture and nutty flavor.",
+    "price": 180,
+    "category": "BROWNIES",
+    "image": "/images/products/Pastery/BROWNIES/Amond Brownie.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coffee Brownie",
+    "description": "An intensely flavored brownie infused with rich coffee essence, perfect for coffee lovers seeking a decadent chocolate treat.",
+    "price": 170,
+    "category": "BROWNIES",
+    "image": "/images/products/Pastery/BROWNIES/Coffee Brownie.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Hazelnut Brownie",
+    "description": "A luxurious brownie packed with toasted hazelnuts and a deep chocolate flavor, offering a delightful crunch and aroma.",
+    "price": 190,
+    "category": "BROWNIES",
+    "image": "/images/products/Pastery/BROWNIES/Hazelnut Brownie.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Brownie",
+    "description": "Classic fudgy brownie loaded with crunchy walnuts for a perfect balance of rich chocolate and earthy nuttiness.",
+    "price": 180,
+    "category": "BROWNIES",
+    "image": "/images/products/Pastery/BROWNIES/Walnut Brownie.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cadbury Chocolate Pastry",
+    "description": "A delightful pastry featuring layers of moist cake and creamy frosting, infused with the classic taste of Cadbury chocolate.",
+    "price": 200,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Cadbury Chocolate Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Hard Icing Pastry",
+    "description": "A decadent chocolate pastry covered with a smooth, firm chocolate icing for an intense chocolate experience.",
+    "price": 180,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Choclate Hard Icing Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Cherry Pastry",
+    "description": "A luscious pastry combining rich chocolate cake, creamy frosting, and sweet cherries, a delightful twist on a classic.",
+    "price": 190,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Chocolate Cherry Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Danish Pastry",
+    "description": "Flaky, buttery Danish pastry with a rich chocolate filling or topping, perfect for breakfast or a sweet treat.",
+    "price": 160,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Chocolate Danish Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Fudge Pastry",
+    "description": "An incredibly rich and dense chocolate fudge pastry, layered with smooth fudge frosting for ultimate indulgence.",
+    "price": 220,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Chocolate Fudge Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cinnamon Roll",
+    "description": "A warm, soft, and gooey cinnamon roll swirled with cinnamon sugar and topped with a sweet cream cheese frosting.",
+    "price": 150,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Cinnamon Roll.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coffee Fudge Pastry",
+    "description": "A delightful pastry blending rich coffee flavor with decadent fudge, perfect for a sophisticated sweet craving.",
+    "price": 210,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Coffee Fudge Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lemon Tart",
+    "description": "A zesty and refreshing lemon tart with a buttery shortcrust pastry filled with tangy lemon curd, often topped with meringue or dusted sugar.",
+    "price": 170,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Lemon Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lotus Danish Pastry",
+    "description": "A flaky Danish pastry filled or topped with irresistible Lotus Biscoff spread and crumbled biscuits.",
+    "price": 180,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Lotus Danish Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mocha Tart",
+    "description": "A sophisticated tart combining the rich flavors of chocolate and coffee in a crisp pastry shell.",
+    "price": 190,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Mocha Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Noon Cinnamon Roll",
+    "description": "Our special Noon Cinnamon Roll, perfectly baked with swirls of cinnamon and a generous layer of frosting. Ideal for an afternoon treat.",
+    "price": 160,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Noon Cinnamon Roll.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Strawberry Hard Icing Pastry",
+    "description": "A delightful pastry with a sweet strawberry flavor, covered in a smooth, firm strawberry-flavored icing.",
+    "price": 180,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Strawberry Hard Icing Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Swiss Chocolate Roll Pastry",
+    "description": "A light and airy chocolate sponge cake rolled with a rich chocolate cream filling, a classic Swiss delight.",
+    "price": 200,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Swiss Chocolate Roll Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Swiss Lemon Roll Pastry",
+    "description": "A refreshing lemon sponge cake rolled with a tangy lemon cream filling, offering a light and zesty treat.",
+    "price": 190,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Swiss Lemon Roll Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Chocolate Fudge Pastry",
+    "description": "A delightful combination of vanilla sponge and rich chocolate fudge layers, topped with creamy frosting.",
+    "price": 210,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Vanilla Chocolate Fudge Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Vanilla Hard Icing Pastry",
+    "description": "A classic vanilla pastry with a smooth, firm vanilla icing, offering a simple yet elegant sweet treat.",
+    "price": 170,
+    "category": "BUTTERCREAM PASTERY",
+    "image": "/images/products/Pastery/BUTTERCREAM PASTERY/Vanilla Hard Icing Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cheese Pastry",
+    "description": "A creamy and indulgent cheesecake pastry with a rich cheese filling on a biscuit base. A classic delight.",
+    "price": 230,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Cheese Pastery.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Cheese Cupcake",
+    "description": "A decadent cupcake blending rich chocolate cake with a creamy cheesecake swirl or filling, topped with frosting.",
+    "price": 150,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Chocolate Cheese Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Fruit Tart",
+    "description": "A beautiful tart featuring a chocolate pastry shell filled with creamy custard or chocolate ganache and topped with fresh assorted fruits.",
+    "price": 200,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Chocolate Fruit Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Pastry",
+    "description": "A tropical delight, this pastry features a light cake or base infused with coconut flavor and often topped with shredded coconut.",
+    "price": 180,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Coconut Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Tart",
+    "description": "A sweet tart with a buttery crust filled with a rich, chewy coconut filling, baked to golden perfection.",
+    "price": 160,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Coconut Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Diplomat Chocolate Cupcake",
+    "description": "An elegant chocolate cupcake with a sophisticated diplomat cream filling or topping, offering a rich and smooth texture.",
+    "price": 170,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Diplomat Chocolate Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Cupcake",
+    "description": "A delightful cupcake infused with the sweet flavors of honey and crunchy almonds, often topped with a honey glaze.",
+    "price": 160,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Honey Almond Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Pastry",
+    "description": "A delicate pastry combining the sweetness of honey with the nutty crunch of almonds, perfect for a light treat.",
+    "price": 190,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Honey Almond Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Tart",
+    "description": "A delicious tart with a crisp pastry shell, filled with a sweet honey and almond mixture, baked to golden perfection.",
+    "price": 180,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Honey Almond Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Fudge Cupcake",
+    "description": "A rich fudge cupcake loaded with crunchy walnuts, offering a perfect blend of textures and deep chocolate flavor.",
+    "price": 170,
+    "category": "CHEESECAKE PASTERY",
+    "image": "/images/products/Pastery/CHEESECAKE PASTERY/Walnut Fudge Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Coconut Tart (Dry)",
+    "description": "A delightful dry tart with a crumbly base and a sweet, baked coconut filling. Perfect with tea or coffee.",
+    "price": 150,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Coconut Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Diplomat Chocolate Cupcake (Dry)",
+    "description": "A refined chocolate cupcake with a less creamy, more baked diplomat-style topping, offering a sophisticated dry pastry experience.",
+    "price": 160,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Diplomat Chocolate Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Cupcake (Dry)",
+    "description": "A subtly sweet cupcake with a delightful almond crunch and honey notes, baked for a perfect dry texture.",
+    "price": 150,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Honey Almond Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Pastry (Dry)",
+    "description": "A crisp and flaky dry pastry layered with honey and almonds, offering a satisfying crunch.",
+    "price": 180,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Honey Almond Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Honey Almond Tart (Dry)",
+    "description": "A firm and crumbly tart shell filled with a baked honey almond mixture, perfect for a long-lasting treat.",
+    "price": 170,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Honey Almond Tart.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Walnut Fudge Cupcake (Dry)",
+    "description": "A dense, fudgy cupcake with walnuts, baked to a firmer texture ideal as a dry pastry snack.",
+    "price": 160,
+    "category": "DRY PATERY",
+    "image": "/images/products/Pastery/DRY PATERY/Walnut Fudge Cupcake.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Black Forest Pastry",
+    "description": "A classic German delight with layers of chocolate sponge, whipped cream, and cherries, garnished with chocolate shavings.",
+    "price": 220,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Black Forest Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Pastry",
+    "description": "A light and airy pastry studded with chocolate chips and layered with fresh cream for a simple yet satisfying treat.",
+    "price": 190,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Chocolate Chip Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Syrup Pastry",
+    "description": "A moist pastry infused with sweet syrup, generously sprinkled with chocolate chips and finished with fresh cream.",
+    "price": 200,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Chocolate Chip Syrup Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Cream Roll",
+    "description": "A delicate sponge cake rolled with a luscious fresh chocolate cream filling, light and indulgent.",
+    "price": 180,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Chocolate Cream Roll.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Eclair",
+    "description": "An elegant choux pastry filled with rich chocolate cream and topped with a smooth chocolate glaze.",
+    "price": 170,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Chocolate eclair.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cream Puff",
+    "description": "A light and airy choux pastry ball filled with delicate fresh whipped cream, often dusted with powdered sugar.",
+    "price": 150,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Cream Puff.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cream Roll",
+    "description": "A flaky puff pastry horn or roll filled with sweet, fresh whipped cream. A classic bakery favorite.",
+    "price": 160,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Cream Rool.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lotus Eclair",
+    "description": "A modern twist on a classic, this choux pastry eclair is filled with Lotus Biscoff infused cream and topped with Biscoff glaze.",
+    "price": 190,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Lotus Eclair.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Oreo Pastry",
+    "description": "A delectable pastry featuring layers of crushed Oreo cookies, fresh cream, and chocolate sponge. A treat for Oreo lovers.",
+    "price": 210,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Oreo Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pineapple Pastry",
+    "description": "A light and refreshing pastry with layers of vanilla sponge, fresh cream, and sweet pineapple chunks.",
+    "price": 180,
+    "category": "FRESH CREAM PASTERY",
+    "image": "/images/products/Pastery/FRESH CREAM PASTERY/Pineapple Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Caramel Crunch Mousse Pastry",
+    "description": "A luxurious pastry with layers of smooth caramel mousse and crunchy elements, offering a delightful textural contrast.",
+    "price": 240,
+    "category": "MOUSSE PASTERY",
+    "image": "/images/products/Pastery/MOUSSE PASTERY/Caramel Crunch Mousse Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Mousse Pastry",
+    "description": "An intensely rich and airy chocolate mousse pastry, often with layers of chocolate sponge or a biscuit base. Pure chocolate bliss.",
+    "price": 230,
+    "category": "MOUSSE PASTERY",
+    "image": "/images/products/Pastery/MOUSSE PASTERY/Chocolate Mousse Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Crispy Chocolate Mousse Pastry",
+    "description": "A delightful combination of light chocolate mousse and crispy wafer or praline layers, providing a wonderful crunch.",
+    "price": 250,
+    "category": "MOUSSE PASTERY",
+    "image": "/images/products/Pastery/MOUSSE PASTERY/Crispy Chocolate Mousse Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dream Chocolate Pastry",
+    "description": "A truly dreamy pastry featuring multiple layers of chocolatey goodness, possibly combining mousse, ganache, and sponge.",
+    "price": 260,
+    "category": "MOUSSE PASTERY",
+    "image": "/images/products/Pastery/MOUSSE PASTERY/Dream Chocolate Pastry.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cadbury Sundae Cup",
+    "description": "An indulgent sundae cup layered with Cadbury chocolate pieces, ice cream or mousse, sauce, and whipped cream.",
+    "price": 220,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Cadbury Sundae Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Chip Mousse Cup",
+    "description": "A delightful cup filled with creamy chocolate mousse and generously studded with chocolate chips for an extra crunch.",
+    "price": 200,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Chocolate Chip Mousse Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chocolate Mousse Cup",
+    "description": "A rich and airy chocolate mousse served in a convenient cup, perfect for a quick and decadent dessert.",
+    "price": 190,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Chocolate Mousse Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Lotus Sundae Cup",
+    "description": "An irresistible sundae cup featuring layers of Lotus Biscoff spread, Biscoff crumbs, creamy mousse or ice cream, and whipped topping.",
+    "price": 230,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Lotus Sundae Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Pineapple Mousse Cup",
+    "description": "A refreshing dessert cup with light and airy pineapple mousse, often layered with sponge cake or fruit pieces.",
+    "price": 180,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Pineapple Mousse Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Salted Caramel Sundae Cup",
+    "description": "A perfect blend of sweet and salty, this sundae cup layers salted caramel sauce, creamy mousse or ice cream, and crunchy toppings.",
+    "price": 240,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Salted Caramel Sundae Cup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Three Milk Sundae Cup",
+    "description": "Inspired by Tres Leches cake, this sundae cup features a moist sponge soaked in three types of milk, layered with cream and toppings.",
+    "price": 250,
+    "category": "SUNDAE CUPS",
+    "image": "/images/products/Pastery/SUNDAE CUPS/Three Milk Sundae Cup.jpg",
+    "inStock": true
+  }
+]

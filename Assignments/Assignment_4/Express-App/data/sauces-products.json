@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Kanas Barbecue Ketchup",
+    "description": "Smoky and tangy barbecue ketchup from Kanas, perfect for grilling, dipping, or adding a rich flavor to your favorite dishes.",
+    "price": 180,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Bar be que Katchup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Chili Garlic Sauce",
+    "description": "A fiery and flavorful chili garlic sauce by Kanas, blending spicy chilies with pungent garlic. Ideal for adding a kick to noodles, stir-fries, or as a zesty dip.",
+    "price": 160,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Chili Garlic Sauce.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Dates Imli Chutney",
+    "description": "Sweet and tangy chutney from Kanas, made with rich dates and tart tamarind (imli). A perfect accompaniment for snacks like samosas, pakoras, or chaat.",
+    "price": 190,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Dates Imli Chutney.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Green Chilli Chutney",
+    "description": "A vibrant and spicy green chilli chutney from Kanas, perfect for adding fresh heat to sandwiches, snacks, or Indian meals.",
+    "price": 150,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Green Chill Chutney.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Ketchup Sachet",
+    "description": "Convenient single-serving sachets of Kanas classic tomato ketchup. Perfect for on-the-go meals, picnics, or portion control. (Price per small pack)",
+    "price": 50,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Ketchup Sachet.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Mayonnaise Classic",
+    "description": "Creamy and smooth classic mayonnaise from Kanas. Versatile for sandwiches, salads, dips, or as a base for your own sauces.",
+    "price": 170,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Mayonnaise Classic.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Plain Paratha",
+    "description": "Ready-to-cook plain parathas by Kanas. Soft, flaky, and perfect to enjoy with curries, chutneys, or on their own. (Pack of frozen parathas)",
+    "price": 180,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Palin Paratha.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Sriracha Ketchup Pouch",
+    "description": "A bold fusion of classic Kanas ketchup with the fiery kick of Sriracha, conveniently packaged in a pouch. Perfect for adding spicy-sweet flavor.",
+    "price": 140,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Sriracha Ketchup Pouch.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Sweet Chilli Sauce",
+    "description": "A delightful blend of sweet and mildly spicy flavors in Kanas Sweet Chilli Sauce. Perfect as a dipping sauce for spring rolls, chicken, or appetizers.",
+    "price": 160,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Sweet Chilli Sauce.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Tomato Ketchup Jalapeno",
+    "description": "Kanas classic tomato ketchup infused with the fiery zest of jalapenos. Adds a delicious spicy twist to your favorite snacks and meals.",
+    "price": 150,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Tomato Ketchup Jalapeno.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Tomato Ketchup",
+    "description": "The classic, rich, and tangy tomato ketchup from Kanas. Made with ripe tomatoes, perfect for burgers, fries, and all your favorite dishes.",
+    "price": 130,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Tomato Ketchup.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Kanas Whole Wheat Paratha",
+    "description": "Healthy and delicious ready-to-cook whole wheat parathas by Kanas. A nutritious option for a quick and satisfying meal. (Pack of frozen parathas)",
+    "price": 200,
+    "category": "Kanas Ketchup",
+    "image": "/images/products/Kanas Ketchup/Kanas Whole Wheat Paratha.jpg",
+    "inStock": true
+  }
+]

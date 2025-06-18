@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Complaints - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .complaints-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            padding-top:170px;
+        }
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        .pending { background-color: #ffc107; color: #000; }
+        .resolved { background-color: #28a745; color: #fff; }
+        .in_progress { background-color: #17a2b8; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="complaints-container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="mb-0">Manage Complaints</h1>
+            <a href="/admin" class="btn btn-secondary">Back to Admin Dashboard</a>
+        </div>
+        
+        <% if (complaints.length === 0) { %>
+            <div class="alert alert-info">No complaints submitted yet.</div>
+        <% } else { %>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Order ID</th>
+                            <th>Message</th>
+                            <th>Status</th>
+                            <th>Submitted</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% complaints.forEach(complaint => { %>
+                            <tr>
+                                <td><%= complaint.userFirstName %> <%= complaint.userLastName %></td>
+                                <td><%= complaint.orderId %></td>
+                                <td><%= complaint.message %></td>
+                                <td>
+                                    <span class="status-badge <%= complaint.status %>">
+                                        <%= complaint.status %>
+                                    </span>
+                                </td>
+                                <td><%= new Date(complaint.createdAt).toLocaleString() %></td>
+                                <td>
+                                    <form action="/admin/complaints/<%= complaint._id %>/update-status" method="POST" class="d-inline">
+                                        <select name="status" onchange="this.form.submit()" class="form-select">
+                                            <option value="pending" <%= complaint.status === 'pending' ? 'selected' : '' %>>Pending</option>
+                                            <option value="in_progress" <%= complaint.status === 'in_progress' ? 'selected' : '' %>>In Progress</option>
+                                            <option value="resolved" <%= complaint.status === 'resolved' ? 'selected' : '' %>>Resolved</option>
+                                        </select>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% }); %>
+                    </tbody>
+                </table>
+            </div>
+        <% } %>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
