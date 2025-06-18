@@ -1,8 +1,91 @@
-const BreadProduct = require('../models/breadProduct');
-const path = require('path');
+const express = require("express");
+const controller = express.Router();
+const BreadProduct = require("../models/breadProduct");
 
-// Get all bread products
-exports.getAllBreads = async (req, res, next) => {
+// Admin routes
+controller.get("/admin/Bread", async (req, res) => {
+    try {
+        const existingBreads = await BreadProduct.find().sort({ name: 1 });
+        return res.render("admin/Bread", {
+            layout: "admin/adminlayout",
+            breads: existingBreads,
+            pageTitle: "Create Bread Product",
+            formData: {},
+            error: null
+        });
+    } catch (error) {
+        console.error("Error preparing create bread page:", error);
+        return res.render("admin/Bread", {
+            layout: "admin/adminlayout",
+            breads: [],
+            error: "Failed to load the create bread page. " + error.message,
+            formData: {},
+            pageTitle: "Create Bread Product"
+        });
+    }
+});
+
+controller.post("/admin/Bread", async (req, res) => {
+    let data = req.body;
+    try {
+        if (!data.name || !data.image || !data.price) {
+            const existingBreads = await BreadProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Bread", {
+                layout: "admin/adminlayout",
+                breads: existingBreads,
+                error: "Name, Image URL, and Price are required.",
+                formData: data,
+                pageTitle: "Create Bread Product"
+            });
+        }
+
+        const existingBread = await BreadProduct.findOne({ name: data.name });
+        if (existingBread) {
+            const existingBreads = await BreadProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Bread", {
+                layout: "admin/adminlayout",
+                breads: existingBreads,
+                error: "A bread product with the name " + data.name + " already exists.",
+                formData: data,
+                pageTitle: "Create Bread Product"
+            });
+        }
+
+        let newBread = new BreadProduct({
+            name: data.name,
+            image: data.image,
+            price: data.price,
+            description: data.description,
+            category: data.category
+        });
+
+        await newBread.save();
+        return res.redirect("/admin");
+
+    } catch (error) {
+        console.error("Error creating bread product:", error);
+        let existingBreadsForError = [];
+        try {
+            existingBreadsForError = await BreadProduct.find().sort({ name: 1 });
+        } catch (fetchErr) {
+            console.error("Error fetching existing breads during error handling:", fetchErr);
+        }
+
+        return res.render("admin/Bread", {
+            layout: "admin/adminlayout",
+            breads: existingBreadsForError,
+            error: "Failed to create bread product. Please try again. " + error.message,
+            formData: data,
+            pageTitle: "Create Bread Product"
+        });
+    }
+});
+
+
+// Public routes
+
+
+controller.get('/categories/bread',async (req, res, next) => {
     try {
         const products = await BreadProduct.find();
         
@@ -24,10 +107,9 @@ exports.getAllBreads = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
-// Get bread products by category
-exports.getBreadsByCategory = async (req, res, next) => {
+controller.get('/categories/bread/:category', async (req, res, next) => {
     try {
         const category = req.params.category;
         // const product = req.params.product;
@@ -61,62 +143,13 @@ exports.getBreadsByCategory = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
-// Add a new bread product (for admin use)
-exports.addBreadProduct = async (req, res, next) => {
-    try {
-        const newProduct = new BreadProduct(req.body);
-        await newProduct.save();
-        res.status(201).json({ 
-            success: true, 
-            message: 'Product added successfully',
-            product: newProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Update a bread product (for admin use)
-exports.updateBreadProduct = async (req, res, next) => {
-    try {
-        const updatedProduct = await BreadProduct.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
-        if (!updatedProduct) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product updated successfully',
-            product: updatedProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Delete a bread product (for admin use)
-exports.deleteBreadProduct = async (req, res, next) => {
-    try {
-        const product = await BreadProduct.findByIdAndDelete(req.params.id);
-        if (!product) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product deleted successfully' 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-}; 
+
+module.exports = controller;
+
+
+
+

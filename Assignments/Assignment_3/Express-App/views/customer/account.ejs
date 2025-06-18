@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="title" content="My Account">
@@ -16,7 +17,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         .account-grid {
             display: grid;
             grid-template-columns: 280px 1fr;
@@ -44,7 +45,8 @@
             background: #ffffff;
         }
 
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover,
+        .nav-link.active {
             background: #fdf9f3;
             color: #1A1A1A !important;
         }
@@ -119,7 +121,8 @@
             border-collapse: collapse;
         }
 
-        .order-table th, .order-table td {
+        .order-table th,
+        .order-table td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #E5E5E5;
@@ -180,6 +183,7 @@
         }
     </style>
 </head>
+
 <body class="customer-account-dashboard">
     <!-- Content Section -->
     <div class="account-container" style="margin-top: 260px;">
@@ -206,7 +210,7 @@
                         <i class="fas fa-bell"></i> Notifications
                     </a>
                     <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
-                        <a href="/auth/logout" class="nav-link logout-link">
+                        <a href="/logout" class="nav-link logout-link">
                             <i class="fas fa-sign-out-alt"></i> Logout
                         </a>
                     </div>
@@ -216,31 +220,38 @@
             <!-- Main Content -->
             <div class="dashboard-content">
                 <div class="dashboard-card">
-                    <h1 class="dashboard-title">Welcome back, <%= locals.user ? user.name : 'Guest' %>!</h1>
-                    
+                    <h1 class="dashboard-title">Welcome back, <%= user ? user.firstName + ' ' + user.lastName : 'Guest'
+                            %>!</h1>
+
                     <!-- Stats Overview -->
                     <div class="stats-grid">
                         <div class="stat-card">
                             <i class="fas fa-shopping-bag"></i>
                             <div class="stat-title">Total Orders</div>
-                            <div class="stat-value"><%= locals.user && user.orders ? user.orders.length : 0 %></div>
+                            <div class="stat-value">
+                                <%= order %>
+                            </div>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-heart"></i>
                             <div class="stat-title">Wishlist Items</div>
-                            <div class="stat-value"><%= locals.user && user.wishlist ? user.wishlist.length : 0 %></div>
+                            <div class="stat-value">
+                                <%= locals.user && user.wishlist ? user.wishlist.length : 0 %>
+                            </div>
                         </div>
                         <div class="stat-card">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="stat-title">Saved Addresses</div>
-                            <div class="stat-value"><%= locals.user && user.addresses ? user.addresses.length : 0 %></div>
+                            <div class="stat-value">
+                                <%= locals.user && user.addresses ? user.addresses.length : 0 %>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Recent Orders -->
                     <div class="recent-orders">
                         <h2 class="dashboard-title">Recent Orders</h2>
-                        <% if (locals.user && user.orders && user.orders.length > 0) { %>
+                        <% if (locals.user && user.orders && user.orders.length> 0) { %>
                             <table class="order-table">
                                 <thead>
                                     <tr>
@@ -251,23 +262,27 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <% user.orders.slice(0, 5).forEach(order => { %>
+                                    <% user.orders.slice(0, 5).forEach(order=> { %>
                                         <tr>
-                                            <td>#<%= order.id %></td>
-                                            <td><%= order.date %></td>
-                                            <td>Rs. <%= order.total %></td>
+                                            <td>#<%= order.id %>
+                                            </td>
+                                            <td>
+                                                <%= order.date %>
+                                            </td>
+                                            <td>Rs. <%= order.total %>
+                                            </td>
                                             <td>
                                                 <span class="status-badge status-<%= order.status.toLowerCase() %>">
                                                     <%= order.status %>
                                                 </span>
                                             </td>
                                         </tr>
-                                    <% }) %>
+                                        <% }) %>
                                 </tbody>
                             </table>
-                        <% } else { %>
-                            <p>No orders found.</p>
-                        <% } %>
+                            <% } else { %>
+                                <p>No orders found.</p>
+                                <% } %>
                     </div>
                 </div>
             </div>
@@ -280,7 +295,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
+
         .account-grid {
             display: grid;
             grid-template-columns: 280px 1fr;
@@ -308,7 +323,8 @@
             background: #ffffff;
         }
 
-        .nav-link:hover, .nav-link.active {
+        .nav-link:hover,
+        .nav-link.active {
             background: #fdf9f3;
             color: #1A1A1A !important;
         }
@@ -383,7 +399,8 @@
             border-collapse: collapse;
         }
 
-        .order-table th, .order-table td {
+        .order-table th,
+        .order-table td {
             padding: 12px;
             text-align: left;
             border-bottom: 1px solid #E5E5E5;
@@ -419,4 +436,5 @@
         }
     </style>
 </body>
-</html> 
+
+</html>

@@ -1,8 +1,90 @@
+const express = require("express");
+const controller = express.Router();
 const NimkoProduct = require('../models/nimkoProduct');
 const path = require('path');
 
-// Get all bread products
-exports.getAllNimko = async (req, res, next) => {
+// Admin routes
+controller.get("/admin/Nimko", async (req, res) => {
+    try {
+        const existingNimkos = await NimkoProduct.find().sort({ name: 1 });
+        return res.render("admin/Nimko", {
+            layout: "admin/adminlayout",
+            nimkos: existingNimkos,
+            pageTitle: "Create Nimko Product",
+            formData: {},
+            error: null
+        });
+    } catch (error) {
+        console.error("Error preparing create nimko page:", error);
+        return res.render("admin/Nimko", {
+            layout: "admin/adminlayout",
+            nimkos: [],
+            error: "Failed to load the create nimko page. " + error.message,
+            formData: {},
+            pageTitle: "Create Nimko Product"
+        });
+    }
+});
+
+controller.post("/admin/Nimko", async (req, res) => {
+    let data = req.body;
+    try {
+        if (!data.name || !data.image || !data.price) {
+            const existingNimkos = await NimkoProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Nimko", {
+                layout: "admin/adminlayout",
+                nimkos: existingNimkos,
+                error: "Name, Image URL, and Price are required.",
+                formData: data,
+                pageTitle: "Create Nimko Product"
+            });
+        }
+
+        const existingNimko = await NimkoProduct.findOne({ name: data.name });
+        if (existingNimko) {
+            const existingNimkos = await NimkoProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Nimko", {
+                layout: "admin/adminlayout",
+                nimkos: existingNimkos,
+                error: `A nimko product with the name "${data.name}" already exists.`,
+                formData: data,
+                pageTitle: "Create Nimko Product"
+            });
+        }
+
+        let newNimko = new NimkoProduct({
+            name: data.name,
+            image: data.image,
+            price: data.price,
+            description: data.description,
+            category: data.category
+        });
+
+        await newNimko.save();
+        return res.redirect("/admin");
+
+    } catch (error) {
+        console.error("Error creating nimko product:", error);
+        let existingNimkosForError = [];
+        try {
+            existingNimkosForError = await NimkoProduct.find().sort({ name: 1 });
+        } catch (fetchErr) {
+            console.error("Error fetching existing nimkos during error handling:", fetchErr);
+        }
+
+        return res.render("admin/Nimko", {
+            layout: "admin/adminlayout",
+            nimkos: existingNimkosForError,
+            error: "Failed to create nimko product. Please try again. " + error.message,
+            formData: data,
+            pageTitle: "Create Nimko Product"
+        });
+    }
+});
+
+// Public routes and existing admin functions
+
+controller.get('/categories/nimko', async (req, res, next) => {
     try {
         const products = await NimkoProduct.find();
         
@@ -24,10 +106,8 @@ exports.getAllNimko = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
-
-// Get bread products by category
-exports.getNimkoByCategory = async (req, res, next) => {
+});
+controller.get('/categories/nimko/:category', async (req, res, next) => {
     try {
         const category = req.params.category;
         let query = {};
@@ -60,62 +140,10 @@ exports.getNimkoByCategory = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
+// Get all bread products
 
-// Add a new bread product (for admin use)
-exports.addNimkoProduct = async (req, res, next) => {
-    try {
-        const newProduct = new NimkoProduct(req.body);
-        await newProduct.save();
-        res.status(201).json({ 
-            success: true, 
-            message: 'Product added successfully',
-            product: newProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
+// Get bread products by category
 
-// Update a bread product (for admin use)
-exports.updateNimkoProduct = async (req, res, next) => {
-    try {
-        const updatedProduct = await NimkoProduct.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
-        if (!updatedProduct) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product updated successfully',
-            product: updatedProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Delete a bread product (for admin use)
-exports.deleteNimkoProduct = async (req, res, next) => {
-    try {
-        const product = await NimkoProduct.findByIdAndDelete(req.params.id);
-        if (!product) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product deleted successfully' 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-}; 
+module.exports = controller;

@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,259 +13,219 @@
     <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/registrations/registration-3/assets/css/registration-3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header class="fixed-top transparent shadow-sm">
-        <div class="bg-danger text-white text-center py-2">
-            Delivering Nationwide. <a href="tel:051111112253" class="text-white fw-bold">051-111-11-2253</a>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent text-black py-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="d-flex flex-column align-items-start">
-                    <div class="d-flex align-items-center">
-                        <button class="btn btn-outline-black me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#categoryMenu">
-                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/HamburgerMenu.webp" alt="menu" width="30">
-                        </button>
-                        <div class="d-none d-md-block ">
-                            <span class="fw-bold">How do you want your products?</span>
-                        </div>
-                    </div>
-                    <ul class="nav justify-content-start border-top pt-2" style="color: black;">
-                        <style>
-                            .nav-link{
-                                color :black !important;
-                            }
-                        </style>
-
-                        <li class="nav-item"><a href="https://tehzeeb.com/pizza.html/" class="nav-link">Pizza</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/cake.html/" class="nav-link">Cakes</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/biscuits.html/" class="nav-link">Biscuits</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/pastry.html/" class="nav-link">Pastry</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/bread.html/" class="nav-link">Bread</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/puff.html/" class="nav-link">Puffs</a></li>
-                    </ul>
-                </div>
-                <a class="navbar-brand mx-auto" href="https://tehzeeb.com/">
-                    <img src="https://tehzeeb.com/media/logo/stores/1/Tehzeeb-Logo-PNG1.png" alt="Tehzeeb Bakers" width="150">
-                </a>
-                <div class="d-flex flex-column align-items-end">
-                    <div class="d-flex align-items-center">
-                        <a style="text-decoration: none;" href="tel:051111112253" class="text-light me-3 d-flex align-items-center">
-                            <i class="fa-solid fa-phone nav-link"></i>
-                            <span class="ms-2 d-none d-md-inline nav-link">Call Us</span>
-                        </a>
-                        <button class=" nav-link" data-bs-toggle="modal" data-bs-target="#signupModal">
-                            Sign Up
-                        </button>
-                        <button class="btn btn-outline-secondary me-3" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
-                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/searchicon.webp" alt="search" width="25">
-                        </button>
-                        <a href="https://tehzeeb.com/customer/account/" class="text-light me-3">
-                            <i style="font-size: 24px; color: white;" class="fa-regular fa-user nav-link"></i>
-                        </a>
-                        <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartMenu">
-                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt="cart" width="27">
-                        </button>
-                    </div>
-                    <ul class="nav justify-content-end border-top pt-2">
-                        <li class="nav-item"><a href="https://tehzeeb.com/ramadan-menu.html/" class="nav-link">
-                            <i class="fa-solid fa-mosque nav-link"></i>
-                            Ramdan</a></li>
-                        <li class="nav-item"><DELIVER href="https://tehzeeb.com/snacks.html/" class="nav-link">DELIVER NATIONWIDE</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/snacks.html/" class="nav-link">Snacks</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/salad.html/" class="nav-link">Salad</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <div class="checkout-container">
+    <div id="checkout-page" class="checkout-container">
         <div class="row">
             <div class="col-md-8 form-section">
                 <h3>Shipping Information</h3>
-                <form id="checkoutForm" novalidate>
+                <form id="checkout-form" class="needs-validation" novalidate>
                     <div class="row mb-3">
                         <div class="col-md-6">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" required pattern="^[A-Za-z\s]+$">
-                            <div class="error-message" id="fullNameError">Only alphabets allowed.</div>
-
-                            <label for ="fullName" class = "form-label"> Full Name</label>
-                            <input type = "tezt" class = "form-control" id = "fullName">
-                            <div class = "erro-message" id = "fullNameError"></div>
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            <div class="invalid-feedback">First name is required.</div>
                         </div>
                         <div class="col-md-6">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" required>
-                            <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                            <div class="invalid-feedback">Last name is required.</div>
                         </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Please enter a valid email address.</div>
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="text" class="form-control" id="phone" required pattern="\d{10,15}">
-                        <div class="error-message" id="phoneError">Phone number must contain only digits (10-15 characters).</div>
+                        <input type="text" class="form-control" id="phone" name="phone" required>
+                        <div class="invalid-feedback">Phone number is required.</div>
                     </div>
                     <div class="mb-3">
                         <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address" required>
-                        <div class="error-message" id="addressError">Address is required.</div>
+                        <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+                        <div class="invalid-feedback">Address is required.</div>
                     </div>
-                    <div class="mb-3">
-                        <label for="creditCard" class="form-label">Credit Card Number</label>
-                        <input type="text" class="form-control" id="creditCard" required pattern="\d{16}">
-                        <div class="error-message" id="creditCardError">Credit card number must be exactly 16 digits.</div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col-md-6">
-                            <label for="expiryDate" class="form-label">Expiry Date</label>
-                            <input type="date" class="form-control" id="expiryDate" required>
-                            <div class="error-message" id="expiryDateError">Expiry date must be in the future.</div>
+                    <div class="mb-4">
+                        <h5>Payment Method</h5>
+                        <div class="payment-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCard" value="card" checked>
+                                <label class="form-check-label" for="paymentCard">
+                                    <i class="fas fa-credit-card me-2"></i> Credit/Debit Card
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="paymentMethod" id="paymentCod" value="cod">
+                                <label class="form-check-label" for="paymentCod">
+                                    <i class="fas fa-cash-register me-2"></i> Cash on Delivery
+                                </label>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <label for="cvv" class="form-label">CVV</label>
-                            <input type="text" class="form-control" id="cvv" required pattern="\d{3}">
-                            <div class="error-message" id="cvvError">CVV must be exactly 3 digits.</div>
+                    </div>
+
+                    <div id="card-details" class="mb-4">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Credit Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" name="cardNumber" required pattern="\d{16}" placeholder="1234 5678 9012 3456">
+                            <div class="invalid-feedback">Please enter a valid 16-digit card number.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="expiry" class="form-label">Expiry Date</label>
+                                <input type="month" class="form-control" id="expiry" name="expiry" required min="2024-01">
+                                <div class="invalid-feedback">Please select a valid expiry date.</div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cvv" name="cvv" required pattern="\d{3}" placeholder="123">
+                                <div class="invalid-feedback">Please enter a 3-digit CVV.</div>
+                            </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-danger">Place Order</button>
+
+                    <button type="submit" class="btn btn-danger btn-lg">Place Order</button>
                 </form>
+
+                <script>
+                    document.addEventListener('DOMContentLoaded', function() {
+                        const form = document.getElementById('checkout-form');
+                        const cardDetails = document.getElementById('card-details');
+                        const paymentRadios = document.querySelectorAll('input[name="paymentMethod"]');
+
+                        // Toggle card details based on payment method
+                        paymentRadios.forEach(radio => {
+                            radio.addEventListener('change', function() {
+                                cardDetails.style.display = this.value === 'card' ? 'block' : 'none';
+                            });
+                        });
+
+                        // Initialize form validation
+                        form.addEventListener('submit', function(event) {
+                            if (!form.checkValidity()) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        });
+
+                        // Handle form submission
+                        form.addEventListener('submit', async function(event) {
+                            event.preventDefault();
+
+                            try {
+                                const formData = new FormData(form);
+                                const data = {};
+                                
+                                // Convert FormData to object
+                                for (let [key, value] of formData.entries()) {
+                                    data[key] = value;
+                                }
+
+                                // Add cart data
+                                data.cartItems = window.cartItems;
+
+                                const response = await fetch('/placeOrder', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                    },
+                                    body: JSON.stringify(data)
+                                });
+
+                                const result = await response.json();
+                                
+                                if (result.success) {
+                                    window.location.href = `/order/success?orderId=${result.orderId}&paymentMethod=${result.paymentMethod}`;
+                                } else {
+                                    alert('Failed to place order: ' + result.message);
+                                }
+                            } catch (error) {
+                                console.error('Error placing order:', error);
+                                alert('An error occurred while placing your order. Please try again.');
+                            }
+                        });
+                    });
+                </script>
             </div>
             <div class="col-md-4">
                 <div class="order-summary">
                     <h4>Order Summary</h4>
-                    <div class="product-summary d-flex align-items-center mb-3">
-                        <img src="https://tehzeeb.com/media/catalog/product/cache/e434ba80c3596943a9a54c6bd30f7643/i/m/img_7647.jpg" alt="Lemon Puff" class="me-3" style="width: 80px;">
-                        <div>
-                            <p class="mb-0 fw-bold">Lemon Puff</p>
-                            <small class="text-muted">Quantity: 1</small>
+                    <div id="checkout-cart-summary-items">
+                        <% cartItems.forEach(item => { %>
+                        <div class="card mb-3 shadow-sm border-0">
+                            <div class="row g-0">
+                                <div class="col-md-2 col-3 d-flex align-items-center justify-content-center p-3">
+                                    <img src="<%= item.image %>" class="img-fluid rounded" alt="<%= item.name %>" style="max-height: 100px; object-fit: contain;">
+                                </div>
+                                <div class="col-md-10 col-9">
+                                    <div class="card-body p-md-3 p-2">
+                                        <h5 class="card-title mb-0"><%= item.name %></h5>
+                                        <p class="card-text text-muted mb-2 small">Price: PKR <%= item.price %></p>
+                                        <p class="card-text fw-bold mt-2">Quantity: <%= item.quantity %></p>
+                                        <p class="card-text fw-bold mt-2">Item Total: PKR <%= item.price * item.quantity %></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <% }); %>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <p>Subtotal:</p>
-                        <p>$10.00</p>
+                        <p id="checkout-subtotal">PKR <%= subtotal %></p>
                     </div>
                     <div class="d-flex justify-content-between">
                         <p>Shipping:</p>
-                        <p>$5.00</p>
+                        <p id="checkout-shipping">PKR <%= shipping %></p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p>Tax:</p>
-                        <p>$1.50</p>
+                        <p>Tax (17%):</p>
+                        <p id="checkout-tax">PKR <%= tax %></p>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between fw-bold">
                         <p>Total:</p>
-                        <p>$16.50</p>
+                        <p id="checkout-grand-total">PKR <%= total %></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-<footer class="page-footer footer  pt-5"style="background-color: #fdf9f3;">
-        <div class="container"  style="background-color: #fdf9f3;">
-            <div class="row mb-4 align-items-center">
-                <div class="col-md-6">
-                    <h2 class="h4">Enter the world of Tehzeeb</h2>
-                    <p class="mb-3">News, Bakery Creation & Latest events in stores.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <form class="subscribe" novalidate action="https://tehzeeb.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
-                        <div class="input-group">
-                            <input type="email" name="email" id="newsletter" class="form-control" placeholder="Enter your email address *" required>
-                            <button class="btn custom-brown-btn" type="submit" title="Subscribe" aria-label="Subscribe">
-                                <span>Subscribe</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 mb-4">
-                    <h5 class="footer_title">Categories</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="list-unstyled footer_list">
-                                <li><a href="https://tehzeeb.com/cake.html/" class="footer_link">Cakes</a></li>
-                                <li><a href="https://tehzeeb.com/biscuits.html/" class="footer_link">Biscuits</a></li>
-                                <li><a href="https://tehzeeb.com/pastry.html/" class="footer_link">Pastries</a></li>
-                                <li><a href="https://tehzeeb.com/salad.html/" class="footer_link">Salads</a></li>
-                                <li><a href="https://tehzeeb.com/bread.html/" class="footer_link">Bread</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="list-unstyled footer_list">
-                                <li><a href="https://tehzeeb.com/pizza.html/" class="footer_link">Pizzas</a></li>
-                                <li><a href="https://tehzeeb.com/donut.html/" class="footer_link">Donuts</a></li>
-                                <li><a href="https://tehzeeb.com/snacks.html/" class="footer_link">Snacks</a></li>
-                                <li><a href="https://tehzeeb.com/puff.html/" class="footer_link">Puff</a></li>
-                                <li><a href="https://tehzeeb.com/bread/buns.html/" class="footer_link">Buns</a></li>
-                            </ul>
-                        </div>
+    <script>
+        // Initialize cart summary
+        const cartData = JSON.parse(sessionStorage.getItem('cart')) || [];
+        const cartSummaryItems = document.getElementById('checkout-cart-summary-items');
+        const subtotalEl = document.getElementById('checkout-subtotal');
+        const shippingEl = document.getElementById('checkout-shipping');
+        const taxEl = document.getElementById('checkout-tax');
+        const totalEl = document.getElementById('checkout-grand-total');
+
+        if (cartSummaryItems && cartData.length > 0) {
+            cartSummaryItems.innerHTML = cartData.map(item => `
+                <div class="product-summary d-flex align-items-center mb-3">
+                    <img src="${item.image}" alt="${item.title}" class="me-3" style="width: 80px;">
+                    <div>
+                        <p class="mb-0 fw-bold">${item.title}</p>
+                        <small class="text-muted">Quantity: ${item.quantity}</small>
                     </div>
+                    <p class="ms-auto">$${(item.price * item.quantity).toFixed(2)}</p>
                 </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="footer_title">Company</h5>
-                    <ul class="list-unstyled footer_list">
-                        <li><a href="https://tehzeeb.com/contactus.html/" class="footer_link">Contact us</a></li>
-                        <li><a href="https://tehzeeb.com/about-us/" class="footer_link">About us</a></li>
-                        <li><a href="https://tehzeeb.com/terms-and-conditions-1/" class="footer_link">Terms & Conditions</a></li>
-                        <li><a href="https://tehzeeb.com/privacy-policy/" class="footer_link">Privacy Policy</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="footer_title">Services</h5>
-                    <ul class="list-unstyled footer_list">
-                        <li><a href="javascript:void(0)" class="footer_link">B2B</a></li>
-                        <li><a href="javascript:void(0)" class="footer_link">Art of Gifting</a></li>
-                        <li><a href="javascript:void(0)" class="footer_link">Built My Cake</a></li>
-                        <li><a href="javascript:void(0)" class="footer_link">Pick up</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="footer_title">Quick Links</h5>
-                    <ul class="list-unstyled footer_list">
-                        <li><a href="https://tehzeeb.com/faqs.html/" class="footer_link">FAQ's</a></li>
-                        <li><a href="https://tehzeeb.com/customer/account/index/" class="footer_link">My Account</a></li>
-                        <li><a href="https://tehzeeb.com/storepickup/" class="footer_link">Our Stores</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <ul class="list-inline d-flex flex-row justify-content-center align-items-center mb-0">
-                        <li class="list-inline-item social_list">
-                            <a href="https://www.facebook.com/Tehzeeb.pk/" target="_blank" class="social_item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="24" fill="none" viewBox="0 0 13 24">
-                                    <path d="M8.08008 23.5679V13.0302H11.6351L12.1635 8.90436H8.08008V6.27636C8.08008 5.08579 8.4118 4.27064 10.1205 4.27064H12.2857V0.592214C11.2322 0.479317 10.1733 0.424805 9.1138 0.428928C5.97151 0.428928 3.81408 2.34721 3.81408 5.86879V8.89664H0.282227V13.0225H3.8218V23.5679H8.08008Z" fill="#A4854F"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="list-inline-item social_list">
-                            <a href="https://www.instagram.com/tehzeeb.pk/?hl=en" target="_blank" class="social_item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 6.40372 13.0003C6.40372 11.2509 7.09869 9.57305 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="list-inline-item social_list">
-                            <a href="https://www.pinterest.com/tehzeebbakers/" target="_blank" class="social_item">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 4.87 2.92 9.06 7.12 11 0-.83 0-1.82.22-2.72.22-.91 1.5-6.38 1.5-6.38s-.39-.78-.39-1.93c0-1.8 1.04-3.15 2.35-3.15 1.1 0 1.63.83 1.63 1.83 0 1.1-.7 2.75-1.06 4.27-.31 1.34.66 2.44 2 2.44 2.41 0 4.27-2.56 4.27-6.24 0-3.27-2.35-5.58-5.71-5.58-3.9 0-6.21 2.92-6.21 5.94 0 1.1.39 2.27.96 2.91.13.17.13.26.09.48-.09.22-.26.83-.31.96-.09.22-.26.31-.48.17-1.35-.65-2.2-2.73-2.2-4.41 0-3.56 2.74-6.84 7.86-6.84 4.13 0 7.33 2.96 7.33 6.89 0 4.1-2.44 7.36-5.91 7.36-1.14 0-2.26-.61-2.63-1.31l-.72 2.74c-.22.87-.83 1.96-1.24 2.63 1.13.35 2.33.52 3.59.52 6.63 0 12-5.37 12-12S18.63 0 12 0z" fill="#A4854F"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-12 text-center mt-3">
-                    <p class="mb-0">&copy; 2025 Your Company Name. All Rights Reserved.</p>
-                </div>
-            </div>
-    
-        </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script defer src="checkoutform.js"></script>
+            `).join('');
+
+            // Calculate totals
+            const subtotal = cartData.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const shipping = subtotal > 0 ? 5.00 : 0; // Flat shipping rate
+            const tax = subtotal * 0.15; // 15% tax
+            const total = subtotal + shipping + tax;
+
+            subtotalEl.textContent = `$${subtotal.toFixed(2)}`;
+            shippingEl.textContent = `$${shipping.toFixed(2)}`;
+            taxEl.textContent = `$${tax.toFixed(2)}`;
+            totalEl.textContent = `$${total.toFixed(2)}`;
+        }
+    </script>
 </body>
 </html>

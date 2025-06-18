@@ -134,7 +134,7 @@
     <header class="admin-themed-header fixed-top shadow-sm">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
             <div class="container-fluid">
-                <a class="navbar-brand d-flex align-items-center" href="/admin/dashboard">
+                <a class="navbar-brand d-flex align-items-center" href="/">
                     <img src="https://tehzeeb.com/media/logo/stores/1/Tehzeeb-Logo-PNG1.png" alt="Tehzeeb Admin Logo" width="100" class="me-2">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#adminNavbarContent" aria-controls="adminNavbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,7 +149,7 @@
                             <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'products') ? 'active' : '' %>" href="/admin/products"><i class="fas fa-box-open me-1"></i> Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'orders') ? 'active' : '' %>" href="/admin/orders"><i class="fas fa-shopping-cart me-1"></i> Orders</a>
+                            <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'orders') ? 'active' : '' %>" href="/admin/adminmyorders"><i class="fas fa-shopping-cart me-1"></i> Orders</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link <%= (typeof pageTag !== 'undefined' && pageTag === 'users') ? 'active' : '' %>" href="/admin/users"><i class="fas fa-users me-1"></i> Users</a>
@@ -164,7 +164,8 @@
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
                         <li class="nav-item d-none d-lg-block">
                             <span class="navbar-text text-black me-3">
-                                Welcome, Admin!
+                                Welcome, <%= user ? user.firstName + ' ' + user.lastName : 'Guest'
+                            %>!
                             </span>
                         </li>
                         <li class="nav-item dropdown bg-white">
@@ -176,7 +177,7 @@
                                 <li><a class="dropdown-item" href="/admin/profile"><i class="fas fa-user-edit me-2"></i> Profile</a></li>
                                 <li><a class="dropdown-item" href="/admin/settings"><i class="fas fa-cog me-2"></i> Settings</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/admin/logout"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
+                                <li><a class="dropdown-item" href="/logout"><i class="fas fa-sign-out-alt me-2"></i> Logout</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -81,6 +81,8 @@
                 <div class="auth-buttons">
                     <a href="/login" class="auth-btn login-btn">Login</a>
                     <a href="/register" class="auth-btn register-btn">Register</a>
+                    <a href="/loginadmin" class="auth-btn login-btn">AdminLogin </a>
+                    <a href="/registeradmin" class="auth-btn register-btn">AdminRegister</a>
                 </div>
             </div>
         </div>
@@ -102,15 +104,15 @@
                             }
                         </style>
 
-                        <li class="nav-item"><a href="https://tehzeeb.com/pizza.html/" class="nav-link">Pizza</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/cake.html/" class="nav-link">Cakes</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/biscuits.html/" class="nav-link">Biscuits</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/pastry.html/" class="nav-link">Pastry</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/bread.html/" class="nav-link">Bread</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/puff.html/" class="nav-link">Puffs</a></li>
+                        <li class="nav-item"><a href="/categories/pizza" class="nav-link">Pizza</a></li>
+                        <li class="nav-item"><a href="/categories/cakes" class="nav-link">Cakes</a></li>
+                        <li class="nav-item"><a href="/categories/biscuits" class="nav-link">Biscuits</a></li>
+                        <li class="nav-item"><a href="/categories/pastry" class="nav-link">Pastry</a></li>
+                        <li class="nav-item"><a href="/categories/bread" class="nav-link">Bread</a></li>
+                        <li class="nav-item"><a href="/categories/puff" class="nav-link">Puffs</a></li>
                     </ul>
                 </div>
-                <a class="navbar-brand mx-auto" href="https://tehzeeb.com/">
+                <a class="navbar-brand mx-auto" href="/">
                     <img src="https://tehzeeb.com/media/logo/stores/1/Tehzeeb-Logo-PNG1.png" alt="Tehzeeb Bakers" width="150">
                 </a>
                 <div class="d-flex flex-column align-items-end">
@@ -123,31 +125,41 @@
                         <button class="btn btn-outline-secondary me-3" type="button" data-bs-toggle="modal" data-bs-target="#searchModal">
                             <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/searchicon.webp" alt="search" width="25">
                         </button>
-                        <a href="/customer/account" class="text-light me-3">
-                            <i style="font-size: 24px; color: white;" class="fa-regular fa-user nav-link"></i>
-                            <!-- <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/Accont.webp" alt="account" width="25"> -->
-                        </a>
-                        <a href="/admin" class="text-light me-3" title="Admin Panel">
-                            <i style="font-size: 24px; color: white;" class="fa-solid fa-user-shield nav-link"></i>
-                        </a>
-                        <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartMenu">
+                        <% if (user) { %>
+                            <% if (user.isAdmin === 'admin') { %>
+                                <a href="/admin" class="text-light me-3" title="Admin Panel">
+                                    <i style="font-size: 24px; color: white;" class="fa-solid fa-user-shield nav-link"></i>
+                                </a>
+                            <% } else if (user.isAdmin === 'user') { %>
+                                <a href="/customer/account" class="text-light me-3">
+                                    <i style="font-size: 24px; color: white;" class="fa-regular fa-user nav-link"></i>
+                                </a>
+                            <% } %>
+                        <% } %>
+                        <!-- <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartMenu">
                             <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt="cart" width="27">
                             <% if (locals.cart && cart.items.length > 0) { %>
                                 <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                                     <%= cart.items.length %>
                                 </span>
                             <% } %>
+                        </button> -->
+                        <button class="btn btn-outline-secondary position-relative" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartMenu">
+                            <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/cart.webp" alt="cart" width="27">
+                            <span id="cart-item-count-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="display: none;">
+                                0
+                            </span>
                         </button>
                         
                     </div>
                     <ul class="nav justify-content-end border-top pt-2">
                         <li class="nav-item"><a href="https://tehzeeb.com/ramadan-menu.html/" class="nav-link">
-                            <!-- <img src="https://tehzeeb.com/static/version1741244330/frontend/Magento/tehzeeb_new/en_US/images/ramadan.png" alt="Ramadan Icon" style="width: 20px; height: 20px; margin-right: 5px;"> -->
+                            <!-- <img src="https://tehzeeb.com/static/version1740642958/frontend/Magento/tehzeeb_new/en_US/images/ramadan.png" alt="Ramadan Icon" style="width: 20px; height: 20px; margin-right: 5px;"> -->
                             <i class="fa-solid fa-mosque nav-link"></i>
                             Ramdan</a></li>
-                        <li class="nav-item"><DELIVER href="https://tehzeeb.com/snacks.html/" class="nav-link">DELIVER NATIONWIDE</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/snacks.html/" class="nav-link">Snacks</a></li>
-                        <li class="nav-item"><a href="https://tehzeeb.com/salad.html/" class="nav-link">Salad</a></li>
+                        <li class="nav-item"><a href="/categories/snack" class="nav-link">DELIVER NATIONWIDE</a></li>
+                        <li class="nav-item"><a href="/categories/snack" class="nav-link">Snacks</a></li>
+                        <li class="nav-item"><a href="/categories/salad" class="nav-link">Salad</a></li>
                     </ul>
                 </div>
             </div>
@@ -241,7 +253,7 @@
         <h5 class="offcanvas-title">Shopping Cart</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
     </div>
-    <div class="offcanvas-body">
+    <!-- <div class="offcanvas-body">
         <% if (!locals.cart || cart.items.length === 0) { %>
             <p class="text-center text-muted">You have no items in your shopping cart.</p>
         <% } else { %>
@@ -279,6 +291,26 @@
                 </div>
             </div>
         <% } %>
+    </div> -->
+    <div class="offcanvas-body">
+        <div id="cart-items-container">
+            <p class="text-center text-muted" id="empty-cart-message">You have no items in your shopping cart.</p>
+            <!-- Offcanvas cart items will be rendered here by index.js -->
+        </div>
+        <div id="cart-summary" class="border-top pt-3 mt-3" style="display: none;">
+            <div class="d-flex justify-content-between mb-2">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">PKR 0.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3 fw-bold">
+                <h5>Total:</h5>
+                <h5 id="cart-total">PKR 0.00</h5>
+            </div>
+            <div class="d-grid gap-2">
+                <button id = view-full-cart-btn href="/viewcart" class="btn btn-outline-secondary">View and Edit Cart</button>
+                <button id = proceed-to-checkout-fullcart-btn href="/checkoutform" class="btn btn-danger btn-primary-custom">Proceed to Checkout</button> <!-- Placeholder link -->
+            </div>
+        </div>
     </div>
 </div>
 <%- body %>
@@ -378,7 +410,7 @@
                     <li class="list-inline-item social_list">
                         <a href="https://www.instagram.com/tehzeeb.pk/?hl=en" target="_blank" class="social_item">
                             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26">
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 6.40372 13.0003C6.40372 11.2509 7.09869 9.57305 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70925 0.243992C9.07775 0.180992 9.51408 0.166992 13.0001 0.166992C16.4861 0.166992 16.9224 0.182159 18.2897 0.243992C19.6571 0.305826 20.5904 0.523992 21.4071 0.840159C22.2622 1.16333 23.0381 1.66849 23.6797 2.32183C24.3331 2.96233 24.8371 3.73699 25.1591 4.59333C25.4764 5.40999 25.6934 6.34333 25.7564 7.70833C25.8194 9.07916 25.8334 9.51549 25.8334 13.0003C25.8334 16.4863 25.8182 16.9227 25.7564 18.2912C25.6946 19.6562 25.4764 20.5895 25.1591 21.4062C24.8371 22.2626 24.3322 23.0386 23.6797 23.68C23.0381 24.3333 22.2622 24.8373 21.4071 25.1593C20.5904 25.4767 19.6571 25.6937 18.2921 25.7567C16.9224 25.8197 16.4861 25.8337 13.0001 25.8337C9.51408 25.8337 9.07775 25.8185 7.70925 25.7567C6.34425 25.6948 5.41091 25.4767 4.59425 25.1593C3.73782 24.8373 2.96187 24.3325 2.32041 23.68C1.66752 23.0391 1.16228 22.2635 0.839915 21.4073C0.523748 20.5907 0.306748 19.6573 0.243748 18.2923C0.180748 16.9215 0.166748 16.4852 0.166748 13.0003C0.166748 9.51433 0.181915 9.07799 0.243748 7.71066C0.305581 6.34333 0.523748 5.40999 0.839915 4.59333C1.16276 3.73709 1.66839 2.96152 2.32158 2.32066C2.96213 1.66791 3.7373 1.16268 4.59308 0.840159C5.40975 0.523992 6.34308 0.306992 7.70808 0.243992H7.70925ZM18.1859 2.55399C16.8326 2.49216 16.4266 2.47933 13.0001 2.47933C9.57358 2.47933 9.16758 2.49216 7.81425 2.55399C6.56241 2.61116 5.88341 2.81999 5.43075 2.99616C4.83225 3.22949 4.40408 3.50599 3.95491 3.95516C3.52913 4.36939 3.20146 4.87365 2.99591 5.43099C2.81975 5.88366 2.61091 6.56266 2.55375 7.81449C2.49191 9.16782 2.47908 9.57382 2.47908 13.0003C2.47908 16.4268 2.49191 16.8328 2.55375 18.1862C2.61091 19.438 2.81975 20.117 2.99591 20.5697C3.20125 21.1262 3.52908 21.6313 3.95491 22.0455C4.36908 22.4713 4.87425 22.7992 5.43075 23.0045C5.88341 23.1807 6.56241 23.3895 7.81425 23.4467C9.16758 23.5085 9.57241 23.5213 13.0001 23.5213C16.4277 23.5213 16.8326 23.5085 18.1859 23.4467C19.4377 23.3895 20.1167 23.1807 20.5694 23.0045C21.1679 22.7712 21.5961 22.4947 22.0452 22.0455C22.4711 21.6313 22.7989 21.1262 23.0042 20.5697C23.1804 20.117 23.3892 19.438 23.4464 18.1862C23.5082 16.8328 23.5211 16.4268 23.5211 13.0003C23.5211 9.57382 23.5082 9.16782 23.4464 7.81449C23.3892 6.56266 23.1804 5.88366 23.0042 5.43099C22.7709 4.83249 22.4944 4.40433 22.0452 3.95516C21.631 3.52941 21.1267 3.20174 20.5694 2.99616C20.1167 2.81999 19.4377 2.61116 18.1859 2.55399ZM11.3609 16.9565C12.2764 17.3376 13.2957 17.389 14.2448 17.102C15.194 16.815 16.014 16.2074 16.565 15.3829C17.1159 14.5585 17.3635 13.5683 17.2655 12.5816C17.1675 11.5949 16.7299 10.6728 16.0276 9.97283C15.5799 9.52538 15.0385 9.18277 14.4425 8.96966C13.8464 8.75655 13.2106 8.67825 12.5807 8.74038C11.9507 8.80251 11.3424 9.00353 10.7995 9.32898C10.2566 9.65442 9.79262 10.0962 9.44093 10.6225C9.08925 11.1488 8.85863 11.7465 8.76568 12.3726C8.67273 12.9987 8.71976 13.6377 8.90338 14.2434C9.087 14.8492 9.40264 15.4067 9.82759 15.8758C10.2525 16.345 10.7762 16.714 11.3609 16.9565ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633ZM8.33575 8.33599C8.94828 7.72346 9.67545 7.23758 10.4758 6.90608C11.2761 6.57458 12.1338 6.40396 13.0001 6.40396C13.8663 6.40396 14.7241 6.57458 15.5244 6.90608C16.3247 7.23758 17.0519 7.72346 17.6644 8.33599C18.2769 8.94852 18.7628 9.6757 19.0943 10.476C19.4258 11.2763 19.5964 12.1341 19.5964 13.0003C19.5964 13.8666 19.4258 14.7243 19.0943 15.5246C18.7628 16.325 18.2769 17.0521 17.6644 17.6647C16.4274 18.9017 14.7495 19.5967 13.0001 19.5967C11.2506 19.5967 9.57281 18.9017 8.33575 17.6647C7.09869 16.4276 6.40372 14.7498 8.33575 8.33599ZM21.0594 7.38633C21.2112 7.24314 21.3327 7.07095 21.4168 6.87996C21.5008 6.68897 21.5457 6.48306 21.5487 6.27441C21.5518 6.06577 21.5129 5.85863 21.4345 5.66527C21.356 5.47191 21.2396 5.29625 21.092 5.1487C20.9445 5.00115 20.7688 4.88471 20.5755 4.80626C20.3821 4.72782 20.175 4.68896 19.9663 4.69201C19.7577 4.69505 19.5518 4.73992 19.3608 4.82397C19.1698 4.90802 18.9976 5.02954 18.8544 5.18132C18.5759 5.47653 18.4235 5.86863 18.4294 6.27441C18.4353 6.68019 18.5991 7.06768 18.8861 7.35464C19.1731 7.6416 19.5606 7.80543 19.9663 7.81134C20.3721 7.81726 20.7642 7.6648 21.0594 7.38633Z" fill="#A4854F"></path>
                             </svg>
                         </a>
                     </li>
@@ -495,38 +527,645 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Quantity controls
-    document.querySelectorAll('.decrease-quantity').forEach(button => {
-        button.addEventListener('click', function() {
-            const productId = this.dataset.productId;
-            const input = document.querySelector(`input[data-product-id="${productId}"]`);
-            const newQuantity = parseInt(input.value) - 1;
-            if (newQuantity >= 1) {
-                updateQuantity(productId, newQuantity);
-            }
-        });
+    // Handle cart buttons
+    document.getElementById('view-full-cart-btn').addEventListener('click', function() {
+        window.location.href = '/viewcart';
     });
 
-    document.querySelectorAll('.increase-quantity').forEach(button => {
-        button.addEventListener('click', function() {
-            const productId = this.dataset.productId;
-            const input = document.querySelector(`input[data-product-id="${productId}"]`);
-            const newQuantity = parseInt(input.value) + 1;
-            updateQuantity(productId, newQuantity);
-        });
-    });
-
-    document.querySelectorAll('.quantity-controls input').forEach(input => {
-        input.addEventListener('change', function() {
-            const productId = this.dataset.productId;
-            const newQuantity = parseInt(this.value);
-            if (newQuantity >= 1) {
-                updateQuantity(productId, newQuantity);
-            }
-        });
+    document.getElementById('proceed-to-checkout-fullcart-btn').addEventListener('click', function() {
+        window.location.href = '/checkoutform';
     });
 });
 </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+// Global cartItems array, will be populated from server session
+var cartItems = [];
+
+// --- CORE CART DATA AND SERVER SYNC FUNCTIONS ---
+
+/**
+ * Fetches the cart from the server session and initializes the client-side cartItems array.
+ * This should be called on page load.
+ */
+async function initializeCart() {
+    try {
+        const response = await fetch('/cart/items');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        if (data.success && Array.isArray(data.cart)) {
+            cartItems = data.cart;
+        } else {
+            console.warn('Failed to initialize cart from server or cart is not an array:', data.message);
+            cartItems = [];
+        }
+    } catch (error) {
+        console.error('Error fetching cart items:', error);
+        cartItems = []; // Fallback to empty cart on error
+    }
+    syncCartUpdates(); // Update all UI elements related to the cart
+}
+
+/**
+ * Adds an item to the cart, both optimistically on the client and by syncing with the server.
+ */
+async function addItemToCart(productId, productTitle, productPrice, productImage, quantity = 1) {
+    // Optimistic UI Update
+    const existingItemIndex = cartItems.findIndex(item => item.id === productId);
+    if (existingItemIndex > -1) {
+        cartItems[existingItemIndex].quantity += quantity;
+    } else {
+        cartItems.push({
+            id: productId,
+            title: productTitle,
+            price: parseFloat(productPrice),
+            quantity: quantity,
+            image: productImage
+        });
+    }
+    syncCartUpdates(); // Reflect change immediately in UI
+
+    // Sync with server
+    try {
+        const serverResponse = await fetch('/cart/add', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ productId, productTitle, productPrice, productImage, quantity })
+        });
+        const serverData = await serverResponse.json();
+
+        if (serverData.success) {
+            console.log('Item added to server cart successfully.');
+            // Update badge with server's count to ensure consistency
+            updateCartItemCountBadge(serverData.cartItemCount);
+            // Optionally, if server modifies the cart (e.g., price rules), re-sync:
+            // cartItems = serverData.updatedCart || cartItems;
+            // syncCartUpdates();
+        } else {
+            console.error('Failed to add item to server cart:', serverData.message);
+            alert('Error: Could not add item to cart. ' + (serverData.message || ''));
+            if (serverData.redirect) window.location.href = serverData.redirect;
+            await initializeCart(); // Re-fetch cart to correct optimistic update
+        }
+    } catch (error) {
+        console.error('Network error syncing cart add with server:', error);
+        alert('A network error occurred while adding to cart.');
+        await initializeCart(); // Re-fetch cart
+    }
+}
+
+/**
+ * Removes an item from the cart, both client-side and server-side.
+ */
+async function removeItemFromCart(productId) {
+    const itemIndex = cartItems.findIndex(i => i.id === productId);
+    if (itemIndex > -1) {
+        cartItems.splice(itemIndex, 1); // Optimistic remove
+        syncCartUpdates();
+
+        // Sync with server
+        try {
+            const serverResponse = await fetch('/cart/remove', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ productId })
+            });
+            const serverData = await serverResponse.json();
+            if (serverData.success) {
+                console.log('Item removed from server cart.');
+                updateCartItemCountBadge(serverData.cartItemCount);
+            } else {
+                console.error('Failed to remove item from server cart:', serverData.message);
+                alert('Error removing item. ' + (serverData.message || ''));
+                await initializeCart(); // Re-sync
+            }
+        } catch (error) {
+            console.error('Network error syncing cart remove:', error);
+            alert('A network error occurred while removing item from cart.');
+            await initializeCart(); // Re-sync
+        }
+    }
+}
+
+/**
+ * Updates the quantity of an item in the cart, both client-side and server-side.
+ */
+async function updateCartItemQuantity(productId, newQuantity) {
+    newQuantity = parseInt(newQuantity, 10);
+    const itemInCart = cartItems.find(item => item.id === productId);
+
+    if (itemInCart) {
+        if (newQuantity <= 0) { // If quantity is 0 or less, remove the item
+            await removeItemFromCart(productId);
+            return;
+        }
+        itemInCart.quantity = newQuantity; // Optimistic update
+        syncCartUpdates();
+
+        // Sync with server
+        try {
+            const serverResponse = await fetch('/cart/update', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ productId, quantity: newQuantity })
+            });
+            const serverData = await serverResponse.json();
+            if (serverData.success) {
+                console.log('Cart item quantity updated on server.');
+                updateCartItemCountBadge(serverData.cartItemCount);
+            } else {
+                console.error('Failed to update item quantity on server:', serverData.message);
+                alert('Error updating quantity. ' + (serverData.message || ''));
+                await initializeCart(); // Re-sync
+            }
+        } catch (error) {
+            console.error('Network error syncing cart quantity update:', error);
+            alert('A network error occurred while updating quantity.');
+            await initializeCart(); // Re-sync
+        }
+    }
+}
+
+
+// --- UI UPDATE FUNCTIONS ---
+
+/**
+ * Updates all cart-related UI elements (offcanvas, full cart page, checkout page).
+ */
+function syncCartUpdates() {
+    updateCartOffcanvas();
+    updateCartItemCountBadge(); // Can be called without arg to use client-side cartItems
+
+    // Check if the specific page elements are visible before re-rendering
+    const fullCartPageEl = document.getElementById('full-cart-page');
+    if (fullCartPageEl && fullCartPageEl.style.display === 'block') {
+        renderFullCartPage();
+    }
+    const checkoutPageEl = document.getElementById('checkout-page');
+    if (checkoutPageEl && checkoutPageEl.style.display === 'block') {
+        renderCheckoutPage();
+    }
+}
+
+/**
+ * Updates the content of the cart offcanvas.
+ */
+function updateCartOffcanvas() {
+    const cartItemsContainer = document.getElementById('cart-items-container');
+    const emptyCartMessage = document.getElementById('empty-cart-message');
+    const cartSummaryDiv = document.getElementById('cart-summary');
+    const cartSubtotalEl = document.getElementById('cart-subtotal');
+    const cartTotalEl = document.getElementById('cart-total');
+
+    if (!cartItemsContainer) return; // Exit if the container isn't found
+    cartItemsContainer.innerHTML = ''; // Clear previous items
+
+    if (cartItems.length === 0) {
+        if (emptyCartMessage) emptyCartMessage.style.display = 'block';
+        if (cartSummaryDiv) cartSummaryDiv.style.display = 'none';
+        return;
+    }
+
+    if (emptyCartMessage) emptyCartMessage.style.display = 'none';
+    if (cartSummaryDiv) cartSummaryDiv.style.display = 'block';
+
+    let subtotal = 0;
+    cartItems.forEach(item => {
+        const itemElement = document.createElement('div');
+        itemElement.classList.add('d-flex', 'justify-content-between', 'align-items-center', 'mb-3', 'pb-3', 'border-bottom', 'cart-item-entry');
+        itemElement.dataset.productId = item.id;
+        const itemTotal = parseFloat(item.price) * item.quantity;
+        subtotal += itemTotal;
+
+        itemElement.innerHTML = `
+            <div class="d-flex align-items-center">
+                <img src="${item.image || 'https://via.placeholder.com/50'}" alt="${item.title}" style="width: 50px; height: 50px; object-fit: cover;" class="me-2 rounded">
+                <div>
+                    <h6 class="mb-0 small">${item.title}</h6>
+                    <small class="text-muted">Qty: ${item.quantity} × PKR ${parseFloat(item.price).toFixed(2)}</small>
+                </div>
+            </div>
+            <div class="text-end">
+                <span class="fw-bold small">PKR ${itemTotal.toFixed(2)}</span>
+                <button class="btn btn-sm btn-outline-danger ms-2 remove-item-btn-offcanvas" data-product-id="${item.id}" aria-label="Remove item">×</button>
+            </div>
+        `;
+        cartItemsContainer.appendChild(itemElement);
+    });
+
+    if (cartSubtotalEl) cartSubtotalEl.textContent = `PKR ${subtotal.toFixed(2)}`;
+    if (cartTotalEl) cartTotalEl.textContent = `PKR ${subtotal.toFixed(2)}`; // Assuming no tax/shipping in offcanvas
+
+    // Re-attach event listeners for remove buttons in offcanvas
+    document.querySelectorAll('.remove-item-btn-offcanvas').forEach(button => {
+        // Remove existing listener to prevent duplicates if any, then add
+        const newButton = button.cloneNode(true); // Clone to ensure old listeners are gone
+        button.parentNode.replaceChild(newButton, button);
+        newButton.addEventListener('click', function() {
+            removeItemFromCart(this.dataset.productId);
+        });
+    });
+}
+
+/**
+ * Updates the cart item count badge in the header.
+ * Can take an optional serverCount to directly set the badge.
+ */
+function updateCartItemCountBadge(serverCount) {
+    const badge = document.getElementById('cart-item-count-badge');
+    if (!badge) return;
+
+    const totalItems = serverCount !== undefined ?
+        serverCount :
+        cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+    badge.textContent = totalItems;
+    badge.style.display = totalItems > 0 ? 'inline-block' : 'none';
+
+    // Also update count on checkout page if it exists
+    const checkoutItemCountBadge = document.getElementById('checkout-item-count');
+    if (checkoutItemCountBadge) {
+        checkoutItemCountBadge.textContent = totalItems;
+    }
+}
+
+
+// --- PAGE NAVIGATION AND RENDERING LOGIC (SPA-like for Cart/Checkout) ---
+function showMainPageContent() {
+    const mainPageSections = document.getElementById('main-page-sections');
+    const fullCartPage = document.getElementById('full-cart-page');
+    const checkoutPage = document.getElementById('checkout-page');
+
+    if(mainPageSections) mainPageSections.style.display = 'block';
+    if(fullCartPage) fullCartPage.style.display = 'none';
+    if(checkoutPage) checkoutPage.style.display = 'none';
+    window.scrollTo(0, 0);
+}
+
+function adjustPagePadding(pageElement) {
+    const headerElement = document.querySelector("header.fixed-top");
+    if (pageElement && headerElement) {
+        const headerHeight = headerElement.offsetHeight;
+        pageElement.style.paddingTop = `${headerHeight + 20}px`; // 20px buffer
+    }
+}
+
+function showFullCartPage() {
+    const mainPageSections = document.getElementById('main-page-sections');
+    const fullCartPage = document.getElementById('full-cart-page');
+    const checkoutPage = document.getElementById('checkout-page');
+
+    if(mainPageSections) mainPageSections.style.display = 'none';
+    if(fullCartPage) {
+        adjustPagePadding(fullCartPage);
+        fullCartPage.style.display = 'block';
+    }
+    if(checkoutPage) checkoutPage.style.display = 'none';
+    renderFullCartPage();
+    window.scrollTo(0, 0);
+}
+
+function showCheckoutPage() {
+    if (cartItems.length === 0) {
+        alert("Your cart is empty. Please add items before proceeding to checkout.");
+        showFullCartPage(); // Or show main page: showMainPageContent();
+        return;
+    }
+    const mainPageSections = document.getElementById('main-page-sections');
+    const fullCartPage = document.getElementById('full-cart-page');
+    const checkoutPage = document.getElementById('checkout-page');
+
+    if(mainPageSections) mainPageSections.style.display = 'none';
+    if(fullCartPage) fullCartPage.style.display = 'none';
+    if(checkoutPage) {
+         adjustPagePadding(checkoutPage);
+         checkoutPage.style.display = 'block';
+    }
+    renderCheckoutPage();
+    window.scrollTo(0, 0);
+}
+
+// Full Cart Page Rendering Logic
+function renderFullCartPage() {
+    const container = document.getElementById('full-cart-items-container');
+    const emptyMsg = document.getElementById('full-cart-empty-message');
+    const summaryActions = document.getElementById('full-cart-summary-and-actions');
+
+    if (!container) return;
+    container.innerHTML = ''; // Clear previous items
+
+    if (cartItems.length === 0) {
+        if(emptyMsg) emptyMsg.style.display = 'block';
+        if(summaryActions) summaryActions.style.display = 'none';
+        if(container) container.style.display = 'none'; // Hide the items container itself
+    } else {
+        if(emptyMsg) emptyMsg.style.display = 'none';
+        if(summaryActions) summaryActions.style.display = 'flex'; // It's a row
+        if(container) container.style.display = 'block';
+
+        cartItems.forEach(item => {
+            const itemEl = document.createElement('div');
+            itemEl.classList.add('card', 'mb-3', 'shadow-sm', 'border-0');
+            itemEl.dataset.productId = item.id;
+            itemEl.innerHTML = `
+                <div class="row g-0">
+                    <div class="col-md-2 col-3 d-flex align-items-center justify-content-center p-3">
+                        <img src="${item.image || 'https://via.placeholder.com/120'}" class="img-fluid rounded" alt="${item.title}" style="max-height: 100px; object-fit: contain;">
+                    </div>
+                    <div class="col-md-10 col-9">
+                        <div class="card-body p-md-3 p-2">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h5 class="card-title mb-0">${item.title}</h5>
+                                <button class="btn btn-sm btn-outline-danger remove-full-cart-item border-0" data-product-id="${item.id}" title="Remove"><i class="fas fa-times"></i></button>
+                            </div>
+                            <p class="card-text text-muted mb-2 small">Price: PKR ${parseFloat(item.price).toFixed(2)}</p>
+                            <div class="d-flex align-items-center my-2 quantity-controls">
+                                <label for="qty-full-${item.id}" class="form-label me-2 mb-0 small d-none d-sm-inline">Quantity:</label>
+                                <div class="input-group input-group-sm" style="max-width: 130px;">
+                                    <button class="btn btn-outline-secondary decrease-full-qty" type="button" data-product-id="${item.id}">-</button>
+                                    <input type="number" class="form-control text-center full-item-qty" value="${item.quantity}" min="0" id="qty-full-${item.id}" data-product-id="${item.id}">
+                                    <button class="btn btn-outline-secondary increase-full-qty" type="button" data-product-id="${item.id}">+</button>
+                                </div>
+                            </div>
+                            <p class="card-text fw-bold mt-2">Item Total: PKR <span class="full-item-total">${(parseFloat(item.price) * item.quantity).toFixed(2)}</span></p>
+                        </div>
+                    </div>
+                </div>`;
+            container.appendChild(itemEl);
+        });
+        updateFullCartSummaryDisplay();
+        attachFullCartEventListeners();
+    }
+}
+
+function attachFullCartEventListeners() {
+    // Ensure listeners are fresh by cloning or specific removal if elements are not fully re-rendered
+    document.querySelectorAll('.remove-full-cart-item').forEach(btn => {
+        const newBtn = btn.cloneNode(true); btn.parentNode.replaceChild(newBtn, btn);
+        newBtn.addEventListener('click', (e) => removeItemFromCart(e.currentTarget.dataset.productId));
+    });
+    document.querySelectorAll('.decrease-full-qty').forEach(btn => {
+        const newBtn = btn.cloneNode(true); btn.parentNode.replaceChild(newBtn, btn);
+        newBtn.addEventListener('click', (e) => {
+            const productId = e.currentTarget.dataset.productId;
+            const currentItem = cartItems.find(item => item.id === productId);
+            if (currentItem) updateCartItemQuantity(productId, currentItem.quantity - 1);
+        });
+    });
+    document.querySelectorAll('.increase-full-qty').forEach(btn => {
+        const newBtn = btn.cloneNode(true); btn.parentNode.replaceChild(newBtn, btn);
+        newBtn.addEventListener('click', (e) => {
+            const productId = e.currentTarget.dataset.productId;
+            const currentItem = cartItems.find(item => item.id === productId);
+            if (currentItem) updateCartItemQuantity(productId, currentItem.quantity + 1);
+        });
+    });
+    document.querySelectorAll('.full-item-qty').forEach(input => {
+        const newInput = input.cloneNode(true); input.parentNode.replaceChild(newInput, input);
+        newInput.addEventListener('change', (e) => { // Using 'change' is often better than 'input' for number fields after focus loss
+            updateCartItemQuantity(e.currentTarget.dataset.productId, parseInt(e.currentTarget.value, 10));
+        });
+    });
+}
+
+function updateFullCartSummaryDisplay() {
+    let subtotal = 0;
+    cartItems.forEach(item => { subtotal += parseFloat(item.price) * item.quantity; });
+
+    const subtotalEl = document.getElementById('full-cart-subtotal');
+    const grandTotalEl = document.getElementById('full-cart-grand-total');
+    if(subtotalEl) subtotalEl.textContent = `PKR ${subtotal.toFixed(2)}`;
+    if(grandTotalEl) grandTotalEl.textContent = `PKR ${subtotal.toFixed(2)}`; // Assuming no tax/shipping in this view
+}
+
+// Checkout Page Rendering Logic
+function renderCheckoutPage() {
+    const summaryItemsContainer = document.getElementById('checkout-cart-summary-items');
+    const grandTotalEl = document.getElementById('checkout-grand-total');
+    const itemCountBadge = document.getElementById('checkout-item-count'); // This is also updated by updateCartItemCountBadge
+
+    if (!summaryItemsContainer || !grandTotalEl) return;
+
+    summaryItemsContainer.innerHTML = '';
+    let subtotal = 0;
+
+    if (cartItems.length === 0) { // Should be caught by showCheckoutPage, but good to double check
+        showFullCartPage(); // Or some other appropriate action
+        return;
+    }
+
+    cartItems.forEach(item => {
+        const itemPrice = parseFloat(item.price);
+        const itemTotal = itemPrice * item.quantity;
+        subtotal += itemTotal;
+
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'lh-sm');
+        listItem.innerHTML = `
+            <div>
+                <h6 class="my-0">${item.title}</h6>
+                <small class="text-muted">Qty: ${item.quantity} × PKR ${itemPrice.toFixed(2)}</small>
+            </div>
+            <span class="text-muted">PKR ${itemTotal.toFixed(2)}</span>
+        `;
+        summaryItemsContainer.appendChild(listItem);
+    });
+
+    grandTotalEl.textContent = `PKR ${subtotal.toFixed(2)}`;
+    // itemCountBadge is already handled by updateCartItemCountBadge via syncCartUpdates
+}
+
+
+// --- DOMContentLoaded: INITIALIZATION AND EVENT LISTENERS ---
+document.addEventListener("DOMContentLoaded", function () {
+    // Initialize the cart from server session first
+    initializeCart().then(() => {
+        console.log("Client-side cart initialized.");
+        // Attach event listeners that depend on cart or UI elements
+        attachGlobalEventListeners();
+    });
+
+    // Header scroll effect
+    const header = document.querySelector("header.fixed-top");
+    window.addEventListener("scroll", function () {
+        if (header) {
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        }
+    });
+
+    // Swiper initialization (if Swiper lib is present)
+    if (typeof Swiper !== 'undefined') {
+        new Swiper('.mySwiper', { /* ... swiper options ... */
+            loop: true, slidesPerView: 4, spaceBetween: 20,
+            navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev', },
+            pagination: { el: '.swiper-pagination', clickable: true, },
+            breakpoints: {
+                1200: { slidesPerView: 4 }, 992: { slidesPerView: 3 },
+                768: { slidesPerView: 2 }, 480: { slidesPerView: 1 }
+            }
+        });
+        document.querySelectorAll(".swiper-slide").forEach(slide => {
+            let card = slide.querySelector(".cardofslider"); // Assuming this class exists on hover cards
+            if (card) {
+                slide.addEventListener("mouseenter", () => { card.style.opacity = "1"; });
+                slide.addEventListener("mouseleave", () => { card.style.opacity = "0"; });
+                slide.addEventListener("touchstart", () => { card.style.opacity = "1"; }, {passive: true});
+                slide.addEventListener("touchend", () => { setTimeout(() => { card.style.opacity = "0"; }, 3000); });
+            }
+        });
+    }
+});
+
+/**
+ * Attaches event listeners to globally available elements.
+ */
+function attachGlobalEventListeners() {
+    // "Add to Cart" buttons (delegation might be better if products are dynamically loaded often)
+    document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            addItemToCart(
+                this.dataset.productId,
+                this.dataset.productTitle,
+                this.dataset.productPrice,
+                this.dataset.productImage || this.closest('.product-card,.swiper-slide')?.querySelector('.product-image')?.src
+            );
+        });
+    });
+
+    // Logo link
+    const logoLink = document.getElementById('logo-link'); // Make sure your logo has this ID
+    if (logoLink) {
+        logoLink.addEventListener('click', (e) => { e.preventDefault(); showMainPageContent(); });
+    }
+
+    // Page navigation buttons
+    const viewFullCartBtn = document.getElementById('view-full-cart-btn'); // In offcanvas
+    const viewFullCartLink = document.querySelector('a[href="/viewcart"]'); // General link to view cart
+    const continueShoppingEmptyBtn = document.getElementById('continue-shopping-from-empty-cart');
+    const continueShoppingSummaryBtn = document.getElementById('continue-shopping-from-summary');
+    const proceedToCheckoutOffcanvasBtn = document.querySelector('#cartMenu .btn-danger'); // More specific selector
+    const proceedToCheckoutFullCartBtn = document.getElementById('proceed-to-checkout-fullcart-btn');
+    const backToCartBtn = document.getElementById('back-to-cart-btn'); // On checkout page
+
+    if (viewFullCartBtn) { // From offcanvas
+        viewFullCartBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const cartMenuOffcanvasEl = document.getElementById('cartMenu');
+            bootstrap.Offcanvas.getInstance(cartMenuOffcanvasEl)?.hide();
+            showFullCartPage();
+        });
+    }
+    if (viewFullCartLink) { // General link to view cart (e.g. from nav or footer)
+        viewFullCartLink.addEventListener('click', (e) => {
+            e.preventDefault();
+             const cartMenuOffcanvasEl = document.getElementById('cartMenu');
+            if (cartMenuOffcanvasEl && bootstrap.Offcanvas.getInstance(cartMenuOffcanvasEl)?.show) {
+                 bootstrap.Offcanvas.getInstance(cartMenuOffcanvasEl).hide();
+            }
+            showFullCartPage();
+        });
+    }
+
+    if (continueShoppingEmptyBtn) continueShoppingEmptyBtn.addEventListener('click', (e) => { e.preventDefault(); showMainPageContent(); });
+    if (continueShoppingSummaryBtn) continueShoppingSummaryBtn.addEventListener('click', (e) => { e.preventDefault(); showMainPageContent(); });
+
+    if (proceedToCheckoutOffcanvasBtn) {
+        proceedToCheckoutOffcanvasBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const cartMenuOffcanvasEl = document.getElementById('cartMenu');
+            bootstrap.Offcanvas.getInstance(cartMenuOffcanvasEl)?.hide();
+            showCheckoutPage();
+        });
+    }
+    if (proceedToCheckoutFullCartBtn) {
+        proceedToCheckoutFullCartBtn.addEventListener('click', async (e) => {
+            e.preventDefault();
+            // Check if user is logged in
+            // if (!window.user) {
+            //     alert('Please login to proceed to checkout');
+            //     window.location.href = '/login';
+            //     return;
+            // }
+
+            // Check if cart has items
+            if (!window.cartItems || window.cartItems.length === 0) {
+                alert('Your cart is empty! Please add items to proceed.');
+                return;
+            }
+
+            // Redirect to checkout page
+            window.location.href = '/checkoutform';
+        });
+    }
+    if (backToCartBtn) {
+        backToCartBtn.addEventListener('click', (e) => { e.preventDefault(); showFullCartPage(); });
+    }
+
+    // Checkout Form Submission
+    const checkoutForm = document.getElementById('checkout-form');
+    if (checkoutForm) {
+        checkoutForm.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+
+            if (!checkoutForm.checkValidity()) {
+                checkoutForm.classList.add('was-validated');
+                return;
+            }
+            checkoutForm.classList.add('was-validated');
+
+            const formData = {
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                city: document.getElementById('city').value, // Assuming you add these fields
+                state: document.getElementById('state').value, // Assuming you add these fields
+                zip: document.getElementById('zip').value,   // Assuming you add these fields
+                paymentMethod: document.querySelector('input[name="paymentMethod"]:checked').id,
+                // Add other fields as needed by your /api/orders/place endpoint
+                // e.g., fullName: document.getElementById('fullName').value,
+            };
+
+            try {
+                const response = await fetch('/api/orders/place', { // Ensure this matches your server route
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formData) // Send only form data, cart is in session
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    alert(`Thank you! Your order #${result.order ? result.order._id : ''} has been placed.`);
+                    cartItems = []; // Clear client-side cart
+                    await initializeCart(); // This will effectively clear and re-sync an empty cart
+                    checkoutForm.reset();
+                    checkoutForm.classList.remove('was-validated');
+                    // Redirect to a success page or main page
+                    if (result.order && result.order._id) {
+                         window.location.href = `/order/success?orderId=${result.order._id}`;
+                    } else {
+                        showMainPageContent();
+                    }
+                } else {
+                    alert('Error placing order: ' + (result.message || 'Please try again.'));
+                     if (result.redirect) window.location.href = result.redirect;
+                }
+            } catch (error) {
+                console.error('Error submitting checkout form:', error);
+                alert('An unexpected error occurred. Please try again.');
+            }
+        });
+    }
+}
+</script>
+
 
 <style>
 .quantity-controls {

@@ -1,8 +1,91 @@
+const express = require("express");
+const controller = express.Router();
 const PuffProduct = require('../models/puffProduct');
 const path = require('path');
 
+// Admin routes
+controller.get("/admin/Puff", async (req, res) => {
+    try {
+        const existingPuffs = await PuffProduct.find().sort({ name: 1 });
+        return res.render("admin/Puff", {
+            layout: "admin/adminlayout",
+            puffs: existingPuffs,
+            pageTitle: "Create Puff Product",
+            formData: {},
+            error: null
+        });
+    } catch (error) {
+        console.error("Error preparing create puff page:", error);
+        return res.render("admin/Puff", {
+            layout: "admin/adminlayout",
+            puffs: [],
+            error: "Failed to load the create puff page. " + error.message,
+            formData: {},
+            pageTitle: "Create Puff Product"
+        });
+    }
+});
+
+controller.post("/admin/Puff", async (req, res) => {
+    let data = req.body;
+    try {
+        if (!data.name || !data.image || !data.price) {
+            const existingPuffs = await PuffProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Puff", {
+                layout: "admin/adminlayout",
+                puffs: existingPuffs,
+                error: "Name, Image URL, and Price are required.",
+                formData: data,
+                pageTitle: "Create Puff Product"
+            });
+        }
+
+        const existingPuff = await PuffProduct.findOne({ name: data.name });
+        if (existingPuff) {
+            const existingPuffs = await PuffProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Puff", {
+                layout: "admin/adminlayout",
+                puffs: existingPuffs,
+                error: `A puff product with the name "${data.name}" already exists.`,
+                formData: data,
+                pageTitle: "Create Puff Product"
+            });
+        }
+
+        let newPuff = new PuffProduct({
+            name: data.name,
+            image: data.image,
+            price: data.price,
+            description: data.description,
+            category: data.category
+        });
+
+        await newPuff.save();
+        return res.redirect("/admin");
+
+    } catch (error) {
+        console.error("Error creating puff product:", error);
+        let existingPuffsForError = [];
+        try {
+            existingPuffsForError = await PuffProduct.find().sort({ name: 1 });
+        } catch (fetchErr) {
+            console.error("Error fetching existing puffs during error handling:", fetchErr);
+        }
+
+        return res.render("admin/Puff", {
+            layout: "admin/adminlayout",
+            puffs: existingPuffsForError,
+            error: "Failed to create puff product. Please try again. " + error.message,
+            formData: data,
+            pageTitle: "Create Puff Product"
+        });
+    }
+});
+
+// Public routes and existing admin functions
+
 // Get all bread products
-exports.getAllPuff = async (req, res, next) => {
+controller.get('/categories/puff', async (req, res, next) => {
     try {
         const products = await PuffProduct.find();
         
@@ -24,10 +107,10 @@ exports.getAllPuff = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
 // Get bread products by category
-exports.getPuffByCategory = async (req, res, next) => {
+controller.get('/categories/puff/:category', async (req, res, next) => {
     try {
         const category = req.params.category;
         let query = {};
@@ -60,62 +143,8 @@ exports.getPuffByCategory = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
-// Add a new bread product (for admin use)
-exports.addPuffProduct = async (req, res, next) => {
-    try {
-        const newProduct = new PuffProduct(req.body);
-        await newProduct.save();
-        res.status(201).json({ 
-            success: true, 
-            message: 'Product added successfully',
-            product: newProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Update a bread product (for admin use)
-exports.updatePuffProduct = async (req, res, next) => {
-    try {
-        const updatedProduct = await PuffProduct.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
-        if (!updatedProduct) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product updated successfully',
-            product: updatedProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Delete a bread product (for admin use)
-exports.deletePuffProduct = async (req, res, next) => {
-    try {
-        const product = await PuffProduct.findByIdAndDelete(req.params.id);
-        if (!product) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product deleted successfully' 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-}; 
+module.exports = controller;

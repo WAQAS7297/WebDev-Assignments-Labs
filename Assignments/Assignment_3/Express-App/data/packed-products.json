@@ -3,344 +3,344 @@
     "name": "Almond Biscotti",
     "description": "Crisp, twice-baked almond biscotti, perfectly packaged for freshness. Ideal for dipping in coffee or tea.",
     "price": 450,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Almond Biscotti.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Almond Biscotti.jpg",
     "inStock": true
   },
   {
     "name": "Almond Khatai Box",
     "description": "A delightful box of traditional, crumbly almond shortbread cookies (Khatai). A classic Indian treat, perfectly packed.",
     "price": 400,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Almond Khatai Box.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Almond Khatai Box.jpg",
     "inStock": true
   },
   {
     "name": "Almond Khatai Fancy Box",
     "description": "Our signature almond shortbread cookies (Khatai) presented in an elegant fancy box, ensuring freshness and appeal.",
     "price": 650,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Almond Khatai Fancy Box.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Almond Khatai Fancy Box.jpg",
     "inStock": true
   },
   {
     "name": "Almond Khatai Tin",
     "description": "Delicious, melt-in-your-mouth almond shortbread cookies (Khatai) packed in a reusable, attractive tin to maintain crispness.",
     "price": 550,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Almond Khatai Tin.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Almond Khatai Tin.jpg",
     "inStock": true
   },
   {
     "name": "Almond Macaroon",
     "description": "Chewy and flavorful almond macaroons, carefully packaged to preserve their delicate texture and taste.",
     "price": 480,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Almond Macaroon.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Almond Macaroon.jpg",
     "inStock": true
   },
   {
     "name": "Arabian Sweet",
     "description": "An exquisite assortment of traditional Arabian sweets, hygienically packed to retain their authentic flavors and textures.",
     "price": 900,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Arabian Sweet.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Arabian Sweet.jpg",
     "inStock": true
   },
   {
     "name": "Besan Khatai",
     "description": "Traditional gram flour (besan) shortbread cookies with a unique, crumbly texture, neatly packed for your enjoyment.",
     "price": 300,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Besan Khatai.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Besan Khatai.jpg",
     "inStock": true
   },
   {
     "name": "Bread Stick Box",
     "description": "Crispy and savory breadsticks packed in a convenient box, perfect for snacking, dipping, or accompanying soups and salads.",
     "price": 180,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Bread Stick Box.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Bread Stick Box.jpg",
     "inStock": true
   },
   {
     "name": "Cranberry Cookies",
     "description": "Soft and chewy cookies packed with tart cranberries, often with white chocolate, hygienically packed for freshness.",
     "price": 380,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Canberry Cookies.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Canberry Cookies.jpg",
     "inStock": true
   },
   {
     "name": "Chips",
     "description": "Classic, crispy potato chips, lightly salted and sealed in a pack for ultimate crunch and freshness.",
     "price": 80,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Chips.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Chips.jpg",
     "inStock": true
   },
   {
     "name": "Chocolate Chip Box",
     "description": "A box full of classic, soft, and chewy chocolate chip cookies, packed to retain their delicious homemade taste.",
     "price": 400,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Chocolate Chip Box.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Chocolate Chip Box.jpg",
     "inStock": true
   },
   {
     "name": "Chocolate Crisp",
     "description": "Thin, delicate, and intensely chocolatey crisp biscuits, carefully packaged to maintain their snap.",
     "price": 350,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Chocolate Crisp.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Chocolate Crisp.jpg",
     "inStock": true
   },
   {
     "name": "Chocolate Walnut Biscotti",
     "description": "Crunchy biscotti generously studded with rich chocolate chunks and walnuts, securely packaged for lasting freshness.",
     "price": 500,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Chocolate Walnut Biscotti.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Chocolate Walnut Biscotti.jpg",
     "inStock": true
   },
   {
     "name": "Coconut Cookies",
     "description": "Buttery cookies with a delightful tropical coconut flavor, packed to preserve their aroma and crispness.",
     "price": 320,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Coconut Cookies.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Coconut Cookies.jpg",
     "inStock": true
   },
   {
     "name": "Countryside Biscuit",
     "description": "An assortment of rustic and wholesome countryside-style biscuits, offering a variety of flavors in a sealed pack.",
     "price": 480,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Countryside Biscuit.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Countryside Biscuit.jpg",
     "inStock": true
   },
   {
     "name": "Flax Snap",
     "description": "Healthy and crispy flaxseed snaps or crackers, a nutritious snack packed for convenience and freshness.",
     "price": 280,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Flax Sanp.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Flax Sanp.jpg",
     "inStock": true
   },
   {
     "name": "French Heart Box",
     "description": "Sweet, crispy, heart-shaped puff pastries (palmiers), also known as elephant ears, packed in a box to maintain their delicate crunch.",
     "price": 350,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/French Heart Box.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/French Heart Box.jpg",
     "inStock": true
   },
   {
     "name": "Fruit Cake Rusk",
     "description": "Deliciously crispy rusk made from rich fruit cake, packed with mixed dried fruits and sealed for lasting crispness.",
     "price": 250,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Fruit Cake Rusk.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Fruit Cake Rusk.jpg",
     "inStock": true
   },
   {
     "name": "Ginger Cake Rusk",
     "description": "Crispy and aromatic rusk made from spiced ginger cake, offering a warm flavor, packed to stay crunchy.",
     "price": 250,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Ginger Cake Rusk.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Ginger Cake Rusk.jpg",
     "inStock": true
   },
   {
     "name": "Hard Nougat",
     "description": "Classic hard nougat packed with crunchy nuts and sweetened with honey, individually wrapped or in a sealed pack.",
     "price": 450,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Hard Nougat.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Hard Nougat.jpg",
     "inStock": true
   },
   {
     "name": "Honey Nougat",
     "description": "Soft and chewy honey nougat, generously filled with almonds or other nuts, packaged to maintain its texture.",
     "price": 480,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Honey Nougat.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Honey Nougat.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Chili Garlic Sauce",
     "description": "Kanas brand fiery and flavorful chili garlic sauce in a hygienically sealed bottle or jar for lasting freshness.",
     "price": 160,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Chili Garlic Sauce.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Chili Garlic Sauce.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Dates Imli Chutney",
     "description": "Sweet and tangy Dates Imli (Tamarind) Chutney from Kanas, packed in a sealed bottle for authentic taste.",
     "price": 190,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Dates Imli Chutney.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Dates Imli Chutney.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Green Chili Chutney",
     "description": "Kanas brand vibrant and spicy green chili chutney, bottled to preserve its fresh, zesty flavor.",
     "price": 150,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Green Chili Chuntey.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Green Chili Chuntey.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Ketchup Sachet",
     "description": "A convenient retail pack of Kanas classic tomato ketchup sachets, perfect for individual servings and maintaining freshness.",
     "price": 100,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Ketchup Sachet.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Ketchup Sachet.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Mayonnaise Classic",
     "description": "Creamy and smooth classic mayonnaise by Kanas, available in a sealed jar or pouch for various culinary uses.",
     "price": 170,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Mayonnaise Classic.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Mayonnaise Classic.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Plain Paratha",
     "description": "Kanas brand ready-to-cook frozen plain parathas, packed to ensure freshness and convenience for quick meals.",
     "price": 180,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Plain Paratha.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Plain Paratha.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Sriracha Sauce Bottle",
     "description": "Kanas brand Sriracha sauce in a convenient bottle, delivering a bold and spicy kick to your dishes.",
     "price": 170,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Sriracha Sauce Bottle.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Sriracha Sauce Bottle.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Tomato Ketchup",
     "description": "The classic, rich, and tangy tomato ketchup from Kanas, bottled for everyday use with your favorite snacks and meals.",
     "price": 130,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Tomato Ketchup.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Tomato Ketchup.jpg",
     "inStock": true
   },
   {
     "name": "Kanas Whole wheat paratha",
     "description": "Healthy and delicious Kanas brand frozen whole wheat parathas, packed for a nutritious and easy meal option.",
     "price": 200,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Kanas Whole wheat paratha.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Kanas Whole wheat paratha.jpg",
     "inStock": true
   },
   {
     "name": "Lemon Crisp",
     "description": "Thin, zesty, and refreshing lemon-flavored crisp biscuits, carefully packaged to maintain their delightful crunch.",
     "price": 330,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Lemon Crisp.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Lemon Crisp.jpg",
     "inStock": true
   },
   {
     "name": "Marzipan",
     "description": "Exquisite almond marzipan confections, often artfully shaped, hygienically packed for a traditional treat.",
     "price": 600,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Marzipan.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Marzipan.jpg",
     "inStock": true
   },
   {
     "name": "Multiseed Biscotti",
     "description": "Wholesome and crunchy biscotti packed with a variety of nutritious seeds, sealed for lasting freshness and flavor.",
     "price": 480,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Multiseed Biscotti.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Multiseed Biscotti.jpg",
     "inStock": true
   },
   {
     "name": "Oatlay",
     "description": "Delicious and wholesome oatmeal cookies, possibly with raisins or nuts, packed to retain their texture and taste.",
     "price": 300,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Oatlay.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Oatlay.jpg",
     "inStock": true
   },
   {
     "name": "Pistachio Biscotti",
     "description": "Premium crunchy biscotti featuring the rich flavor and vibrant color of pistachios, elegantly packaged.",
     "price": 550,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Pistachio Bischotti.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Pistachio Bischotti.jpg",
     "inStock": true
   },
   {
     "name": "Popcorn",
     "description": "Ready-to-eat classic, fluffy popcorn, lightly salted and sealed in a bag for a perfect snack anytime.",
     "price": 70,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Popcorn.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Popcorn.jpg",
     "inStock": true
   },
   {
     "name": "Royal Biscuit Collection (Assorted)",
     "description": "An assorted collection of our fine royal biscuits, offering a variety of popular flavors in a conveniently sealed pack or box.",
     "price": 350,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Royal Biscuit Collection (Assorted).jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Royal Biscuit Collection (Assorted).jpg",
     "inStock": true
   },
   {
     "name": "Royal Biscuit Collection 250 g",
     "description": "A 250g pack of our Royal Biscuit Collection, featuring an assortment of fine, buttery biscuits sealed for freshness.",
     "price": 250,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Royal Biscuit Collection 250 g.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Royal Biscuit Collection 250 g.jpg",
     "inStock": true
   },
   {
     "name": "Royal Biscuit Collection 500 g",
     "description": "A generous 500g pack of our Royal Biscuit Collection, offering a wider variety of exquisite biscuits, perfectly sealed.",
     "price": 450,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Royal Biscuit Collection 500 g.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Royal Biscuit Collection 500 g.jpg",
     "inStock": true
   },
   {
     "name": "Royal Biscuit Collection",
     "description": "Our premium Royal Biscuit Collection presented in an elegant, reusable tin, ensuring lasting freshness and quality.",
     "price": 700,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Royal Biscuit Collection.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Royal Biscuit Collection.jpg",
     "inStock": true
   },
   {
     "name": "Sesame Snap",
     "description": "Crisp and sweet sesame snaps or brittle, a delightful crunchy treat packed for your enjoyment.",
     "price": 200,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Seasame Snap.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Seasame Snap.jpg",
     "inStock": true
   },
   {
     "name": "Slanty",
     "description": "Light, crispy, and uniquely shaped puffed snacks, flavored with tangy or spicy seasonings, in a sealed bag.",
     "price": 80,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Slanty.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Slanty.jpg",
     "inStock": true
   },
   {
     "name": "Vanilla Crisp",
     "description": "Thin, delicate, and fragrant vanilla-flavored crisp biscuits, securely packaged to preserve their classic taste and crunch.",
     "price": 330,
-    "category": "Packed Items",
-    "image": "/images/products/Packed Items/Vanilla Crisp.jpg",
+    "category": "Packed_Items",
+    "image": "/images/products/Packed_Items/Vanilla Crisp.jpg",
     "inStock": true
   }
 ]

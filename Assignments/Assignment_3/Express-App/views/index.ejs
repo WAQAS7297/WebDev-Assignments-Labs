@@ -1,17 +1,64 @@
 <main id="main-content" class="container-fluid p-0">
     <div class="main-content">
-        <div id="bannerCarousel" class="carousel slide mt-2" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <picture>
-                        <source media="(max-width:600px)" srcset="https://tehzeeb.com/media/banners/mobile/icon/9.jpeg">
-                        <source media="(max-width:1024px)" srcset="https://tehzeeb.com/media/banners/main/icon/5.jpeg">
-                        <source media="(min-width:1024px)" srcset="https://tehzeeb.com/media/banners/main/icon/5.jpeg">
-                        <img class="d-block w-100 banner-image" src="https://tehzeeb.com/media/banners/main/icon/5.jpeg" alt="banner">
-                    </picture>
+        <div class="banner_slider swiper home_banners swiper-initialized swiper-horizontal swiper-backface-hidden"> 
+    <div class="swiper-wrapper" id="swiper-wrapper-b5dff8104d3a12da4" aria-live="polite">
+        <div class="swiper-slide swiper-slide-active swiper-slide-next" 
+             role="group" 
+             aria-label="1 / 1" 
+             data-swiper-slide-index="0" 
+             style="width: 100%;">
+             
+            <!-- Responsive Video -->
+            <video id="video_source" width="100%" autoplay muted loop playsinline webkit-playsinline>
+                <source id="video_source_tag" type="video/mp4" src="">
+            </video>
+
+            <div class="banner_inner">
+                <div class="banner_block">
+                    <div class="banner_content">
+                        <!-- Optional content goes here -->
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="swiper-scrollbar swiper-scrollbar-horizontal swiper-scrollbar-lock" style="display: none;">
+        <div class="swiper-scrollbar-drag" style="width: 0px;"></div>
+    </div>
+
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div>
+
+<!-- JavaScript to switch video based on screen size -->
+<script>
+    const videoSource = document.getElementById('video_source_tag');
+    const videoElement = document.getElementById('video_source');
+
+    if (window.innerWidth <=400 ) {
+        videoSource.src = "videos/Mango_Cake_Garden_Drizzle_Vertical_Final.mp4";
+    } else {
+        videoSource.src = "videos/Mango_Cake_Garden_Drizzle_Horizontal_Final.mp4";
+    }
+
+    videoElement.load(); // Reload video with correct source
+</script>
+
+<!-- Optional CSS for better scaling -->
+<style>
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .banner_slider {
+        overflow: hidden;
+    }
+</style>
+
         <!-- <div class="container py-5 " style="background-color: #fdf9f3; color: black;">
             <div class="text-center mb-4">
                 <h2 class="text-dark">CATEGORIES</h2>

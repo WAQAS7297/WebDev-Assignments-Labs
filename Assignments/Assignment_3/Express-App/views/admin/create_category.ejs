@@ -1,3 +1,39 @@
+<style>
+    .category-navigation {
+        color: #000000 !important;
+    }
+    
+    .category-navigation .form-label {
+        color: #000000 !important;
+        font-weight: 500;
+    }
+    
+    .category-navigation .form-select {
+        color: #000000 !important;
+        background-color: #ffffff;
+        border: 1px solid #ced4da;
+    }
+    
+    .category-navigation .form-select:focus {
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    .category-navigation .btn-outline-secondary {
+        color: #000000 !important;
+        border-color: #6c757d;
+    }
+    
+    .category-navigation .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white !important;
+    }
+    
+    .category-navigation .fas {
+        color: #000000 !important;
+    }
+</style>
+
 <div class="card form-card">
     <div class="card-header">
         <h3>Add New Category</h3>
@@ -64,6 +100,24 @@
 <div class="card mt-4">
         <div class="card-header">
             <h3>Existing Categories</h3>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="categoryNavigation" class="form-label">Category Navigation</label>
+                    <div class="input-group category-navigation">
+                        <select class="form-select" id="categoryNavigation" onchange="window.location.href=this.value">
+                            <option value="">Select a Category...</option>
+                            <% categories.forEach(function(category) { %>
+                                <option value="/admin/<%= category.name %>">
+                                    <%= category.name  %>
+                                </option>
+                            <% }); %>
+                        </select>
+                        <button class="btn btn-outline-secondary" type="button" id="goToCategory">
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -83,9 +137,9 @@
                             <% categories.forEach(category => { %>
                                 <tr>
                                     <td>
-                                        <img src="<%= category.imageUrl %>" alt="<%= category.alt_text %>" style="width: 60px; height: auto; border-radius: 4px;">
+                                        <img src="<%= category.image %>" alt="<%= category.image %>" style="width: 60px; height: auto; border-radius: 4px;">
                                     </td>
-                                    <td>"<%= category.name %>"</td>
+                                    <td><%= category.name %></td>
                                     <td><a href="<%= category.pageUrl %>" target="_blank"><%= category.pagelink%></a></td>
                                     <td><%= category.alt_text %></td>
                                     <td><%= category.title %></td>
@@ -104,7 +158,7 @@
                             <% }) %>
                         <% } else { %>
                             <tr>
-                                <td colspan="6" class="text-center">No categories found. Add one above!</td>
+                                <td colspan="7" class="text-center">No categories found. Add one above!</td>
                             </tr>
                         <% } %>
                     </tbody>

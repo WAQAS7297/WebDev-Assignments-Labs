@@ -1,8 +1,91 @@
+const express = require("express");
+const controller = express.Router();
 const BurgerProduct = require('../models/burgerProduct');
 const path = require('path');
 
+// Admin routes
+controller.get("/admin/Burger", async (req, res) => {
+    try {
+        const existingBurgers = await BurgerProduct.find().sort({ name: 1 });
+        return res.render("admin/Burger", {
+            layout: "admin/adminlayout",
+            burgers: existingBurgers,
+            pageTitle: "Create Burger Product",
+            formData: {},
+            error: null
+        });
+    } catch (error) {
+        console.error("Error preparing create burger page:", error);
+        return res.render("admin/Burger", {
+            layout: "admin/adminlayout",
+            burgers: [],
+            error: "Failed to load the create burger page. " + error.message,
+            formData: {},
+            pageTitle: "Create Burger Product"
+        });
+    }
+});
+
+controller.post("/admin/Burger", async (req, res) => {
+    let data = req.body;
+    try {
+        if (!data.name || !data.image || !data.price) {
+            const existingBurgers = await BurgerProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Burger", {
+                layout: "admin/adminlayout",
+                burgers: existingBurgers,
+                error: "Name, Image URL, and Price are required.",
+                formData: data,
+                pageTitle: "Create Burger Product"
+            });
+        }
+
+        const existingBurger = await BurgerProduct.findOne({ name: data.name });
+        if (existingBurger) {
+            const existingBurgers = await BurgerProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/Burger", {
+                layout: "admin/adminlayout",
+                burgers: existingBurgers,
+                error: `A burger product with the name "${data.name}" already exists.`,
+                formData: data,
+                pageTitle: "Create Burger Product"
+            });
+        }
+
+        let newBurger = new BurgerProduct({
+            name: data.name,
+            image: data.image,
+            price: data.price,
+            description: data.description,
+            category: data.category
+        });
+
+        await newBurger.save();
+        return res.redirect("/admin");
+
+    } catch (error) {
+        console.error("Error creating burger product:", error);
+        let existingBurgersForError = [];
+        try {
+            existingBurgersForError = await BurgerProduct.find().sort({ name: 1 });
+        } catch (fetchErr) {
+            console.error("Error fetching existing burgers during error handling:", fetchErr);
+        }
+
+        return res.render("admin/Burger", {
+            layout: "admin/adminlayout",
+            burgers: existingBurgersForError,
+            error: "Failed to create burger product. Please try again. " + error.message,
+            formData: data,
+            pageTitle: "Create Burger Product"
+        });
+    }
+});
+
+// Public routes and existing admin functions
+
 // Get all bread products
-exports.getAllBurger = async (req, res, next) => {
+controller.get('/categories/burger', async (req, res, next) => {
     try {
         const products = await BurgerProduct.find();
         
@@ -24,10 +107,10 @@ exports.getAllBurger = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
 // Get bread products by category
-exports.getBurgerByCategory = async (req, res, next) => {
+controller.get('/categories/burger/:category', async (req, res, next) => {
     try {
         const category = req.params.category;
         let query = {};
@@ -60,62 +143,7 @@ exports.getBurgerByCategory = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
-// Add a new bread product (for admin use)
-exports.addBurgerProduct = async (req, res, next) => {
-    try {
-        const newProduct = new BurgerProduct(req.body);
-        await newProduct.save();
-        res.status(201).json({ 
-            success: true, 
-            message: 'Product added successfully',
-            product: newProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Update a bread product (for admin use)
-exports.updateBurgerProduct = async (req, res, next) => {
-    try {
-        const updatedProduct = await BurgerProduct.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
-        if (!updatedProduct) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product updated successfully',
-            product: updatedProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
-
-// Delete a bread product (for admin use)
-exports.deleteBurgerProduct = async (req, res, next) => {
-    try {
-        const product = await BurgerProduct.findByIdAndDelete(req.params.id);
-        if (!product) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product deleted successfully' 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-}; 
+module.exports = controller;

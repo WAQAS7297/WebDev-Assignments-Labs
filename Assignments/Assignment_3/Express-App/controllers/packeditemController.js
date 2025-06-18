@@ -1,9 +1,91 @@
+const express = require("express");
+const controller = express.Router();
 const PackedItemProduct = require('../models/packeditemsProduct');
 const path = require('path');
 
-// Get all bread products
+// Admin routes
+controller.get("/admin/PackedItem", async (req, res) => {
+    try {
+        const existingPackedItems = await PackedItemProduct.find().sort({ name: 1 });
+        return res.render("admin/PackedItem", {
+            layout: "admin/adminlayout",
+            packeditems: existingPackedItems,
+            pageTitle: "Create Packed Item Product",
+            formData: {},
+            error: null
+        });
+    } catch (error) {
+        console.error("Error preparing create packed item page:", error);
+        return res.render("admin/PackedItem", {
+            layout: "admin/adminlayout",
+            packeditems: [],
+            error: "Failed to load the create packed item page. " + error.message,
+            formData: {},
+            pageTitle: "Create Packed Item Product"
+        });
+    }
+});
 
-exports.getAllPacked = async (req, res, next) => {
+controller.post("/admin/PackedItem", async (req, res) => {
+    let data = req.body;
+    try {
+        if (!data.name || !data.image || !data.price) {
+            const existingPackedItems = await PackedItemProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/PackedItem", {
+                layout: "admin/adminlayout",
+                packeditems: existingPackedItems,
+                error: "Name, Image URL, and Price are required.",
+                formData: data,
+                pageTitle: "Create Packed Item Product"
+            });
+        }
+
+        const existingPackedItem = await PackedItemProduct.findOne({ name: data.name });
+        if (existingPackedItem) {
+            const existingPackedItems = await PackedItemProduct.find().sort({ name: 1 }).catch(() => []);
+            return res.render("admin/PackedItem", {
+                layout: "admin/adminlayout",
+                packeditems: existingPackedItems,
+                error: `A packed item product with the name "${data.name}" already exists.`,
+                formData: data,
+                pageTitle: "Create Packed Item Product"
+            });
+        }
+
+        let newPackedItem = new PackedItemProduct({
+            name: data.name,
+            image: data.image,
+            price: data.price,
+            description: data.description,
+            category: data.category
+        });
+
+        await newPackedItem.save();
+        return res.redirect("/admin");
+
+    } catch (error) {
+        console.error("Error creating packed item product:", error);
+        let existingPackedItemsForError = [];
+        try {
+            existingPackedItemsForError = await PackedItemProduct.find().sort({ name: 1 });
+        } catch (fetchErr) {
+            console.error("Error fetching existing packed items during error handling:", fetchErr);
+        }
+
+        return res.render("admin/PackedItem", {
+            layout: "admin/adminlayout",
+            packeditems: existingPackedItemsForError,
+            error: "Failed to create packed item product. Please try again. " + error.message,
+            formData: data,
+            pageTitle: "Create Packed Item Product"
+        });
+    }
+});
+
+// Public routes and existing admin functions
+
+// Get all bread products
+controller.get('/categories/Packed_Items',async (req, res, next) => {
     try {
         console.log("hello ");
         const products = await PackedItemProduct.find();
@@ -19,7 +101,7 @@ exports.getAllPacked = async (req, res, next) => {
             return productObj;
         });
 
-        res.render('categories/Packed Items', { 
+        res.render('categories/Packed_Items', { 
             products: processedProducts,
             pageTitle: 'All Packed Items Products',
             currentCategory: 'all'
@@ -27,10 +109,8 @@ exports.getAllPacked = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
-
-// Get bread products by category
-exports.getPackedItemsByCategory = async (req, res, next) => {
+});
+controller.get('/categories/Packed_Items/:category',async (req, res, next) => {
     try {
         const category = req.params.category;
         let query = {};
@@ -55,7 +135,7 @@ exports.getPackedItemsByCategory = async (req, res, next) => {
             return productObj;
         });
 
-        res.render('categories/Packed Items', { 
+        res.render('categories/Packed_Items', { 
             products: processedProducts,
             pageTitle,
             currentCategory: category
@@ -63,62 +143,8 @@ exports.getPackedItemsByCategory = async (req, res, next) => {
     } catch (error) {
         next(error); // Pass error to express error handler
     }
-};
+});
 
-// Add a new bread product (for admin use)
-exports.addPackedItemProduct = async (req, res, next) => {
-    try {
-        const newProduct = new PackedItemProduct(req.body);
-        await newProduct.save();
-        res.status(201).json({ 
-            success: true, 
-            message: 'Product added successfully',
-            product: newProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Update a bread product (for admin use)
-exports.updatePackedItemProduct = async (req, res, next) => {
-    try {
-        const updatedProduct = await PackedItemProduct.findByIdAndUpdate(
-            req.params.id,
-            req.body,
-            { new: true, runValidators: true }
-        );
-        if (!updatedProduct) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product updated successfully',
-            product: updatedProduct 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-};
 
-// Delete a bread product (for admin use)
-exports.deletePackedItemsProduct = async (req, res, next) => {
-    try {
-        const product = await PackedItemProduct.findByIdAndDelete(req.params.id);
-        if (!product) {
-            return res.status(404).json({ 
-                success: false, 
-                message: 'Product not found' 
-            });
-        }
-        res.status(200).json({ 
-            success: true, 
-            message: 'Product deleted successfully' 
-        });
-    } catch (error) {
-        next(error); // Pass error to express error handler
-    }
-}; 
+module.exports = controller;
