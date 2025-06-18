@@ -6,6 +6,7 @@ const session = require('express-session');
 const path = require('path');
 const Order = require('./models/Order.model');
 const middleware = require('./middleware/middleware');
+const Complaint = require('./models/Complaint.model');
 
 server.use(express.static("public"));
 server.use(expressLayouts);
@@ -61,6 +62,8 @@ server.use("/", require("./controllers/orderController"));
 server.use("/", require("./controllers/admin/admin.gifting.controller"));
 const cartController = require('./controllers/cartController');
 server.use("/", cartController);
+const complaintController = require('./controllers/admin/admin.complaintcontroller');
+server.use("/", complaintController);
 const adminController = require('./controllers/admin/adminorder.controller');
 server.use("/", adminController);
 
@@ -146,6 +149,106 @@ server.get("/checkoutform", middleware.ensureAuthenticatedUser, async (req, res)
 server.get("/cv", (req, res) => {
     res.render("cv");
 });
+
+// Contact Routes
+server.get('/contact', (req, res) => {
+    res.render('contact');
+});
+
+server.post('/contact', (req, res) => {
+    const { name, email, subject, message } = req.body;
+    console.log('Received contact form submission:', { name, email, subject, message });
+    
+    res.render('contact', {
+        success: true,
+        message: 'Thank you for your message! We will get back to you soon.'
+    });
+});
+
+// GET complaint form
+server.get('/complaint', (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login');
+    }
+    res.render('complaint');
+});
+
+
+server.post('/submit-complaint', async (req, res) => {
+    if (!req.session.user) {
+        console.log("POST /submit-complaint: No user in session. Redirecting to login.");
+        return res.redirect('/login');
+    }
+
+    try {
+        const { orderId, message } = req.body;
+        const complaint = new Complaint({
+            userFirstName: req.session.user.firstName,
+            userLastName: req.session.user.lastName,
+            orderId,
+            message
+        });
+        await complaint.save();
+        
+        res.render('complaint', {
+            success: true,
+            message: 'Your complaint has been submitted successfully. We will get back to you soon.'
+        });
+    } catch (error) {
+        console.error('Error submitting complaint:', error);
+        res.render('complaint', {
+            error: 'An error occurred while submitting your complaint. Please try again.'
+        });
+    }
+});
+
+
+server.get('/mycomplaints', async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login');
+    }
+
+    try {
+        const complaints = await Complaint.find({
+            userId: req.session.user._id
+        }).sort({ createdAt: -1 });
+
+        res.render('mycomplaints', {
+            complaints,
+            user: req.session.user
+        });
+    } catch (error) {
+        console.error('Error fetching user complaints:', error);
+        res.redirect('/complaint');
+    }
+});
+
+server.post('/submit-complaint', async (req, res) => {
+    if (!req.session.user) {
+        return res.redirect('/login');
+    }
+
+    try {
+        const { orderId, message } = req.body;
+        const complaint = new Complaint({
+            userId: req.session.user._id,
+            orderId,
+            message
+        });
+        await complaint.save();
+        
+        res.render('complaint', {
+            success: true,
+            message: 'Your complaint has been submitted successfully. We will get back to you soon.'
+        });
+    } catch (error) {
+        console.error('Error submitting complaint:', error);
+        res.render('complaint', {
+            error: 'An error occurred while submitting your complaint. Please try again.'
+        });
+    }
+});
+
 
 
 mongoose.connect("mongodb://127.0.0.1:27017/Tehzeeb_Bakers").then(() => {
