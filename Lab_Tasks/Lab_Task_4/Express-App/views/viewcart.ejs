@@ -1,0 +1,88 @@
+<div class="container py-5" id="full-cart-page" style="display: block; min-height: 70vh; padding-top: 226px;">
+    <h1 class="mb-4 display-5 text-center fw-bold">Your Shopping Cart</h1>
+    <div id="full-cart-items-container" class="mb-4" style="display: block;">
+        <div class="card mb-3 shadow-sm border-0" data-product-id="black-forest-cake">
+            <div class="row g-0">
+                <div class="col-md-2 col-3 d-flex align-items-center justify-content-center p-3">
+                    <img src="https://tehzeeb.com/media/catalog/product/cache/6ae3a50c5c0313a15177419915526b1d/b/l/black_forest_cake_1.jpg" class="img-fluid rounded" alt="Black Forest Cake" style="max-height: 100px; object-fit: contain;">
+                </div>
+                <div class="col-md-10 col-9">
+                    <div class="card-body p-md-3 p-2">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h5 class="card-title mb-0">Black Forest Cake</h5>
+                            <button class="btn btn-sm btn-outline-danger remove-full-cart-item border-0" data-product-id="black-forest-cake" title="Remove" fdprocessedid="4t2gp"><i class="fas fa-times"></i></button>
+                        </div>
+                        <p class="card-text text-muted mb-2 small">Price: PKR 1800.00</p>
+                        <div class="d-flex align-items-center my-2 quantity-controls">
+                            <label for="qty-full-black-forest-cake" class="form-label me-2 mb-0 small d-none d-sm-inline">Quantity:</label>
+                            <div class="input-group input-group-sm" style="max-width: 130px;">
+                                <button class="btn btn-outline-secondary decrease-full-qty" type="button" data-product-id="black-forest-cake" fdprocessedid="eo0xo">-</button>
+                                <input type="number" class="form-control text-center full-item-qty" value="1" min="1" id="qty-full-black-forest-cake" data-product-id="black-forest-cake" fdprocessedid="yan12">
+                                <button class="btn btn-outline-secondary increase-full-qty" type="button" data-product-id="black-forest-cake" fdprocessedid="l5ozzh">+</button>
+                            </div>
+                        </div>
+                        <p class="card-text fw-bold mt-2">Item Total: PKR <span class="full-item-total">1800.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="full-cart-empty-message" class="text-center py-5" style="display: none;">
+        <i class="fas fa-shopping-cart fa-4x text-muted mb-3"></i>
+        <h2 class="mb-3">Your cart is currently empty.</h2>
+        <p class="text-muted fs-5">Looks like you haven't added anything to your cart yet.</p>
+        <button id="continue-shopping-from-empty-cart" class="btn btn-lg btn-primary-custom mt-4 px-5 py-2">Continue Shopping</button>
+    </div>
+    <div id="full-cart-summary-and-actions" class="mt-4 row justify-content-end" style="display: flex;">
+        <div class="col-lg-5 col-md-7 col-sm-10">
+            <div class="card shadow-sm border-0">
+                <div class="card-body p-4">
+                    <h4 class="card-title mb-3 fw-bold">Order Summary</h4>
+                    <div class="d-flex justify-content-between mb-2 fs-5">
+                        <span>Subtotal</span>
+                        <span id="full-cart-subtotal">PKR 1800.00</span>
+                    </div>
+                    <hr class="my-3">
+                    <div class="d-flex justify-content-between fw-bold mb-4 fs-4">
+                        <span>Total</span>
+                        <span id="full-cart-grand-total">PKR 1800.00</span>
+                    </div>
+                    <div class="d-grid gap-3">
+                        <button id="proceed-to-checkout-fullcart-btn-final" href="/checkoutform" class="btn btn-danger btn-primary-custom">Proceed to Checkout</button>
+                        <button id="continue-shopping-from-summary" href="/" class="btn btn-outline-secondary py-2" >Continue Shopping</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // Wait for the DOM to be fully loaded
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the "Proceed to Checkout" button element by its ID
+        const proceedToCheckoutFullCartBtnFinal = document.getElementById('proceed-to-checkout-fullcart-btn-final');
+
+        // Check if the "Proceed to Checkout" button actually exists on the page
+        if (proceedToCheckoutFullCartBtnFinal) {
+            proceedToCheckoutFullCartBtnFinal.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default button action
+                window.location.href = '/checkoutform'; // Redirect to the checkout page
+            });
+        } else {
+            console.error("Button with ID 'proceed-to-checkout-fullcart-btn-final' not found.");
+        }
+
+        // Get the "Continue Shopping" button element by its ID
+        const continueShoppingBtn = document.getElementById('continue-shopping-from-summary');
+
+        // Check if the "Continue Shopping" button actually exists on the page
+        if (continueShoppingBtn) {
+            continueShoppingBtn.addEventListener('click', function(e) {
+                e.preventDefault(); // Prevent default button action
+                window.location.href = '/'; // Redirect to the homepage (root)
+            });
+        } else {
+            console.error("Button with ID 'continue-shopping-from-summary' not found.");
+        }
+    });
+</script>

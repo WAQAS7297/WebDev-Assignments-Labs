@@ -1,0 +1,20 @@
+Please add the following category images to this directory:
+
+1. bread.jpg - Image of fresh bread
+2. cakes.jpg - Image of decorated cakes
+3. pizza.jpg - Image of pizza
+4. salad.jpg - Image of fresh salad
+5. sandwich.jpg - Image of sandwich
+6. burger.jpg - Image of burger
+7. nimko.jpg - Image of nimko snacks
+8. puff.jpg - Image of puffs
+9. gifting.jpg - Image of gift boxes
+10. kanas.jpg - Image of kanas
+11. ketchup.jpg - Image of ketchup bottles
+12. packed.jpg - Image of packed items
+
+Note: Please ensure all images are:
+- High quality
+- Square aspect ratio (1:1)
+- Optimized for web (compressed)
+- Minimum size 300x300px

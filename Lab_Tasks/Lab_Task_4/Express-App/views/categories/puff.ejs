@@ -1,0 +1,238 @@
+<!-- Puff Category Page -->
+<div class="container mt-5 pt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Puffs</li>
+        </ol>
+    </nav>
+
+    <h1 class="dashboard-title mb-4">Our Puff Collection</h1>
+
+    <div class="row">
+        <div class="col-md-3">
+            <!-- Category Filter Sidebar -->
+            <div class="card sidebar-card">
+                <div class="card-header">
+                    <h5 class="mb-0">Categories</h5>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="/categories/puff/all" class="list-group-item list-group-item-action <%= currentCategory === 'all' ? 'active' : '' %>">All Puffs</a>
+                    <a href="/categories/puff/vegetable" class="list-group-item list-group-item-action">Vegetable</a>
+                    <a href="/categories/puff/chicken" class="list-group-item list-group-item-action">Chicken</a>
+                    <a href="/categories/puff/cheese" class="list-group-item list-group-item-action">Cheese</a>
+                    <a href="/categories/puff/special" class="list-group-item list-group-item-action">Special</a>
+                </div>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="card sidebar-card mt-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Filter by Price</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="priceRange" id="price1" value="0-50">
+                        <label class="form-check-label" for="price1">
+                            Under Rs. 50
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="priceRange" id="price2" value="50-100">
+                        <label class="form-check-label" for="price2">
+                            Rs. 50 - Rs. 100
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="priceRange" id="price3" value="100+">
+                        <label class="form-check-label" for="price3">
+                            Above Rs. 100
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filling Type -->
+            <div class="card sidebar-card mt-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Filling Type</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="vegetable" id="fillingVegetable">
+                        <label class="form-check-label" for="fillingVegetable">
+                            Vegetable
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="chicken" id="fillingChicken">
+                        <label class="form-check-label" for="fillingChicken">
+                            Chicken
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="cheese" id="fillingCheese">
+                        <label class="form-check-label" for="fillingCheese">
+                            Cheese
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="mushroom" id="fillingMushroom">
+                        <label class="form-check-label" for="fillingMushroom">
+                            Mushroom
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Size -->
+            <div class="card sidebar-card mt-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Size</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="sizeRegular" value="regular">
+                        <label class="form-check-label" for="sizeRegular">
+                            Regular
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="sizeMini" value="mini">
+                        <label class="form-check-label" for="sizeMini">
+                            Mini
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="size" id="sizeParty" value="party">
+                        <label class="form-check-label" for="sizeParty">
+                            Party Size
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dietary Options -->
+            <div class="card sidebar-card mt-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Dietary Options</h5>
+                </div>
+                <div class="card-body">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="vegetarian" id="dietVegetarian">
+                        <label class="form-check-label" for="dietVegetarian">
+                            Vegetarian
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="spicy" id="dietSpicy">
+                        <label class="form-check-label" for="dietSpicy">
+                            Spicy
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <!-- Error Alert -->
+            <% if (locals.error) { %>
+                <div class="alert alert-danger" role="alert">
+                    <%= error %>
+                </div>
+            <% } %>
+
+            <!-- Products Grid -->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <% if (locals.products && products.length > 0) { %>
+                    <% products.forEach(product => { %>
+                        <div class="col">
+                            <div class="card h-100 product-card">
+                                <img src="<%= product.image %>"
+                                     class="card-img-top product-image"  
+                                     alt="<%= product.name %>"
+                                     onerror="this.src='/images/placeholder.jpg'; this.onerror=null;"
+                                     style="height: 200px; object-fit: cover;">
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="card-title"><%= product.name %></h5>
+                                    <p class="card-text flex-grow-1"><%= product.description %></p>
+                                    <p class="card-text"><strong>Rs. <%= product.price %></strong></p>
+                                    <% if (product.inStock) { %>
+                                        <button class="btn btn-primary add-to-cart-btn mt-auto" 
+                                                data-product-id="<%= product._id %>">
+                                            Add to Cart
+                                        </button>
+                                    <% } else { %>
+                                        <button class="btn btn-secondary disabled mt-auto" 
+                                                data-product-id="<%= product._id %>">
+                                            Out of Stock
+                                        </button>
+                                    <% } %>
+                                </div>
+                            </div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="col-12">
+                        <div class="alert alert-info">
+                            No products available in this category.
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .dashboard-title {
+        color: #C8102E;
+        font-weight: bold;
+    }
+
+    .sidebar-card {
+        border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .sidebar-card .card-header {
+        background-color: #C8102E;
+        color: white;
+    }
+
+    .list-group-item.active {
+        background-color: #C8102E;
+        border-color: #C8102E;
+        color: white;
+    }
+
+    .list-group-item:hover {
+        background-color: #C8102E;
+        color: white;
+    }
+
+    .product-card {
+        border: none;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .add-to-cart-btn {
+        background-color: #C8102E;
+        border-color: #C8102E;
+    }
+
+    .add-to-cart-btn:hover {
+        background-color: #a30d1d;
+        border-color: #a30d1d;
+    }
+
+    .add-to-cart-btn:disabled {
+        background-color: #cccccc;
+        border-color: #cccccc;
+    }
+</style>

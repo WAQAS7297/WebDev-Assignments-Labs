@@ -1,0 +1,242 @@
+[
+  {
+    "name": "Bareek Seviyan",
+    "description": "Fine, crispy gram flour noodles (sev), lightly spiced. Perfect for adding crunch to chaats or enjoying as a standalone snack.",
+    "price": 90,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Bareek Seviyan.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Besan Papri",
+    "description": "Crispy, savory wafers made from gram flour (besan). Ideal for chaats or as a crunchy accompaniment to your tea.",
+    "price": 100,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Besan Papri.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bhel Puri",
+    "description": "A delightful mix of puffed rice, sev, papri, and savory spices. A classic Indian street food snack base, ready for your fresh additions.",
+    "price": 150,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Bhel Puri.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Bombay Nimko",
+    "description": "A classic spicy and tangy Bombay mix, featuring a variety of savory noodles, lentils, peanuts, and spices. An all-time favorite.",
+    "price": 130,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Bombay Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chaat Papri",
+    "description": "Small, round, crispy fried flour discs, an essential ingredient for making delicious chaats like Dahi Papri Chaat.",
+    "price": 110,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Chaat Papri.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Chips",
+    "description": "Classic, crispy potato chips, lightly salted and perfect for snacking anytime, anywhere.",
+    "price": 80,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Chips.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Cookies Nimko",
+    "description": "Savory, bite-sized nimko cookies, mildly spiced and perfect with tea. A delightful twist on traditional nimko.",
+    "price": 140,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Cookies Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Crush Nimko",
+    "description": "A finely crushed mixture of various savory nimko items, perfect as a topping or for adding a crunchy texture to dishes.",
+    "price": 120,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Crush Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Daal Biji Nimko",
+    "description": "Crunchy and savory nimko made from roasted or fried lentil seeds, seasoned with traditional spices.",
+    "price": 125,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Daal Biji Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Daal Chana Nimko",
+    "description": "Crispy roasted or fried split chickpeas (chana dal), lightly spiced for a wholesome and protein-rich snack.",
+    "price": 110,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Daal Chana Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Daal Moong Nimko",
+    "description": "Light and crispy fried moong lentils, seasoned with salt and mild spices. A popular and healthy snack.",
+    "price": 115,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Daal Moong Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Daal Sev Nimko",
+    "description": "Crispy gram flour noodles (sev) enriched with the goodness of lentils, offering a unique flavor and texture.",
+    "price": 100,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Daal Sev Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Dahi Pulki",
+    "description": "Small, savory lentil dumplings (phulki), perfect for soaking in yogurt to make Dahi Phulki. These are the dry, ready-to-soak version.",
+    "price": 130,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Dahi Pulki.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Gathiya Nimko",
+    "description": "A popular Gujarati snack, these are thick, soft, and savory gram flour strands, often enjoyed with tea.",
+    "price": 120,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Gathiya Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Hyderabadi Nimko",
+    "description": "A spicy and flavorful nimko mix inspired by Hyderabadi cuisine, featuring a blend of sev, nuts, and aromatic spices.",
+    "price": 160,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Hyderabadi Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Medium Sev Nimko",
+    "description": "Crispy gram flour noodles (sev) of medium thickness, perfectly spiced for a satisfying crunch.",
+    "price": 95,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Medium Sev Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Meetha Chewra Nimko",
+    "description": "A sweet and savory snack made from flattened rice (poha/chewra), nuts, and raisins, with a hint of sweetness.",
+    "price": 140,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Meetha Chewra Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mix Nimko",
+    "description": "A delightful assortment of various savory fried snacks, offering a mix of textures and flavors in every bite. A classic crowd-pleaser.",
+    "price": 120,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Mix Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mongra Nimko",
+    "description": "Small, round, and crunchy lentil balls, seasoned with spices. A traditional and tasty snack.",
+    "price": 130,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Mongra Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mota Sev Nimko",
+    "description": "Thick, crispy gram flour noodles (sev), robustly flavored and perfect for those who enjoy a heartier crunch.",
+    "price": 100,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Mota Sev Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Mughlai Nimko",
+    "description": "A rich and royal savory mix inspired by Mughlai cuisine, often containing nuts, raisins, and a blend of aromatic spices.",
+    "price": 170,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Mughlai Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Namak Paray",
+    "description": "Crispy, diamond-shaped savory fried crackers, lightly seasoned with salt and carom seeds. A traditional tea-time snack.",
+    "price": 110,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Namak Paray.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Namkeen Chewra Nimko",
+    "description": "A savory snack made from flattened rice (poha/chewra), often mixed with peanuts, curry leaves, and spices.",
+    "price": 130,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Namkeen Chewra Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Parsley Nimko",
+    "description": "A unique savory snack infused with the fresh, herbaceous flavor of parsley, offering a delightful twist to traditional nimko.",
+    "price": 140,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Parsley Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Popcorn",
+    "description": "Classic, fluffy popcorn, lightly salted or with a hint of savory seasoning. The perfect movie-time or anytime snack.",
+    "price": 70,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Popcorn.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sabut Moong Nimko",
+    "description": "Crispy fried whole moong beans (green gram), lightly spiced for a crunchy and protein-packed snack.",
+    "price": 120,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Sabut Moon Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Safaid Channy Nimko",
+    "description": "Crunchy fried white chickpeas (kabuli chana), seasoned with a blend of savory spices. A hearty and flavorful snack.",
+    "price": 130,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Safaid Channy Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Sahi Nimko",
+    "description": "A 'royal' or premium nimko mix, featuring a special selection of high-quality ingredients, nuts, and exquisite spices.",
+    "price": 180,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Sahi Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Shakarpary Nimko",
+    "description": "Sweet, diamond-shaped fried flour crisps, often coated with a light sugar glaze. A delightful sweet nimko treat.",
+    "price": 120,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Shakarpary Nimko.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Slanty",
+    "description": "Light, crispy, and uniquely shaped puffed snacks, often flavored with tangy or spicy seasonings. A fun and addictive snack.",
+    "price": 80,
+    "category": "Nimko",
+    "image": "/images/products/Nimko/Slanty.jpg",
+    "inStock": true
+  }
+]

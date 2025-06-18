@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Royal Biscuit Collection 250 G",
+    "description": "A delightful 250g assortment of our finest royal biscuits, offering a variety of popular flavors and crisp textures. Perfect for your daily tea time or as a sweet snack.",
+    "price": 120,
+    "category": "Biscuit",
+    "image": "/images/products/Biscuit/Royal Biscuit Collection 250 G.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Royal Biscuit Collection 500 G",
+    "description": "An expansive 500g selection from our Royal Biscuit Collection, featuring a generous variety of our most beloved buttery, crumbly, and flavorful biscuits. Ideal for families or sharing with guests.",
+    "price": 220,
+    "category": "Biscuit",
+    "image": "/images/products/Biscuit/Royal Biscuit Collection 500 G.jpg",
+    "inStock": true
+  },
+  {
+    "name": "Royal Biscuit Collection(Assorted Tin Pack)",
+    "description": "Our premium Royal Biscuit Collection presented in an elegant, reusable assorted tin. A luxurious selection of diverse, high-quality biscuits, perfect for gifting, special occasions, or indulging in a variety of exquisite tastes.",
+    "price": 350,
+    "category": "Biscuit",
+    "image": "/images/products/Biscuit/Royal Biscuit Collection(Assorted Tin Pack).jpg",
+    "inStock": true
+  }
+]
